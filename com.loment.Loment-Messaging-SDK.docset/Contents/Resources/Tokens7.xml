@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CNMDevice.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CNMDevice</TokenIdentifier>
+			<Abstract type="html">Object represents a device object in the Loment system. Should be at least one valid object after login.</Abstract>
+			<DeclaredIn>CNMDevice.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMDevice/setDeviceName:</TokenIdentifier>
+			<Abstract type="html">The name of the device</Abstract>
+			<DeclaredIn>CNMDevice.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *deviceName</Declaration>
+			
+			
+			<Anchor>//api/name/deviceName</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMDevice/deviceName</TokenIdentifier>
+			<Abstract type="html">The name of the device</Abstract>
+			<DeclaredIn>CNMDevice.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *deviceName</Declaration>
+			
+			
+			<Anchor>//api/name/deviceName</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMDevice/deviceName</TokenIdentifier>
+			<Abstract type="html">The name of the device</Abstract>
+			<DeclaredIn>CNMDevice.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *deviceName</Declaration>
+			
+			
+			<Anchor>//api/name/deviceName</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMDevice/setDeviceID:</TokenIdentifier>
+			<Abstract type="html">The unique ID set by the server</Abstract>
+			<DeclaredIn>CNMDevice.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *deviceID</Declaration>
+			
+			
+			<Anchor>//api/name/deviceID</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMDevice/deviceID</TokenIdentifier>
+			<Abstract type="html">The unique ID set by the server</Abstract>
+			<DeclaredIn>CNMDevice.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *deviceID</Declaration>
+			
+			
+			<Anchor>//api/name/deviceID</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMDevice/deviceID</TokenIdentifier>
+			<Abstract type="html">The unique ID set by the server</Abstract>
+			<DeclaredIn>CNMDevice.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *deviceID</Declaration>
+			
+			
+			<Anchor>//api/name/deviceID</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

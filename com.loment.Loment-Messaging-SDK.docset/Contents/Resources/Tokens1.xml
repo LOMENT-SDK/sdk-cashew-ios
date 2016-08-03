@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CNMAttachment.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CNMAttachment</TokenIdentifier>
+			<Abstract type="html">Object representing a message with an attachment. Filename is the name of the original file provided by sender, and should
+be an indicator what type of file it is.</Abstract>
+			<DeclaredIn>CNMAttachment.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMAttachment/setFilename:</TokenIdentifier>
+			<Abstract type="html">The name of the file including extension</Abstract>
+			<DeclaredIn>CNMAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *filename</Declaration>
+			
+			
+			<Anchor>//api/name/filename</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMAttachment/filename</TokenIdentifier>
+			<Abstract type="html">The name of the file including extension</Abstract>
+			<DeclaredIn>CNMAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *filename</Declaration>
+			
+			
+			<Anchor>//api/name/filename</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMAttachment/filename</TokenIdentifier>
+			<Abstract type="html">The name of the file including extension</Abstract>
+			<DeclaredIn>CNMAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *filename</Declaration>
+			
+			
+			<Anchor>//api/name/filename</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMAttachment/setData:</TokenIdentifier>
+			<Abstract type="html">The raw data of the file. Though on disk the data is encrypted, calling this property gives you the non-encrypted form.
+If data is not yet downloaded this will return nil and you should call the asynchronous version.</Abstract>
+			<DeclaredIn>CNMAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMAttachment/data</TokenIdentifier>
+			<Abstract type="html">The raw data of the file. Though on disk the data is encrypted, calling this property gives you the non-encrypted form.
+If data is not yet downloaded this will return nil and you should call the asynchronous version.</Abstract>
+			<DeclaredIn>CNMAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMAttachment/data</TokenIdentifier>
+			<Abstract type="html">The raw data of the file. Though on disk the data is encrypted, calling this property gives you the non-encrypted form.
+If data is not yet downloaded this will return nil and you should call the asynchronous version.</Abstract>
+			<DeclaredIn>CNMAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMAttachment/setMessage:</TokenIdentifier>
+			<Abstract type="html">The message to which the attachment belongs to</Abstract>
+			<DeclaredIn>CNMAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMMessage *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMAttachment/message</TokenIdentifier>
+			<Abstract type="html">The message to which the attachment belongs to</Abstract>
+			<DeclaredIn>CNMAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMMessage *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMAttachment/message</TokenIdentifier>
+			<Abstract type="html">The message to which the attachment belongs to</Abstract>
+			<DeclaredIn>CNMAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMMessage *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

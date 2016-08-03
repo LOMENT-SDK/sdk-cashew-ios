@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/OutgoingContactRequestStatus.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/OutgoingContactRequestStatus</TokenIdentifier>
+			<Abstract type="html">Status representing different states a suggested contact is in</Abstract>
+			<DeclaredIn>CNMOutgoingContact.h</DeclaredIn>
+            
+			
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/OutgoingContactRequestStatusNotSent</TokenIdentifier>
+            <Abstract type="html">You have yet to send a request to this suggestion
+     </Abstract>
+            <Declaration>OutgoingContactRequestStatusNotSent</Declaration>
+            
+            <DeclaredIn>CNMOutgoingContact.h</DeclaredIn>
+            
+            <NodeRef refid="23"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/OutgoingContactRequestStatusSent</TokenIdentifier>
+            <Abstract type="html">You have sent a request, waiting for response
+     </Abstract>
+            <Declaration>OutgoingContactRequestStatusSent</Declaration>
+            
+            <DeclaredIn>CNMOutgoingContact.h</DeclaredIn>
+            
+            <NodeRef refid="23"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/OutgoingContactRequestStatusAccepted</TokenIdentifier>
+            <Abstract type="html">The suggested contact has accepted, and has been added to contacts
+     </Abstract>
+            <Declaration>OutgoingContactRequestStatusAccepted</Declaration>
+            
+            <DeclaredIn>CNMOutgoingContact.h</DeclaredIn>
+            
+            <NodeRef refid="23"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/OutgoingContactRequestStatusRejected</TokenIdentifier>
+            <Abstract type="html">The suggested contact has declined, no information downloaded
+     </Abstract>
+            <Declaration>OutgoingContactRequestStatusRejected</Declaration>
+            
+            <DeclaredIn>CNMOutgoingContact.h</DeclaredIn>
+            
+            <NodeRef refid="23"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CNMUser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CNMUser</TokenIdentifier>
+			<Abstract type="html">Object represents a Loment user in the Loment system.</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+            
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/setUserName:</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s name</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userName</Declaration>
+			
+			
+			<Anchor>//api/name/userName</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/userName</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s name</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userName</Declaration>
+			
+			
+			<Anchor>//api/name/userName</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMUser/userName</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s name</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userName</Declaration>
+			
+			
+			<Anchor>//api/name/userName</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/setUserEmail:</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s email</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userEmail</Declaration>
+			
+			
+			<Anchor>//api/name/userEmail</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/userEmail</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s email</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userEmail</Declaration>
+			
+			
+			<Anchor>//api/name/userEmail</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMUser/userEmail</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s email</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userEmail</Declaration>
+			
+			
+			<Anchor>//api/name/userEmail</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/setUserPhone:</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s mobile phone</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userPhone</Declaration>
+			
+			
+			<Anchor>//api/name/userPhone</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/userPhone</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s mobile phone</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userPhone</Declaration>
+			
+			
+			<Anchor>//api/name/userPhone</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMUser/userPhone</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s mobile phone</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userPhone</Declaration>
+			
+			
+			<Anchor>//api/name/userPhone</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/setDevice:</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s device</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMDevice *device</Declaration>
+			
+			
+			<Anchor>//api/name/device</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/device</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s device</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMDevice *device</Declaration>
+			
+			
+			<Anchor>//api/name/device</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMUser/device</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s device</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMDevice *device</Declaration>
+			
+			
+			<Anchor>//api/name/device</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/setCashewAccounts:</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s set of cashew account</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSArray *cashewAccounts</Declaration>
+			
+			
+			<Anchor>//api/name/cashewAccounts</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/cashewAccounts</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s set of cashew account</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSArray *cashewAccounts</Declaration>
+			
+			
+			<Anchor>//api/name/cashewAccounts</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMUser/cashewAccounts</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s set of cashew account</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSArray *cashewAccounts</Declaration>
+			
+			
+			<Anchor>//api/name/cashewAccounts</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/setPassword:</TokenIdentifier>
+			<Abstract type="html">The users password</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *password</Declaration>
+			
+			
+			<Anchor>//api/name/password</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/password</TokenIdentifier>
+			<Abstract type="html">The users password</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *password</Declaration>
+			
+			
+			<Anchor>//api/name/password</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMUser/password</TokenIdentifier>
+			<Abstract type="html">The users password</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *password</Declaration>
+			
+			
+			<Anchor>//api/name/password</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

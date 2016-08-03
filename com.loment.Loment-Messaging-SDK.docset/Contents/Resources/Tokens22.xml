@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/MessageStatus.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/MessageStatus</TokenIdentifier>
+			<Abstract type="html">The different possibilities for a message&apos;s status</Abstract>
+			<DeclaredIn>CNMMessageEnums.h</DeclaredIn>
+            
+			
+			<NodeRef refid="22"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/MessageStatusPending</TokenIdentifier>
+            <Abstract type="html">Message is in the process of being sent
+     </Abstract>
+            <Declaration>MessageStatusPending</Declaration>
+            
+            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="22"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/MessageStatusFailed</TokenIdentifier>
+            <Abstract type="html">Message failed to sent to the server
+     </Abstract>
+            <Declaration>MessageStatusFailed</Declaration>
+            
+            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="22"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/MessageStatusSent</TokenIdentifier>
+            <Abstract type="html">Message has been sent to the server
+     </Abstract>
+            <Declaration>MessageStatusSent</Declaration>
+            
+            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="22"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/MessageStatusRead</TokenIdentifier>
+            <Abstract type="html">Message has been read by the recipient(s)
+     </Abstract>
+            <Declaration>MessageStatusRead</Declaration>
+            
+            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="22"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

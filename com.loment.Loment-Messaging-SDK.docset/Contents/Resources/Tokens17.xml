@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/CNMMessagingServicesListener.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/CNMMessagingServicesListener</TokenIdentifier>
+			<Abstract type="html">Listener / hook object that is notified when messaging services stop / starts. Useful for cleaning up and setting up after stop / start.
+Especially with contentDeliveryControllers</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+            
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CNMMessagingServicesListener/didStopServices</TokenIdentifier>
+			<Abstract type="html">Called when started</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>- (void)didStopServices</Declaration>
+			
+			
+			<Anchor>//api/name/didStopServices</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CNMMessagingServicesListener/didStartServices</TokenIdentifier>
+			<Abstract type="html">Called when stopped</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>- (void)didStartServices</Declaration>
+			
+			
+			<Anchor>//api/name/didStartServices</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

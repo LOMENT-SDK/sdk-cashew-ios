@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CNMContentDeliveryController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CNMContentDeliveryController</TokenIdentifier>
+			<Abstract type="html">This delivers CNMObjects in an FRC like fashion for quick access. Example usages are for a list of conversations, or viewing a list of messages
+in a conversation.</Abstract>
+			<DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMContentDeliveryController/fetchData:</TokenIdentifier>
+			<Abstract type="html">Once you have a CNMContentDeliveryController you must call this method to begin listening to changes.</Abstract>
+			<DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)fetchData:(NSError *__autoreleasing *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Error reference</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES / NO on pass / fail</Abstract></ReturnValue>
+			<Anchor>//api/name/fetchData:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMContentDeliveryController/numberOfObjects</TokenIdentifier>
+			<Abstract type="html">Number of objects backed by this content delivery</Abstract>
+			<DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
+			
+			<Declaration>- (NSUInteger)numberOfObjects</Declaration>
+			
+			<ReturnValue><Abstract type="html">Count of objects</Abstract></ReturnValue>
+			<Anchor>//api/name/numberOfObjects</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMContentDeliveryController/allObjects</TokenIdentifier>
+			<Abstract type="html">All the fetched objects</Abstract>
+			<DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)allObjects</Declaration>
+			
+			<ReturnValue><Abstract type="html">All the objects</Abstract></ReturnValue>
+			<Anchor>//api/name/allObjects</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMContentDeliveryController/objectAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Retrieves the CNMObject at given indexPath</Abstract>
+			<DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
+			
+			<Declaration>- (id)objectAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">The indexPath to retrieve from</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CNMObject</Abstract></ReturnValue>
+			<Anchor>//api/name/objectAtIndexPath:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMContentDeliveryController/setDelegate:</TokenIdentifier>
+			<Abstract type="html">Delegate to update on.</Abstract>
+			<DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSObject&lt;CNMContentDeliveryControllerDelegate&gt; *delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMContentDeliveryController/delegate</TokenIdentifier>
+			<Abstract type="html">Delegate to update on.</Abstract>
+			<DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSObject&lt;CNMContentDeliveryControllerDelegate&gt; *delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMContentDeliveryController/delegate</TokenIdentifier>
+			<Abstract type="html">Delegate to update on.</Abstract>
+			<DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSObject&lt;CNMContentDeliveryControllerDelegate&gt; *delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

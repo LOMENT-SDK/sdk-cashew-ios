@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CNMMessageDefaultsServices.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CNMMessageDefaultsServices</TokenIdentifier>
+			<Abstract type="html">This class provides the ability to set / get defaults for sending a message. If you call send message without the explicit attributes
+parameters, what is stored in defaults here is what will be used.</Abstract>
+			<DeclaredIn>CNMMessageDefaultsServices.h</DeclaredIn>
+            
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessageDefaultsServices/isAcknowledgementRequired:</TokenIdentifier>
+			<Abstract type="html">Retrieves global acknowledgementRequired value</Abstract>
+			<DeclaredIn>CNMMessageDefaultsServices.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)isAcknowledgementRequired:(NSError *__autoreleasing *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Error reference in case something goes wrong. If error is return, ignore return value</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Requires acknowledgement</Abstract></ReturnValue>
+			<Anchor>//api/name/isAcknowledgementRequired:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessageDefaultsServices/isForwardingRestricted:</TokenIdentifier>
+			<Abstract type="html">Retrieves global forward restricted value</Abstract>
+			<DeclaredIn>CNMMessageDefaultsServices.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)isForwardingRestricted:(NSError *__autoreleasing *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Error reference in case something goes wrong. If error is return, ignore return value</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Restricted forwarding</Abstract></ReturnValue>
+			<Anchor>//api/name/isForwardingRestricted:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessageDefaultsServices/priorityLevel:</TokenIdentifier>
+			<Abstract type="html">Retrieves global priority value</Abstract>
+			<DeclaredIn>CNMMessageDefaultsServices.h</DeclaredIn>
+			
+			<Declaration>+ (MessagePriorityLevel)priorityLevel:(NSError *__autoreleasing *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Error reference in case something goes wrong. If error is return, ignore return value</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Message priority level</Abstract></ReturnValue>
+			<Anchor>//api/name/priorityLevel:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessageDefaultsServices/expirationDurationMinutes:</TokenIdentifier>
+			<Abstract type="html">Retrieves global expiration value</Abstract>
+			<DeclaredIn>CNMMessageDefaultsServices.h</DeclaredIn>
+			
+			<Declaration>+ (NSInteger)expirationDurationMinutes:(NSError *__autoreleasing *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Error reference in case something goes wrong. If error is return, ignore return value</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Expiration duration in minutes</Abstract></ReturnValue>
+			<Anchor>//api/name/expirationDurationMinutes:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessageDefaultsServices/setAcknowledgementRequired:error:</TokenIdentifier>
+			<Abstract type="html">Sets global acknowledgementRequired value</Abstract>
+			<DeclaredIn>CNMMessageDefaultsServices.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)setAcknowledgementRequired:(BOOL)acknowledgementRequired error:(NSError *__autoreleasing *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>acknowledgementRequired</Name>
+					<Abstract type="html">New value</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Error reference in case something goes wrong.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setAcknowledgementRequired:error:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessageDefaultsServices/setForwardingRestricted:error:</TokenIdentifier>
+			<Abstract type="html">Sets global forward restricted value</Abstract>
+			<DeclaredIn>CNMMessageDefaultsServices.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)setForwardingRestricted:(BOOL)forwardingRestricted error:(NSError *__autoreleasing *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>forwardingRestricted</Name>
+					<Abstract type="html">New value</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Error reference in case something goes wrong.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setForwardingRestricted:error:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessageDefaultsServices/setPriorityLevel:error:</TokenIdentifier>
+			<Abstract type="html">Sets global priority value</Abstract>
+			<DeclaredIn>CNMMessageDefaultsServices.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)setPriorityLevel:(MessagePriorityLevel)priorityLevel error:(NSError *__autoreleasing *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>priorityLevel</Name>
+					<Abstract type="html">New value</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Error reference in case something goes wrong.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setPriorityLevel:error:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessageDefaultsServices/setExpirationDurationMinutes:error:</TokenIdentifier>
+			<Abstract type="html">Sets global expiration value</Abstract>
+			<DeclaredIn>CNMMessageDefaultsServices.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)setExpirationDurationMinutes:(NSInteger)expirationDurationMinutes error:(NSError *__autoreleasing *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>expirationDurationMinutes</Name>
+					<Abstract type="html">New value</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Error reference in case something goes wrong.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setExpirationDurationMinutes:error:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CNMMessagingServices.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CNMMessagingServices</TokenIdentifier>
+			<Abstract type="html">Public interface for SDK user, allowing them to send and receive messages, create groups, create contacts, and all other things messaginging related.</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+            
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/startServiceForCashewAccount:user:withCompletion:serviceInteruption:</TokenIdentifier>
+			<Abstract type="html">Starts the messaging service so you can start sending and receiving messages</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)startServiceForCashewAccount:(CNMCashewAccount *)cashewAccount user:(CNMUser *)user withCompletion:(CNMMessagingServiceCompletion)completion serviceInteruption:(CNMMessagingServiceCompletion)interuption</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cashewAccount</Name>
+					<Abstract type="html">The cashew account to use</Abstract>
+				</Parameter><Parameter>
+					<Name>user</Name>
+					<Abstract type="html">The loment user associated with the cashew account</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">completion handler that is called when we are finished trying to start the service</Abstract>
+				</Parameter><Parameter>
+					<Name>interuption</Name>
+					<Abstract type="html">If service is interupted for any reason, this block is called. Recommendation is to call stop service before calling start again</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/startServiceForCashewAccount:user:withCompletion:serviceInteruption:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/stopServiceWithCompletion:</TokenIdentifier>
+			<Abstract type="html">Stops the messaging service so you can start sending and receiving messages. Subsequently all other calls other than start are guarenteed to fail
+until you start up services again. As a special reminder, all CNMContentDeliveryController will cease to provide updates.</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)stopServiceWithCompletion:(CNMMessagingServiceCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">completion handler that is called when we are finished stopping the service</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/stopServiceWithCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/registerNewListener:</TokenIdentifier>
+			<Abstract type="html">Registers a new listener to listen for start / stop</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)registerNewListener:(NSObject&lt;CNMMessagingServicesListener&gt; *)listener</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>listener</Name>
+					<Abstract type="html">The object that wants to listen</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/registerNewListener:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/unregisterListener:</TokenIdentifier>
+			<Abstract type="html">Unregisters the specified listener</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)unregisterListener:(NSObject&lt;CNMMessagingServicesListener&gt; *)listener</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>listener</Name>
+					<Abstract type="html">The object that no longer wants updates</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/unregisterListener:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/sendNewMessage:forConversation:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Sends a new message from the user on the specified conversation. Uses settings stored in global settings. See CNMSettingsServices, defaults can be changed here.
+To send a message with one-time settings call sendNewMessage:options:withExpirationDuration:forConversation:withCompletion</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)sendNewMessage:(NSString *)plainText forConversation:(CNMConversation *)conversation withCompletion:(CNMMessagingServiceCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>plainText</Name>
+					<Abstract type="html">Plain text message</Abstract>
+				</Parameter><Parameter>
+					<Name>conversation</Name>
+					<Abstract type="html">The conversation to post on</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Completion handler that is called when we are finished sending</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendNewMessage:forConversation:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Sends a new message from the user on the specified conversation with an attachment. Uses settings stored in global settings. See CNMSettingsServices, defaults can be changed here.
+To send a message with one-time settings call sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withCompletion</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)sendNewMessage:(NSString *)plainText withAttachmentFilename:(NSString *)attachmentFilename withAttachmentData:(NSData *)attachmentData forConversation:(CNMConversation *)conversation withCompletion:(CNMMessagingServiceCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>plainText</Name>
+					<Abstract type="html">Plain text message</Abstract>
+				</Parameter><Parameter>
+					<Name>attachmentFilename</Name>
+					<Abstract type="html">The filename of the attachment</Abstract>
+				</Parameter><Parameter>
+					<Name>attachmentData</Name>
+					<Abstract type="html">The NSData contents of the file</Abstract>
+				</Parameter><Parameter>
+					<Name>conversation</Name>
+					<Abstract type="html">The conversation to post on</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Completion handler that is called when we are finished sending</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/sendNewMessage:options:withExpirationDuration:forConversation:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Sends a new message from the user on the specified conversation with customized settings.</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)sendNewMessage:(NSString *)plainText options:(CNMMessageOptions)options withExpirationDuration:(NSInteger)expirationDuration forConversation:(CNMConversation *)conversation withCompletion:(CNMMessagingServiceCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>plainText</Name>
+					<Abstract type="html">Plain text message</Abstract>
+				</Parameter><Parameter>
+					<Name>options</Name>
+					<Abstract type="html">Bit mask of options to set on a message</Abstract>
+				</Parameter><Parameter>
+					<Name>expirationDuration</Name>
+					<Abstract type="html">Expiration in minutes. Valid values are 1-999. Passing anything else assumes no expiration.</Abstract>
+				</Parameter><Parameter>
+					<Name>conversation</Name>
+					<Abstract type="html">The conversation to post on</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Completion handler that is called when we are finished sending</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendNewMessage:options:withExpirationDuration:forConversation:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Sends a new message from the user on the specified conversation with an attachment and customized settings.</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)sendNewMessage:(NSString *)plainText withAttachmentFilename:(NSString *)attachmentFilename withAttachmentData:(NSData *)attachmentData options:(CNMMessageOptions)options withExpirationDuration:(NSInteger)expirationDuration forConversation:(CNMConversation *)conversation withCompletion:(CNMMessagingServiceCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>plainText</Name>
+					<Abstract type="html">Plain text message</Abstract>
+				</Parameter><Parameter>
+					<Name>attachmentFilename</Name>
+					<Abstract type="html">The filename of the attachment</Abstract>
+				</Parameter><Parameter>
+					<Name>attachmentData</Name>
+					<Abstract type="html">The NSData contents of the file</Abstract>
+				</Parameter><Parameter>
+					<Name>options</Name>
+					<Abstract type="html">Bit mask of options to set on a message</Abstract>
+				</Parameter><Parameter>
+					<Name>expirationDuration</Name>
+					<Abstract type="html">Expiration in minutes. Valid values are 1-999. Passing anything else assumes no expiration.</Abstract>
+				</Parameter><Parameter>
+					<Name>conversation</Name>
+					<Abstract type="html">The conversation to post on</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Completion handler that is called when we are finished sending</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/markMessageAsRead:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Mark a message as read</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)markMessageAsRead:(CNMMessage *)message withCompletion:(CNMMessagingServiceCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The message to mark</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">completion handler that is called when we are finished sending</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/markMessageAsRead:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/markMessageAsAcknowledged:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Mark a message as acknowledged when the sender requires it</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)markMessageAsAcknowledged:(CNMMessage *)message withCompletion:(CNMMessagingServiceCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The message to mark</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">completion handler that is called when we are finished sending</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/markMessageAsAcknowledged:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/downloadAttachment:withCompletion:</TokenIdentifier>
+			<Abstract type="html">If you call data property on CNMAttachment and it is nil, call this method to download data. Upon completion, if success it should be safe to
+call data property again to retrieve your data</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)downloadAttachment:(CNMAttachment *)cnmAttachment withCompletion:(CNMAttachmentDownloadComplete)downloadComplete</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cnmAttachment</Name>
+					<Abstract type="html">The attachment to download data on</Abstract>
+				</Parameter><Parameter>
+					<Name>downloadComplete</Name>
+					<Abstract type="html">Completion block</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/downloadAttachment:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/addContact:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Add a contact to list of known contacts. If contact does not exist in Loment system, you will get an error back</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)addContact:(NSString *)cashewUsername withCompletion:(CNMMessagingContactCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cashewUsername</Name>
+					<Abstract type="html">The cashew username to look up</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Completion block that returns CNMContact or an error if something went wrong</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addContact:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/createNewConversationWithOtherCashewContact:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Creates a new 1-to-1 CNMConversation and saves it to the database.</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)createNewConversationWithOtherCashewContact:(CNMContact *)otherCashewContact withCompletion:(CNMMessagingConversationCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>otherCashewContact</Name>
+					<Abstract type="html">Cashew contact representing the other person</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Completion block that returns CNMConversation or an error if something went wrong</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/createNewConversationWithOtherCashewContact:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/createNewGroupConversation:withContacts:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Creates a new group conversation with the given name using the array of CNMContacts. Caller is the admin / owner of the newly created group.</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)createNewGroupConversation:(NSString *)groupName withContacts:(NSArray *)otherContacts withCompletion:(CNMMessagingConversationCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>groupName</Name>
+					<Abstract type="html">The name of the group (This param is required)</Abstract>
+				</Parameter><Parameter>
+					<Name>otherContacts</Name>
+					<Abstract type="html">Array of valid CNMContacts. If you instantiate your CNMContact, unexpected results may happen.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Completion block that returns CNMConversation or an error if something went wrong</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/createNewGroupConversation:withContacts:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/updateConversation:addMembers:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Updates the conversation by adding contacts to group</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)updateConversation:(CNMConversation *)conversation addMembers:(NSArray *)addMembers withCompletion:(CNMMessagingConversationCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>conversation</Name>
+					<Abstract type="html">The group conversation you wish to update</Abstract>
+				</Parameter><Parameter>
+					<Name>addMembers</Name>
+					<Abstract type="html">Array of valid CNMContacts. If you instantiate your CNMContact, unexpected results may happen.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Completion block that returns CNMConversation or an error if something went wrong</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updateConversation:addMembers:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/updateConversation:removeMembers:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Updates the conversation by removing contacts from group</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)updateConversation:(CNMConversation *)conversation removeMembers:(NSArray *)removeMembers withCompletion:(CNMMessagingConversationCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>conversation</Name>
+					<Abstract type="html">The group conversation you wish to update</Abstract>
+				</Parameter><Parameter>
+					<Name>removeMembers</Name>
+					<Abstract type="html">Array of valid CNMContacts</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Completion block that returns CNMConversation or an error if something went wrong</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updateConversation:removeMembers:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/updateConversation:newName:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Updates the conversation by changing the group name</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)updateConversation:(CNMConversation *)conversation newName:(NSString *)newGroupName withCompletion:(CNMMessagingConversationCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>conversation</Name>
+					<Abstract type="html">The group conversation you wish to update</Abstract>
+				</Parameter><Parameter>
+					<Name>newGroupName</Name>
+					<Abstract type="html">New name of the group</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Completion block that returns CNMConversation or an error if something went wrong</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updateConversation:newName:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/updateConversation:newOwner:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Updates the conversation by changing the group admin</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)updateConversation:(CNMConversation *)conversation newOwner:(CNMContact *)newOwner withCompletion:(CNMMessagingConversationCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>conversation</Name>
+					<Abstract type="html">The group conversation you wish to update</Abstract>
+				</Parameter><Parameter>
+					<Name>newOwner</Name>
+					<Abstract type="html">The new owner</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Completion block that returns CNMConversation or an error if something went wrong</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updateConversation:newOwner:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/leaveConversation:withCompletion:</TokenIdentifier>
+			<Abstract type="html">For participants of groups that are not the admin but wish to leave a group conversation. Call this method to remove yourself.
+NOTE: Historical data is kept, you will simply not receive new information on said conversation.</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)leaveConversation:(CNMConversation *)conversation withCompletion:(CNMMessagingConversationCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>conversation</Name>
+					<Abstract type="html">The conversation you wish to leave</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Completion block that returns CNMConversation or an error if something went wrong</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/leaveConversation:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/messagesDeliveryController:error:</TokenIdentifier>
+			<Abstract type="html">Provides access to all messages in a conversation in an FRC-like fashion. Be sure to set delegate</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (CNMContentDeliveryController *)messagesDeliveryController:(CNMConversation *)conversation error:(NSError *__autoreleasing *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>conversation</Name>
+					<Abstract type="html">Conversation we wish to track</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Error referece</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Newly allocated delivery controller</Abstract></ReturnValue>
+			<Anchor>//api/name/messagesDeliveryController:error:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/allConversationsDeliveryController:</TokenIdentifier>
+			<Abstract type="html">Provides access to all conversations in a FRC-like fashion. Be sure to set delegate</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (CNMContentDeliveryController *)allConversationsDeliveryController:(NSError *__autoreleasing *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Error reference</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Newly allocated delivery controller</Abstract></ReturnValue>
+			<Anchor>//api/name/allConversationsDeliveryController:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/groupConversationsDeliveryController:</TokenIdentifier>
+			<Abstract type="html">Provides access to group conversations in a FRC-like fashion. Be sure to set delegate</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (CNMContentDeliveryController *)groupConversationsDeliveryController:(NSError *__autoreleasing *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Error reference</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Newly allocated delivery controller</Abstract></ReturnValue>
+			<Anchor>//api/name/groupConversationsDeliveryController:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/allContactsDeliveryController:</TokenIdentifier>
+			<Abstract type="html">Provides access to contacts in a FRC-like fashion. Be sure to set delegate</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (CNMContentDeliveryController *)allContactsDeliveryController:(NSError *__autoreleasing *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Error reference</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Newly allocated delivery controller</Abstract></ReturnValue>
+			<Anchor>//api/name/allContactsDeliveryController:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/searchForContactsWithEmailAddresses:andPhoneNumbers:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Searches for suggested contacts based on provided email addresses and phone numbers</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)searchForContactsWithEmailAddresses:(NSArray *)emailAddresses andPhoneNumbers:(NSArray *)phoneNumbers withCompletion:(CNMMessagingContactSearchCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>emailAddresses</Name>
+					<Abstract type="html">An array of email addresses with which to search</Abstract>
+				</Parameter><Parameter>
+					<Name>phoneNumbers</Name>
+					<Abstract type="html">An array of phone numbers with which to search</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Completion handler that is called when we are finished sending</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/searchForContactsWithEmailAddresses:andPhoneNumbers:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/allContactRequestsCompletion:</TokenIdentifier>
+			<Abstract type="html">Asynchronously fetches all your CNMIncomingContacts a.k.a. &quot;Incoming Friend Requests&quot;  Note: Includes those you&apos;ve accepted / declined. Please check status of
+individual requests</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)allContactRequestsCompletion:(CNMMessagingContactRequestCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Completion block called when data is retrieved</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/allContactRequestsCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/sendContactRequestOnOutgoingContact:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Initiates a new friend request for the given suggested contact.</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)sendContactRequestOnOutgoingContact:(CNMOutgoingContact *)outgoingContact withCompletion:(CNMMessagingSendContactRequestCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>outgoingContact</Name>
+					<Abstract type="html">The outgoing contact we wish to be-friend as a contact</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Completion block called when request is sent to server</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendContactRequestOnOutgoingContact:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/acceptContactRequest:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Accept a contact request from a CNMIncomingContact</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)acceptContactRequest:(CNMIncomingContact *)incomingContact withCompletion:(CNMMessagingContactRequestResponseCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>incomingContact</Name>
+					<Abstract type="html">The CNMIncomingContact to accept</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Completion block called once the contact request has been accepted.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/acceptContactRequest:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/rejectContactRequest:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Decline a contact request from a CNMIncomingContact</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)rejectContactRequest:(CNMIncomingContact *)incomingContact withCompletion:(CNMMessagingContactRequestResponseCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>incomingContact</Name>
+					<Abstract type="html">The CNMIncomingContact to decline</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Completion block called once the contact request has been declined.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/rejectContactRequest:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

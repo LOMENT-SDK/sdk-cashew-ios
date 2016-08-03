@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CNMConversation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CNMConversation</TokenIdentifier>
+			<Abstract type="html">Object represents a conversation object in the Loment system.</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/setGroupId:</TokenIdentifier>
+			<Abstract type="html">The groupId of the conversation, provided by the server, only set when the conversation is for a group</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *groupId</Declaration>
+			
+			
+			<Anchor>//api/name/groupId</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/groupId</TokenIdentifier>
+			<Abstract type="html">The groupId of the conversation, provided by the server, only set when the conversation is for a group</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *groupId</Declaration>
+			
+			
+			<Anchor>//api/name/groupId</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMConversation/groupId</TokenIdentifier>
+			<Abstract type="html">The groupId of the conversation, provided by the server, only set when the conversation is for a group</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *groupId</Declaration>
+			
+			
+			<Anchor>//api/name/groupId</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/setGroupName:</TokenIdentifier>
+			<Abstract type="html">The groupName of the conversation. The admin of the group sets this on creation, but can also update it.</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *groupName</Declaration>
+			
+			
+			<Anchor>//api/name/groupName</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/groupName</TokenIdentifier>
+			<Abstract type="html">The groupName of the conversation. The admin of the group sets this on creation, but can also update it.</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *groupName</Declaration>
+			
+			
+			<Anchor>//api/name/groupName</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMConversation/groupName</TokenIdentifier>
+			<Abstract type="html">The groupName of the conversation. The admin of the group sets this on creation, but can also update it.</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *groupName</Declaration>
+			
+			
+			<Anchor>//api/name/groupName</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/setGroupOwner:</TokenIdentifier>
+			<Abstract type="html">The groupOwner of the conversation. The person who can control group functionality.</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMContact *groupOwner</Declaration>
+			
+			
+			<Anchor>//api/name/groupOwner</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/groupOwner</TokenIdentifier>
+			<Abstract type="html">The groupOwner of the conversation. The person who can control group functionality.</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMContact *groupOwner</Declaration>
+			
+			
+			<Anchor>//api/name/groupOwner</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMConversation/groupOwner</TokenIdentifier>
+			<Abstract type="html">The groupOwner of the conversation. The person who can control group functionality.</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMContact *groupOwner</Declaration>
+			
+			
+			<Anchor>//api/name/groupOwner</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/setParticipantsString:</TokenIdentifier>
+			<Abstract type="html">An unique identifier clearly stating who the conversation is with</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *participantsString</Declaration>
+			
+			
+			<Anchor>//api/name/participantsString</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/participantsString</TokenIdentifier>
+			<Abstract type="html">An unique identifier clearly stating who the conversation is with</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *participantsString</Declaration>
+			
+			
+			<Anchor>//api/name/participantsString</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMConversation/participantsString</TokenIdentifier>
+			<Abstract type="html">An unique identifier clearly stating who the conversation is with</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *participantsString</Declaration>
+			
+			
+			<Anchor>//api/name/participantsString</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/setParticipants:</TokenIdentifier>
+			<Abstract type="html">Returns all the participants in the conversation.</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSSet *participants</Declaration>
+			
+			
+			<Anchor>//api/name/participants</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/participants</TokenIdentifier>
+			<Abstract type="html">Returns all the participants in the conversation.</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSSet *participants</Declaration>
+			
+			
+			<Anchor>//api/name/participants</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMConversation/participants</TokenIdentifier>
+			<Abstract type="html">Returns all the participants in the conversation.</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSSet *participants</Declaration>
+			
+			
+			<Anchor>//api/name/participants</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/setLatestMessage:</TokenIdentifier>
+			<Abstract type="html">The latest message on the conversation</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMMessage *latestMessage</Declaration>
+			
+			
+			<Anchor>//api/name/latestMessage</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/latestMessage</TokenIdentifier>
+			<Abstract type="html">The latest message on the conversation</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMMessage *latestMessage</Declaration>
+			
+			
+			<Anchor>//api/name/latestMessage</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMConversation/latestMessage</TokenIdentifier>
+			<Abstract type="html">The latest message on the conversation</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMMessage *latestMessage</Declaration>
+			
+			
+			<Anchor>//api/name/latestMessage</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/isGroup</TokenIdentifier>
+			<Abstract type="html">Helper method to tell if a conversation is a group or not (aka 1-1 convo, private convo)</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isGroup</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if group, NO otherwise</Abstract></ReturnValue>
+			<Anchor>//api/name/isGroup</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

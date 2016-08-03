@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CNMMessage.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CNMMessage</TokenIdentifier>
+			<Abstract type="html">Object represents a message object in the Loment system.</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+            
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/setForwardRestricted:</TokenIdentifier>
+			<Abstract type="html">Indicates whether the message can be forwarded</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL forwardRestricted</Declaration>
+			
+			
+			<Anchor>//api/name/forwardRestricted</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/forwardRestricted</TokenIdentifier>
+			<Abstract type="html">Indicates whether the message can be forwarded</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL forwardRestricted</Declaration>
+			
+			
+			<Anchor>//api/name/forwardRestricted</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMMessage/forwardRestricted</TokenIdentifier>
+			<Abstract type="html">Indicates whether the message can be forwarded</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL forwardRestricted</Declaration>
+			
+			
+			<Anchor>//api/name/forwardRestricted</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/setPriority:</TokenIdentifier>
+			<Abstract type="html">The priority of a message (low, medium, high, highest)</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) MessagePriorityLevel priority</Declaration>
+			
+			
+			<Anchor>//api/name/priority</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/priority</TokenIdentifier>
+			<Abstract type="html">The priority of a message (low, medium, high, highest)</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) MessagePriorityLevel priority</Declaration>
+			
+			
+			<Anchor>//api/name/priority</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMMessage/priority</TokenIdentifier>
+			<Abstract type="html">The priority of a message (low, medium, high, highest)</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) MessagePriorityLevel priority</Declaration>
+			
+			
+			<Anchor>//api/name/priority</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/setServerId:</TokenIdentifier>
+			<Abstract type="html">The unique id for the message, assigned by the server</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *serverId</Declaration>
+			
+			
+			<Anchor>//api/name/serverId</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/serverId</TokenIdentifier>
+			<Abstract type="html">The unique id for the message, assigned by the server</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *serverId</Declaration>
+			
+			
+			<Anchor>//api/name/serverId</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMMessage/serverId</TokenIdentifier>
+			<Abstract type="html">The unique id for the message, assigned by the server</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *serverId</Declaration>
+			
+			
+			<Anchor>//api/name/serverId</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/setStatus:</TokenIdentifier>
+			<Abstract type="html">The current status of the message (pending, failed, sent, read)</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) MessageStatus status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/status</TokenIdentifier>
+			<Abstract type="html">The current status of the message (pending, failed, sent, read)</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) MessageStatus status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMMessage/status</TokenIdentifier>
+			<Abstract type="html">The current status of the message (pending, failed, sent, read)</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) MessageStatus status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/setAcknowledged:</TokenIdentifier>
+			<Abstract type="html">Whether or not the message has been acknowledged by the recipient</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL acknowledged</Declaration>
+			
+			
+			<Anchor>//api/name/acknowledged</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/acknowledged</TokenIdentifier>
+			<Abstract type="html">Whether or not the message has been acknowledged by the recipient</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL acknowledged</Declaration>
+			
+			
+			<Anchor>//api/name/acknowledged</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMMessage/acknowledged</TokenIdentifier>
+			<Abstract type="html">Whether or not the message has been acknowledged by the recipient</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL acknowledged</Declaration>
+			
+			
+			<Anchor>//api/name/acknowledged</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/setAcknowledgementRequired:</TokenIdentifier>
+			<Abstract type="html">Whether or not the recipient must acknowledge the message before it can be read</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL acknowledgementRequired</Declaration>
+			
+			
+			<Anchor>//api/name/acknowledgementRequired</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/acknowledgementRequired</TokenIdentifier>
+			<Abstract type="html">Whether or not the recipient must acknowledge the message before it can be read</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL acknowledgementRequired</Declaration>
+			
+			
+			<Anchor>//api/name/acknowledgementRequired</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMMessage/acknowledgementRequired</TokenIdentifier>
+			<Abstract type="html">Whether or not the recipient must acknowledge the message before it can be read</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL acknowledgementRequired</Declaration>
+			
+			
+			<Anchor>//api/name/acknowledgementRequired</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/setTimestamp:</TokenIdentifier>
+			<Abstract type="html">The time at which the message was created</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonnull, nonatomic, strong, readonly) NSDate *timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/timestamp</TokenIdentifier>
+			<Abstract type="html">The time at which the message was created</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonnull, nonatomic, strong, readonly) NSDate *timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMMessage/timestamp</TokenIdentifier>
+			<Abstract type="html">The time at which the message was created</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonnull, nonatomic, strong, readonly) NSDate *timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/setExpiryMinutes:</TokenIdentifier>
+			<Abstract type="html">The number of minutes between the message being viewed and expiring (-1 if the message does not expire)</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSInteger expiryMinutes</Declaration>
+			
+			
+			<Anchor>//api/name/expiryMinutes</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/expiryMinutes</TokenIdentifier>
+			<Abstract type="html">The number of minutes between the message being viewed and expiring (-1 if the message does not expire)</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSInteger expiryMinutes</Declaration>
+			
+			
+			<Anchor>//api/name/expiryMinutes</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMMessage/expiryMinutes</TokenIdentifier>
+			<Abstract type="html">The number of minutes between the message being viewed and expiring (-1 if the message does not expire)</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSInteger expiryMinutes</Declaration>
+			
+			
+			<Anchor>//api/name/expiryMinutes</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/setExpiryDate:</TokenIdentifier>
+			<Abstract type="html">The date at which the message expires, nil if the message does not expire.</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSDate *expiryDate</Declaration>
+			
+			
+			<Anchor>//api/name/expiryDate</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/expiryDate</TokenIdentifier>
+			<Abstract type="html">The date at which the message expires, nil if the message does not expire.</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSDate *expiryDate</Declaration>
+			
+			
+			<Anchor>//api/name/expiryDate</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMMessage/expiryDate</TokenIdentifier>
+			<Abstract type="html">The date at which the message expires, nil if the message does not expire.</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSDate *expiryDate</Declaration>
+			
+			
+			<Anchor>//api/name/expiryDate</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/setSender:</TokenIdentifier>
+			<Abstract type="html">The sender of the message</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMContact *sender</Declaration>
+			
+			
+			<Anchor>//api/name/sender</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/sender</TokenIdentifier>
+			<Abstract type="html">The sender of the message</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMContact *sender</Declaration>
+			
+			
+			<Anchor>//api/name/sender</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMMessage/sender</TokenIdentifier>
+			<Abstract type="html">The sender of the message</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMContact *sender</Declaration>
+			
+			
+			<Anchor>//api/name/sender</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/setConversation:</TokenIdentifier>
+			<Abstract type="html">The conversation that the message belongs to</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMConversation *conversation</Declaration>
+			
+			
+			<Anchor>//api/name/conversation</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/conversation</TokenIdentifier>
+			<Abstract type="html">The conversation that the message belongs to</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMConversation *conversation</Declaration>
+			
+			
+			<Anchor>//api/name/conversation</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMMessage/conversation</TokenIdentifier>
+			<Abstract type="html">The conversation that the message belongs to</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMConversation *conversation</Declaration>
+			
+			
+			<Anchor>//api/name/conversation</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/setAttachment:</TokenIdentifier>
+			<Abstract type="html">If message contains an attachment this value will be present. See CNMAttachment for details on how to extract attachment information</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMAttachment *attachment</Declaration>
+			
+			
+			<Anchor>//api/name/attachment</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/attachment</TokenIdentifier>
+			<Abstract type="html">If message contains an attachment this value will be present. See CNMAttachment for details on how to extract attachment information</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMAttachment *attachment</Declaration>
+			
+			
+			<Anchor>//api/name/attachment</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMMessage/attachment</TokenIdentifier>
+			<Abstract type="html">If message contains an attachment this value will be present. See CNMAttachment for details on how to extract attachment information</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMAttachment *attachment</Declaration>
+			
+			
+			<Anchor>//api/name/attachment</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/setContent:</TokenIdentifier>
+			<Abstract type="html">The message in plain text</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *content</Declaration>
+			
+			
+			<Anchor>//api/name/content</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/content</TokenIdentifier>
+			<Abstract type="html">The message in plain text</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *content</Declaration>
+			
+			
+			<Anchor>//api/name/content</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMMessage/content</TokenIdentifier>
+			<Abstract type="html">The message in plain text</Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *content</Declaration>
+			
+			
+			<Anchor>//api/name/content</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

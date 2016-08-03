@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CNMOutgoingContact.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CNMOutgoingContact</TokenIdentifier>
+			<Abstract type="html">Simple object representing all suggested contacts</Abstract>
+			<DeclaredIn>CNMOutgoingContact.h</DeclaredIn>
+            
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMOutgoingContact/setName:</TokenIdentifier>
+			<Abstract type="html">The name of the suggested friend</Abstract>
+			<DeclaredIn>CNMOutgoingContact.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMOutgoingContact/name</TokenIdentifier>
+			<Abstract type="html">The name of the suggested friend</Abstract>
+			<DeclaredIn>CNMOutgoingContact.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMOutgoingContact/name</TokenIdentifier>
+			<Abstract type="html">The name of the suggested friend</Abstract>
+			<DeclaredIn>CNMOutgoingContact.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMOutgoingContact/setStatus:</TokenIdentifier>
+			<Abstract type="html">The suggested status</Abstract>
+			<DeclaredIn>CNMOutgoingContact.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) OutgoingContactRequestStatus status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMOutgoingContact/status</TokenIdentifier>
+			<Abstract type="html">The suggested status</Abstract>
+			<DeclaredIn>CNMOutgoingContact.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) OutgoingContactRequestStatus status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMOutgoingContact/status</TokenIdentifier>
+			<Abstract type="html">The suggested status</Abstract>
+			<DeclaredIn>CNMOutgoingContact.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) OutgoingContactRequestStatus status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

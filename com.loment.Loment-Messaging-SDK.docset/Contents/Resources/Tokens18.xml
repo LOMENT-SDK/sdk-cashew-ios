@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/CNMFetchResultsChangeType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/CNMFetchResultsChangeType</TokenIdentifier>
+			<Abstract type="html">NSFetchedResultsChangeType like change type enum for when content changes</Abstract>
+			<DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CNMFetchResultsChangeInsert</TokenIdentifier>
+            <Abstract type="html">Data is inserted
+     </Abstract>
+            <Declaration>CNMFetchResultsChangeInsert</Declaration>
+            
+            <DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CNMFetchResultsChangeDelete</TokenIdentifier>
+            <Abstract type="html">Date has been deleted
+     </Abstract>
+            <Declaration>CNMFetchResultsChangeDelete</Declaration>
+            
+            <DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CNMFetchResultsChangeMove</TokenIdentifier>
+            <Abstract type="html">Data has moved
+     </Abstract>
+            <Declaration>CNMFetchResultsChangeMove</Declaration>
+            
+            <DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CNMFetchResultsChangeUpdate</TokenIdentifier>
+            <Abstract type="html">Data is simply updated
+     </Abstract>
+            <Declaration>CNMFetchResultsChangeUpdate</Declaration>
+            
+            <DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

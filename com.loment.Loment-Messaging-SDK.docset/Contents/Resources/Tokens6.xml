@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CNMCryptoServices.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CNMCryptoServices</TokenIdentifier>
+			<Abstract type="html">The class is in charge of all custom cryptography.</Abstract>
+			<DeclaredIn>CNMCryptoServices.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMCryptoServices/sharedInstance</TokenIdentifier>
+			<Abstract type="html">The singleton of this object</Abstract>
+			<DeclaredIn>CNMCryptoServices.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)sharedInstance</Declaration>
+			
+			<ReturnValue><Abstract type="html">Singleton</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedInstance</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMCryptoServices/setDataCrypter:</TokenIdentifier>
+			<Abstract type="html">Nil by default. As an SDK user set this property only if you would like to have custom cryptography around encrypting messages</Abstract>
+			<DeclaredIn>CNMCryptoServices.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSObject&lt;CNMCryptographer&gt; *dataCrypter</Declaration>
+			
+			
+			<Anchor>//api/name/dataCrypter</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMCryptoServices/dataCrypter</TokenIdentifier>
+			<Abstract type="html">Nil by default. As an SDK user set this property only if you would like to have custom cryptography around encrypting messages</Abstract>
+			<DeclaredIn>CNMCryptoServices.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSObject&lt;CNMCryptographer&gt; *dataCrypter</Declaration>
+			
+			
+			<Anchor>//api/name/dataCrypter</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMCryptoServices/dataCrypter</TokenIdentifier>
+			<Abstract type="html">Nil by default. As an SDK user set this property only if you would like to have custom cryptography around encrypting messages</Abstract>
+			<DeclaredIn>CNMCryptoServices.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSObject&lt;CNMCryptographer&gt; *dataCrypter</Declaration>
+			
+			
+			<Anchor>//api/name/dataCrypter</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

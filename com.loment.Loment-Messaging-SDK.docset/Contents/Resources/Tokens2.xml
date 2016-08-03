@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CNMCashewAccount.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CNMCashewAccount</TokenIdentifier>
+			<Abstract type="html">Object represents a cashew account in the Loment system. A Loment user may have many of these</Abstract>
+			<DeclaredIn>CNMCashewAccount.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMCashewAccount/setCashewUsername:</TokenIdentifier>
+			<Abstract type="html">Username for a cashew account</Abstract>
+			<DeclaredIn>CNMCashewAccount.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *cashewUsername</Declaration>
+			
+			
+			<Anchor>//api/name/cashewUsername</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMCashewAccount/cashewUsername</TokenIdentifier>
+			<Abstract type="html">Username for a cashew account</Abstract>
+			<DeclaredIn>CNMCashewAccount.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *cashewUsername</Declaration>
+			
+			
+			<Anchor>//api/name/cashewUsername</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMCashewAccount/cashewUsername</TokenIdentifier>
+			<Abstract type="html">Username for a cashew account</Abstract>
+			<DeclaredIn>CNMCashewAccount.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *cashewUsername</Declaration>
+			
+			
+			<Anchor>//api/name/cashewUsername</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMCashewAccount/setCashewId:</TokenIdentifier>
+			<Abstract type="html">The unique ID set by server</Abstract>
+			<DeclaredIn>CNMCashewAccount.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *cashewId</Declaration>
+			
+			
+			<Anchor>//api/name/cashewId</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMCashewAccount/cashewId</TokenIdentifier>
+			<Abstract type="html">The unique ID set by server</Abstract>
+			<DeclaredIn>CNMCashewAccount.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *cashewId</Declaration>
+			
+			
+			<Anchor>//api/name/cashewId</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMCashewAccount/cashewId</TokenIdentifier>
+			<Abstract type="html">The unique ID set by server</Abstract>
+			<DeclaredIn>CNMCashewAccount.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *cashewId</Declaration>
+			
+			
+			<Anchor>//api/name/cashewId</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

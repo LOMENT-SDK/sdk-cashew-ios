@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>Loment Messaging SDK</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+                
+				<Node>
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+				<Node>
+					<Name>Constants</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						<NodeRef refid="22"/>
+						<NodeRef refid="23"/>
+						<NodeRef refid="24"/>
+						<NodeRef refid="25"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+                <Node>
+                    <Name>Blocks</Name>
+                    <Path>index.html</Path>
+                    <Subnodes>
+                        <NodeRef refid="26"/>
+                        <NodeRef refid="27"/>
+                        <NodeRef refid="28"/>
+                        <NodeRef refid="29"/>
+                        <NodeRef refid="30"/>
+                        <NodeRef refid="31"/>
+                        <NodeRef refid="32"/>
+                        <NodeRef refid="33"/>
+                        <NodeRef refid="34"/>
+                        
+                    </Subnodes>
+                </Node>
+                
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1" type="file" documentType="reference">
+            <Name>CNMAttachment</Name>
+            <Path>Classes/CNMAttachment.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CNMAttachment.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CNMAttachment.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CNMAttachment.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="2" type="file" documentType="reference">
+            <Name>CNMCashewAccount</Name>
+            <Path>Classes/CNMCashewAccount.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CNMCashewAccount.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CNMCashewAccount.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CNMCashewAccount.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="3" type="file" documentType="reference">
+            <Name>CNMContact</Name>
+            <Path>Classes/CNMContact.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CNMContact.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CNMContact.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CNMContact.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/CNMContact.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="4" type="file" documentType="reference">
+            <Name>CNMContentDeliveryController</Name>
+            <Path>Classes/CNMContentDeliveryController.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CNMContentDeliveryController.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CNMContentDeliveryController.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CNMContentDeliveryController.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/CNMContentDeliveryController.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="5" type="file" documentType="reference">
+            <Name>CNMConversation</Name>
+            <Path>Classes/CNMConversation.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CNMConversation.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CNMConversation.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CNMConversation.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/CNMConversation.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="6" type="file" documentType="reference">
+            <Name>CNMCryptoServices</Name>
+            <Path>Classes/CNMCryptoServices.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CNMCryptoServices.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CNMCryptoServices.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CNMCryptoServices.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CNMCryptoServices.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="7" type="file" documentType="reference">
+            <Name>CNMDevice</Name>
+            <Path>Classes/CNMDevice.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CNMDevice.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CNMDevice.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CNMDevice.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="8" type="file" documentType="reference">
+            <Name>CNMIncomingContact</Name>
+            <Path>Classes/CNMIncomingContact.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CNMIncomingContact.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CNMIncomingContact.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CNMIncomingContact.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="9" type="file" documentType="reference">
+            <Name>CNMMessage</Name>
+            <Path>Classes/CNMMessage.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CNMMessage.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CNMMessage.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CNMMessage.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="10" type="file" documentType="reference">
+            <Name>CNMMessageDefaultsServices</Name>
+            <Path>Classes/CNMMessageDefaultsServices.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CNMMessageDefaultsServices.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CNMMessageDefaultsServices.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CNMMessageDefaultsServices.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="11" type="file" documentType="reference">
+            <Name>CNMMessagingServices</Name>
+            <Path>Classes/CNMMessagingServices.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CNMMessagingServices.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CNMMessagingServices.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CNMMessagingServices.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="12" type="file" documentType="reference">
+            <Name>CNMOutgoingContact</Name>
+            <Path>Classes/CNMOutgoingContact.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CNMOutgoingContact.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CNMOutgoingContact.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CNMOutgoingContact.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="13" type="file" documentType="reference">
+            <Name>CNMUser</Name>
+            <Path>Classes/CNMUser.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CNMUser.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CNMUser.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CNMUser.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="14" type="file" documentType="reference">
+            <Name>CNMUserServices</Name>
+            <Path>Classes/CNMUserServices.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CNMUserServices.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CNMUserServices.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CNMUserServices.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
+		
+		
+        <Node id="15" type="file" documentType="reference">
+            <Name>CNMContentDeliveryControllerDelegate</Name>
+            <Path>Protocols/CNMContentDeliveryControllerDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/CNMContentDeliveryControllerDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/CNMContentDeliveryControllerDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/CNMContentDeliveryControllerDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="16" type="file" documentType="reference">
+            <Name>CNMCryptographer</Name>
+            <Path>Protocols/CNMCryptographer.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/CNMCryptographer.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/CNMCryptographer.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/CNMCryptographer.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="17" type="file" documentType="reference">
+            <Name>CNMMessagingServicesListener</Name>
+            <Path>Protocols/CNMMessagingServicesListener.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/CNMMessagingServicesListener.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/CNMMessagingServicesListener.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/CNMMessagingServicesListener.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		
+        <Node id="18" type="file" documentType="reference">
+            <Name>CNMFetchResultsChangeType</Name>
+            <Path>Constants/CNMFetchResultsChangeType.html</Path>
+            
+        </Node>
+		<Node id="19" type="file" documentType="reference">
+            <Name>CNMMessageOptions</Name>
+            <Path>Constants/CNMMessageOptions.html</Path>
+            
+        </Node>
+		<Node id="20" type="file" documentType="reference">
+            <Name>IncomingContactRequestStatus</Name>
+            <Path>Constants/IncomingContactRequestStatus.html</Path>
+            
+        </Node>
+		<Node id="21" type="file" documentType="reference">
+            <Name>MessagePriorityLevel</Name>
+            <Path>Constants/MessagePriorityLevel.html</Path>
+            
+        </Node>
+		<Node id="22" type="file" documentType="reference">
+            <Name>MessageStatus</Name>
+            <Path>Constants/MessageStatus.html</Path>
+            
+        </Node>
+		<Node id="23" type="file" documentType="reference">
+            <Name>OutgoingContactRequestStatus</Name>
+            <Path>Constants/OutgoingContactRequestStatus.html</Path>
+            
+        </Node>
+		<Node id="24" type="file" documentType="reference">
+            <Name>SDKFoundationError</Name>
+            <Path>Constants/SDKFoundationError.html</Path>
+            
+        </Node>
+		<Node id="25" type="file" documentType="reference">
+            <Name>SDKNetworkError</Name>
+            <Path>Constants/SDKNetworkError.html</Path>
+            
+        </Node>
+		
+        <Node id="26" type="file" documentType="reference">
+            <Name>CNMAttachmentDownloadComplete</Name>
+            <Path>Blocks/CNMAttachmentDownloadComplete.html</Path>
+            
+        </Node>
+        <Node id="27" type="file" documentType="reference">
+            <Name>CNMMessagingContactCompletion</Name>
+            <Path>Blocks/CNMMessagingContactCompletion.html</Path>
+            
+        </Node>
+        <Node id="28" type="file" documentType="reference">
+            <Name>CNMMessagingContactRequestCompletion</Name>
+            <Path>Blocks/CNMMessagingContactRequestCompletion.html</Path>
+            
+        </Node>
+        <Node id="29" type="file" documentType="reference">
+            <Name>CNMMessagingContactRequestResponseCompletion</Name>
+            <Path>Blocks/CNMMessagingContactRequestResponseCompletion.html</Path>
+            
+        </Node>
+        <Node id="30" type="file" documentType="reference">
+            <Name>CNMMessagingContactSearchCompletion</Name>
+            <Path>Blocks/CNMMessagingContactSearchCompletion.html</Path>
+            
+        </Node>
+        <Node id="31" type="file" documentType="reference">
+            <Name>CNMMessagingConversationCompletion</Name>
+            <Path>Blocks/CNMMessagingConversationCompletion.html</Path>
+            
+        </Node>
+        <Node id="32" type="file" documentType="reference">
+            <Name>CNMMessagingSendContactRequestCompletion</Name>
+            <Path>Blocks/CNMMessagingSendContactRequestCompletion.html</Path>
+            
+        </Node>
+        <Node id="33" type="file" documentType="reference">
+            <Name>CNMMessagingServiceCompletion</Name>
+            <Path>Blocks/CNMMessagingServiceCompletion.html</Path>
+            
+        </Node>
+        <Node id="34" type="file" documentType="reference">
+            <Name>CNMUserServicesCompletion</Name>
+            <Path>Blocks/CNMUserServicesCompletion.html</Path>
+            
+        </Node>
+        
+	</Library>
+</DocSetNodes>

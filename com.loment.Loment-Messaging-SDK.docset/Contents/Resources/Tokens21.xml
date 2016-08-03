@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/MessagePriorityLevel.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/MessagePriorityLevel</TokenIdentifier>
+			<Abstract type="html">The different possibilities for message priorities</Abstract>
+			<DeclaredIn>CNMMessageEnums.h</DeclaredIn>
+            
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/MessagePriorityLevelHighest</TokenIdentifier>
+            <Abstract type="html">Highest priority
+     </Abstract>
+            <Declaration>MessagePriorityLevelHighest</Declaration>
+            
+            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="21"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/MessagePriorityLevelHigh</TokenIdentifier>
+            <Abstract type="html">High priority
+     </Abstract>
+            <Declaration>MessagePriorityLevelHigh</Declaration>
+            
+            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="21"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/MessagePriorityLevelMedium</TokenIdentifier>
+            <Abstract type="html">Medium priority
+     </Abstract>
+            <Declaration>MessagePriorityLevelMedium</Declaration>
+            
+            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="21"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/MessagePriorityLevelLow</TokenIdentifier>
+            <Abstract type="html">Low priority
+     </Abstract>
+            <Declaration>MessagePriorityLevelLow</Declaration>
+            
+            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
+            
+            <NodeRef refid="21"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

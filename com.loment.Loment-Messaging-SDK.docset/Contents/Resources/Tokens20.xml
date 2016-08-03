@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/IncomingContactRequestStatus.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/IncomingContactRequestStatus</TokenIdentifier>
+			<Abstract type="html">Status representing different states a friend request send to you is in</Abstract>
+			<DeclaredIn>CNMIncomingContact.h</DeclaredIn>
+            
+			
+			<NodeRef refid="20"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/IncomingContactRequestStatusNotAnswered</TokenIdentifier>
+            <Abstract type="html">You have yet to reply to this request
+     </Abstract>
+            <Declaration>IncomingContactRequestStatusNotAnswered</Declaration>
+            
+            <DeclaredIn>CNMIncomingContact.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/IncomingContactRequestStatusAccepted</TokenIdentifier>
+            <Abstract type="html">You have accepted this friend, their contact information has been added
+     </Abstract>
+            <Declaration>IncomingContactRequestStatusAccepted</Declaration>
+            
+            <DeclaredIn>CNMIncomingContact.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/IncomingContactRequestStatusRejected</TokenIdentifier>
+            <Abstract type="html">You have declined their invite, no information downloaded
+     </Abstract>
+            <Declaration>IncomingContactRequestStatusRejected</Declaration>
+            
+            <DeclaredIn>CNMIncomingContact.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

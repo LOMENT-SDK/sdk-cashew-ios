@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CNMContact.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CNMContact</TokenIdentifier>
+			<Abstract type="html">Object represents a contact object in the Loment system.</Abstract>
+			<DeclaredIn>CNMContact.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMContact/setCashewUsername:</TokenIdentifier>
+			<Abstract type="html">The cashewUsername of the contact</Abstract>
+			<DeclaredIn>CNMContact.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *cashewUsername</Declaration>
+			
+			
+			<Anchor>//api/name/cashewUsername</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMContact/cashewUsername</TokenIdentifier>
+			<Abstract type="html">The cashewUsername of the contact</Abstract>
+			<DeclaredIn>CNMContact.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *cashewUsername</Declaration>
+			
+			
+			<Anchor>//api/name/cashewUsername</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMContact/cashewUsername</TokenIdentifier>
+			<Abstract type="html">The cashewUsername of the contact</Abstract>
+			<DeclaredIn>CNMContact.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *cashewUsername</Declaration>
+			
+			
+			<Anchor>//api/name/cashewUsername</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMContact/setContactPhone:</TokenIdentifier>
+			<Abstract type="html">The phone of the contact</Abstract>
+			<DeclaredIn>CNMContact.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *contactPhone</Declaration>
+			
+			
+			<Anchor>//api/name/contactPhone</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMContact/contactPhone</TokenIdentifier>
+			<Abstract type="html">The phone of the contact</Abstract>
+			<DeclaredIn>CNMContact.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *contactPhone</Declaration>
+			
+			
+			<Anchor>//api/name/contactPhone</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMContact/contactPhone</TokenIdentifier>
+			<Abstract type="html">The phone of the contact</Abstract>
+			<DeclaredIn>CNMContact.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *contactPhone</Declaration>
+			
+			
+			<Anchor>//api/name/contactPhone</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMContact/setContactName:</TokenIdentifier>
+			<Abstract type="html">The contact&apos;s name</Abstract>
+			<DeclaredIn>CNMContact.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *contactName</Declaration>
+			
+			
+			<Anchor>//api/name/contactName</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMContact/contactName</TokenIdentifier>
+			<Abstract type="html">The contact&apos;s name</Abstract>
+			<DeclaredIn>CNMContact.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *contactName</Declaration>
+			
+			
+			<Anchor>//api/name/contactName</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMContact/contactName</TokenIdentifier>
+			<Abstract type="html">The contact&apos;s name</Abstract>
+			<DeclaredIn>CNMContact.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *contactName</Declaration>
+			
+			
+			<Anchor>//api/name/contactName</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMContact/setContactEmail:</TokenIdentifier>
+			<Abstract type="html">The contact&apos;s email</Abstract>
+			<DeclaredIn>CNMContact.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *contactEmail</Declaration>
+			
+			
+			<Anchor>//api/name/contactEmail</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMContact/contactEmail</TokenIdentifier>
+			<Abstract type="html">The contact&apos;s email</Abstract>
+			<DeclaredIn>CNMContact.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *contactEmail</Declaration>
+			
+			
+			<Anchor>//api/name/contactEmail</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMContact/contactEmail</TokenIdentifier>
+			<Abstract type="html">The contact&apos;s email</Abstract>
+			<DeclaredIn>CNMContact.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *contactEmail</Declaration>
+			
+			
+			<Anchor>//api/name/contactEmail</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMContact/isUser</TokenIdentifier>
+			<Abstract type="html">Helper method that returns YES if the contact represtents the currently logged in CashewAccount</Abstract>
+			<DeclaredIn>CNMContact.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isUser</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if this is the account you are logged in as</Abstract></ReturnValue>
+			<Anchor>//api/name/isUser</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
