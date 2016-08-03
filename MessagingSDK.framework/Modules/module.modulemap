@@ -1,0 +1,6 @@
+framework module MessagingSDK {
+  umbrella header "MessagingSDK.h"
+
+  export *
+  module * { export * }
+}
