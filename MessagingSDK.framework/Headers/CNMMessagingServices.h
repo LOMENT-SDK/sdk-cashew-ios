@@ -79,10 +79,10 @@ typedef void (^CNMMessagingContactRequestResponseCompletion)(CNMIncomingContact 
 /**
  *  Completion block for calling asynchronous download of attachment.
  *
- *  @param data    Plain data if found
+ *  @param success YES if download is complete and safe to call data again
  *  @param error   Error if present
  */
-typedef void(^CNMAttachmentDownloadComplete)(NSData * data, NSError * error);
+typedef void(^CNMAttachmentDownloadComplete)(BOOL success, NSError * error);
 
 /**
  *  Progress block called periodically when attachments are uploaded/downloaded
@@ -233,20 +233,11 @@ typedef void (^CNMAttachmentTransferProgress)(NSUInteger currentBytesTransferred
  */
 + (void)markMessageAsAcknowledged:(CNMMessage *)message withCompletion:(CNMMessagingServiceCompletion)completion;
 
-/**
- *  Mark a message as deleted. Once the server returns to us that it has been successfully deleted, it will be removed from the app completely.
- *
- * Note: Please wait for completion block to return with success or failure before attempting to call this again
- *
- *  @param message    The message to mark
- *  @param completion completion handler that is called when we are finished updating message
- */
-+ (void)markMessageAsDeleted:(CNMMessage *)message withCompletion:(CNMMessagingServiceCompletion)completion;
-
 #pragma mark - Attachments
 
 /**
- *   Call this method to download data. If data is already downloaded, it will fetch from cache on disk
+ *   If you call data property on CNMAttachment and it is nil, call this method to download data. Upon completion, if success it should be safe to
+ * call data property again to retrieve your data
  *
  *  @param cnmAttachment                The attachment to download data on
  *  @param attachmentTransferProgress   Periodic called block during the time the attachment is downloaded
@@ -327,25 +318,6 @@ typedef void (^CNMAttachmentTransferProgress)(NSUInteger currentBytesTransferred
 + (void)leaveConversation:(CNMConversation *)conversation withCompletion:(CNMMessagingConversationCompletion)completion;
 
 #pragma mark - Delivery Calls
-
-/**
- *  Retrieves the number of unread messages on any given conversation
- *
- *  @param conversation The conversation in question
- *  @param error        Error referece
- *
- *  @return The undread count or NSUIntegerMax if error
- */
-+ (NSUInteger)numberOfUnreadMessagesOnConversation:(CNMConversation *)conversation error:(NSError * __autoreleasing *)error;
-
-/**
- *  Total number of unread messages
- *
- *  @param error        Error referece
- *
- *  @return Total number of unread messsages or NSUIntegerMax if error
- */
-+ (NSUInteger)numberOfUnreadMessagesError:(NSError * __autoreleasing *)error;
 
 /**
  *  Provides access to all messages in a conversation in an FRC-like fashion. Be sure to set delegate

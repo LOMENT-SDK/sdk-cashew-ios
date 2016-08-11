@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/CNMAttachment.h</key>
 		<data>
-		sO8iI5M3kXzXCDasje/nmYrHdYs=
+		7thGOhKsO7IGFNmibMsdqJ6QYLo=
 		</data>
 		<key>Headers/CNMCashewAccount.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/CNMConversation.h</key>
 		<data>
-		a9Gw7Ie07kwpHLidKa46XeWxzG8=
+		jKI+W/GrXlOg3IdWeG7stFi33fs=
 		</data>
 		<key>Headers/CNMCryptoServices.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/CNMErrorCodes.h</key>
 		<data>
-		C2h7mSUb4xJ/MpPsxlAv3t6e5dI=
+		WV18si3+4pHAWpDiHyWWZO+S9ec=
 		</data>
 		<key>Headers/CNMIncomingContact.h</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Headers/CNMMessagingServices.h</key>
 		<data>
-		MK7FccgHj1eWrm6ni3WVGQbg9hA=
+		eWFpZRjRxluCkek+43f9qHbR8yc=
 		</data>
 		<key>Headers/CNMOutgoingContact.h</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Ti7NGl5Zms2sTJpb4VJjhlfyfCc=
+		p6/bi2YTJVm7uTmhTcwCgV8zSsc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -147,11 +147,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sO8iI5M3kXzXCDasje/nmYrHdYs=
+			7thGOhKsO7IGFNmibMsdqJ6QYLo=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jn4wxJqrRkQoX+x9C4diUmc9tL8bi/KoDYUuPhAuvIQ=
+			oHTuCSrPKadfzgHgMjIiKnJpVo+4/zeiU5EW5FLy1ts=
 			</data>
 		</dict>
 		<key>Headers/CNMCashewAccount.h</key>
@@ -191,11 +191,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			a9Gw7Ie07kwpHLidKa46XeWxzG8=
+			jKI+W/GrXlOg3IdWeG7stFi33fs=
 			</data>
 			<key>hash2</key>
 			<data>
-			x6UgKjrKrbb0IOy59/e0x1tY5bJArkVF9zeTJNAYfwI=
+			7ajIFX74vv02j8YNGApMg3ToRTVyeKYzH07DaFpLB6U=
 			</data>
 		</dict>
 		<key>Headers/CNMCryptoServices.h</key>
@@ -224,11 +224,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			C2h7mSUb4xJ/MpPsxlAv3t6e5dI=
+			WV18si3+4pHAWpDiHyWWZO+S9ec=
 			</data>
 			<key>hash2</key>
 			<data>
-			3uLMY6dDZ1pJssBZuVA98VHLqipDwUsGobkVdO9w0uk=
+			cyfMhlwZrq5D4TP8+ISxxxxh2H58bhg5O4vCvYk0Dpw=
 			</data>
 		</dict>
 		<key>Headers/CNMIncomingContact.h</key>
@@ -279,11 +279,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MK7FccgHj1eWrm6ni3WVGQbg9hA=
+			eWFpZRjRxluCkek+43f9qHbR8yc=
 			</data>
 			<key>hash2</key>
 			<data>
-			xJsMH9qThOj4rkExsj5RFXUCYjy5l1GpUOunTOuOBF8=
+			vS77m5Vj7pqpTos/5cNj7EwOJia0FMRUItmC0tSF1/k=
 			</data>
 		</dict>
 		<key>Headers/CNMOutgoingContact.h</key>

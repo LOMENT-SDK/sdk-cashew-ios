@@ -66,14 +66,4 @@ extern NSString * __nonnull const CNMNewConversationKey;
  */
 - (BOOL)isGroup;
 
-/**
- *  Total number of unread messages
- *
- *  @param error        Error referece
- *
- *  @return Total number of unread messsages or NSUIntegerMax if error
- */
-- (NSUInteger)numberOfUnreadMessagesError:(NSError * __autoreleasing _Nullable * _Nullable)error;
-
-
 @end
