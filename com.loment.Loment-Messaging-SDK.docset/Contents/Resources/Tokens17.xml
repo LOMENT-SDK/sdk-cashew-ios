@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/CNMMessagingServicesListener.html">
+	<File path="Protocols/CNMCryptographer.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/CNMMessagingServicesListener</TokenIdentifier>
-			<Abstract type="html">Listener / hook object that is notified when messaging services stop / starts. Useful for cleaning up and setting up after stop / start.
-Especially with contentDeliveryControllers</Abstract>
-			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/CNMCryptographer</TokenIdentifier>
+			<Abstract type="html">Protocol used for encrypting/decrypting string messages. Internally, the SDK has an interface very similar to this protocol.</Abstract>
+			<DeclaredIn>CNMCryptoServices.h</DeclaredIn>
             
 			
 			<NodeRef refid="17"/>
@@ -14,26 +13,186 @@ Especially with contentDeliveryControllers</Abstract>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/CNMMessagingServicesListener/didStopServices</TokenIdentifier>
-			<Abstract type="html">Called when started</Abstract>
-			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/CNMCryptographer/encryptString:sender:recipient:</TokenIdentifier>
+			<Abstract type="html">Encrypts a string. Sender and recipients name can be used to help seed encryption key.</Abstract>
+			<DeclaredIn>CNMCryptoServices.h</DeclaredIn>
 			
-			<Declaration>- (void)didStopServices</Declaration>
-			
-			
-			<Anchor>//api/name/didStopServices</Anchor>
+			<Declaration>- (NSString *)encryptString:(NSString *)plainString sender:(NSString *)sender recipient:(NSString *)recipient</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>plainString</Name>
+					<Abstract type="html">The plain text</Abstract>
+				</Parameter><Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The sender</Abstract>
+				</Parameter><Parameter>
+					<Name>recipient</Name>
+					<Abstract type="html">The recipient</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Base64&apos;d encrypted string. If value is not base64, unexcpected behavior may arrise</Abstract></ReturnValue>
+			<Anchor>//api/name/encryptString:sender:recipient:</Anchor>
             <NodeRef refid="17"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/CNMMessagingServicesListener/didStartServices</TokenIdentifier>
-			<Abstract type="html">Called when stopped</Abstract>
-			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/CNMCryptographer/decryptString:sender:recipient:</TokenIdentifier>
+			<Abstract type="html">Decrypts a string. Sender and recipients name can be used to help seed encryption key.</Abstract>
+			<DeclaredIn>CNMCryptoServices.h</DeclaredIn>
 			
-			<Declaration>- (void)didStartServices</Declaration>
+			<Declaration>- (NSString *)decryptString:(NSString *)encrpyptedString sender:(NSString *)sender recipient:(NSString *)recipient</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>encrpyptedString</Name>
+					<Abstract type="html">The encrypted string</Abstract>
+				</Parameter><Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The sender</Abstract>
+				</Parameter><Parameter>
+					<Name>recipient</Name>
+					<Abstract type="html">The recipient</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The plain text</Abstract></ReturnValue>
+			<Anchor>//api/name/decryptString:sender:recipient:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CNMCryptographer/encryptString:sender:groupId:</TokenIdentifier>
+			<Abstract type="html">Encrypts a string. Sender and group ID can be used to help seed encryption key.</Abstract>
+			<DeclaredIn>CNMCryptoServices.h</DeclaredIn>
 			
+			<Declaration>- (NSString *)encryptString:(NSString *)plainString sender:(NSString *)sender groupId:(NSString *)groupId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>plainString</Name>
+					<Abstract type="html">The plain text</Abstract>
+				</Parameter><Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The sender</Abstract>
+				</Parameter><Parameter>
+					<Name>groupId</Name>
+					<Abstract type="html">The group ID</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Base64&apos;d encrypted string. If value is not base64, unexcpected behavior may arrise</Abstract></ReturnValue>
+			<Anchor>//api/name/encryptString:sender:groupId:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CNMCryptographer/decryptString:sender:groupId:</TokenIdentifier>
+			<Abstract type="html">Decrypts a string. Sender and group ID can be used to help seed encryption key.</Abstract>
+			<DeclaredIn>CNMCryptoServices.h</DeclaredIn>
 			
-			<Anchor>//api/name/didStartServices</Anchor>
+			<Declaration>- (NSString *)decryptString:(NSString *)encrpyptedString sender:(NSString *)sender groupId:(NSString *)groupId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>encrpyptedString</Name>
+					<Abstract type="html">The encrypted string</Abstract>
+				</Parameter><Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The sender</Abstract>
+				</Parameter><Parameter>
+					<Name>groupId</Name>
+					<Abstract type="html">The group ID</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The plain text</Abstract></ReturnValue>
+			<Anchor>//api/name/decryptString:sender:groupId:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CNMCryptographer/encryptData:sender:recipient:</TokenIdentifier>
+			<Abstract type="html">Encrypts plain data. Sender and recipient can be used to help seed encryption key.</Abstract>
+			<DeclaredIn>CNMCryptoServices.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)encryptData:(NSData *)plainData sender:(NSString *)sender recipient:(NSString *)recipient</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>plainData</Name>
+					<Abstract type="html">The plain data</Abstract>
+				</Parameter><Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The sender</Abstract>
+				</Parameter><Parameter>
+					<Name>recipient</Name>
+					<Abstract type="html">The recipient</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The encrypted data.</Abstract></ReturnValue>
+			<Anchor>//api/name/encryptData:sender:recipient:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CNMCryptographer/decryptData:sender:recipient:</TokenIdentifier>
+			<Abstract type="html">Decrypts data. Sender and recipients name can be used to help seed encryption key.</Abstract>
+			<DeclaredIn>CNMCryptoServices.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)decryptData:(NSData *)encrpyptedData sender:(NSString *)sender recipient:(NSString *)recipient</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>encrpyptedData</Name>
+					<Abstract type="html">The encrypted data</Abstract>
+				</Parameter><Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The sender</Abstract>
+				</Parameter><Parameter>
+					<Name>recipient</Name>
+					<Abstract type="html">The recipient</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The plain data</Abstract></ReturnValue>
+			<Anchor>//api/name/decryptData:sender:recipient:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CNMCryptographer/encryptData:sender:groupId:</TokenIdentifier>
+			<Abstract type="html">Encrypts plain data. Sender and group id can be used to help seed encryption key.</Abstract>
+			<DeclaredIn>CNMCryptoServices.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)encryptData:(NSData *)plainData sender:(NSString *)sender groupId:(NSString *)groupId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>plainData</Name>
+					<Abstract type="html">The plain data</Abstract>
+				</Parameter><Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The sender</Abstract>
+				</Parameter><Parameter>
+					<Name>groupId</Name>
+					<Abstract type="html">The recipient</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The encrypted data.</Abstract></ReturnValue>
+			<Anchor>//api/name/encryptData:sender:groupId:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CNMCryptographer/decryptData:sender:groupId:</TokenIdentifier>
+			<Abstract type="html">Decrypts data. Sender and group Id can be used to help seed encryption key.</Abstract>
+			<DeclaredIn>CNMCryptoServices.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)decryptData:(NSData *)encrpyptedData sender:(NSString *)sender groupId:(NSString *)groupId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>encrpyptedData</Name>
+					<Abstract type="html">The encrypted data</Abstract>
+				</Parameter><Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The sender</Abstract>
+				</Parameter><Parameter>
+					<Name>groupId</Name>
+					<Abstract type="html">The recipient</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The plain data</Abstract></ReturnValue>
+			<Anchor>//api/name/decryptData:sender:groupId:</Anchor>
             <NodeRef refid="17"/>
 		</Token>
 		

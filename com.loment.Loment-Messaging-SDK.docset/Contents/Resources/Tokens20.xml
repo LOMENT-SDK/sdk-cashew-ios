@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/IncomingContactRequestStatus.html">
+	<File path="Constants/CNMFetchResultsChangeType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/IncomingContactRequestStatus</TokenIdentifier>
-			<Abstract type="html">Status representing different states a friend request send to you is in</Abstract>
-			<DeclaredIn>CNMIncomingContact.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/CNMFetchResultsChangeType</TokenIdentifier>
+			<Abstract type="html">NSFetchedResultsChangeType like change type enum for when content changes</Abstract>
+			<DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
             
 			
 			<NodeRef refid="20"/>
@@ -14,34 +14,45 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/IncomingContactRequestStatusNotAnswered</TokenIdentifier>
-            <Abstract type="html">You have yet to reply to this request
+            <TokenIdentifier>//apple_ref/c/econst/CNMFetchResultsChangeInsert</TokenIdentifier>
+            <Abstract type="html">Data is inserted
      </Abstract>
-            <Declaration>IncomingContactRequestStatusNotAnswered</Declaration>
+            <Declaration>CNMFetchResultsChangeInsert</Declaration>
             
-            <DeclaredIn>CNMIncomingContact.h</DeclaredIn>
+            <DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
             
             <NodeRef refid="20"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/IncomingContactRequestStatusAccepted</TokenIdentifier>
-            <Abstract type="html">You have accepted this friend, their contact information has been added
+            <TokenIdentifier>//apple_ref/c/econst/CNMFetchResultsChangeDelete</TokenIdentifier>
+            <Abstract type="html">Date has been deleted
      </Abstract>
-            <Declaration>IncomingContactRequestStatusAccepted</Declaration>
+            <Declaration>CNMFetchResultsChangeDelete</Declaration>
             
-            <DeclaredIn>CNMIncomingContact.h</DeclaredIn>
+            <DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
             
             <NodeRef refid="20"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/IncomingContactRequestStatusRejected</TokenIdentifier>
-            <Abstract type="html">You have declined their invite, no information downloaded
+            <TokenIdentifier>//apple_ref/c/econst/CNMFetchResultsChangeMove</TokenIdentifier>
+            <Abstract type="html">Data has moved
      </Abstract>
-            <Declaration>IncomingContactRequestStatusRejected</Declaration>
+            <Declaration>CNMFetchResultsChangeMove</Declaration>
             
-            <DeclaredIn>CNMIncomingContact.h</DeclaredIn>
+            <DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CNMFetchResultsChangeUpdate</TokenIdentifier>
+            <Abstract type="html">Data is simply updated
+     </Abstract>
+            <Declaration>CNMFetchResultsChangeUpdate</Declaration>
+            
+            <DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
             
             <NodeRef refid="20"/>
         </Token>

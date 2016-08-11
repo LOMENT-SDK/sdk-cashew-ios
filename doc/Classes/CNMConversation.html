@@ -56,11 +56,11 @@
 	
 	<optgroup label="Properties">
 		
-		<option value="//api/name/group_admin">group_admin</option>
+		<option value="//api/name/groupId">groupId</option>
 		
-		<option value="//api/name/group_id">group_id</option>
+		<option value="//api/name/groupName">groupName</option>
 		
-		<option value="//api/name/group_name">group_name</option>
+		<option value="//api/name/groupOwner">groupOwner</option>
 		
 		<option value="//api/name/latestMessage">latestMessage</option>
 		
@@ -73,6 +73,12 @@
 
 	
 
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/isGroup">- isGroup</option>
+		
+	</optgroup>
 	
 	
 </select>
@@ -122,8 +128,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/group_id" title="group_id"></a>
-	<h3 class="method-title"><code><a href="#//api/name/group_id">&nbsp;&nbsp;group_id</a></code>
+	<a name="//api/name/groupId" title="groupId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/groupId">&nbsp;&nbsp;groupId</a></code>
 </h3>
 
 	<div class="method-info">
@@ -133,12 +139,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>The group_id of the conversation, provided by the server, only set when the conversation is for a group</p>
+				<p>The groupId of the conversation, provided by the server, only set when the conversation is for a group</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) NSString *group_id</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) NSString *groupId</code></div>
 
 		    
 			
@@ -150,7 +156,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>The group_id of the conversation, provided by the server, only set when the conversation is for a group</p>
+				<p>The groupId of the conversation, provided by the server, only set when the conversation is for a group</p>
 			</div>
 			
 
@@ -168,8 +174,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/group_name" title="group_name"></a>
-	<h3 class="method-title"><code><a href="#//api/name/group_name">&nbsp;&nbsp;group_name</a></code>
+	<a name="//api/name/groupName" title="groupName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/groupName">&nbsp;&nbsp;groupName</a></code>
 </h3>
 
 	<div class="method-info">
@@ -179,12 +185,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>The group_name of the conversation. The admin of the group sets this on creation, but can also update it.</p>
+				<p>The groupName of the conversation. The admin of the group sets this on creation, but can also update it.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) NSString *group_name</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) NSString *groupName</code></div>
 
 		    
 			
@@ -196,7 +202,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>The group_name of the conversation. The admin of the group sets this on creation, but can also update it.</p>
+				<p>The groupName of the conversation. The admin of the group sets this on creation, but can also update it.</p>
 			</div>
 			
 
@@ -214,8 +220,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/group_admin" title="group_admin"></a>
-	<h3 class="method-title"><code><a href="#//api/name/group_admin">&nbsp;&nbsp;group_admin</a></code>
+	<a name="//api/name/groupOwner" title="groupOwner"></a>
+	<h3 class="method-title"><code><a href="#//api/name/groupOwner">&nbsp;&nbsp;groupOwner</a></code>
 </h3>
 
 	<div class="method-info">
@@ -225,12 +231,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>The group_admin of the conversation. The person who can control group functionality.</p>
+				<p>The groupOwner of the conversation. The person who can control group functionality.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) CNMContact *group_admin</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) CNMContact *groupOwner</code></div>
 
 		    
 			
@@ -242,7 +248,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>The group_admin of the conversation. The person who can control group functionality.</p>
+				<p>The groupOwner of the conversation. The person who can control group functionality.</p>
 			</div>
 			
 
@@ -397,6 +403,57 @@
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/isGroup" title="isGroup"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isGroup">&ndash;&nbsp;isGroup</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Helper method to tell if a conversation is a group or not (aka 1-1 convo, private convo)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isGroup</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if group, NO otherwise</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Helper method to tell if a conversation is a group or not (aka 1-1 convo, private convo)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -412,7 +469,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2015 Loment. All rights reserved. Updated: 2015-10-06</p>
+						<p class="copyright">Copyright &copy; 2016 Loment. All rights reserved. Updated: 2016-08-11</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>

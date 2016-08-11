@@ -56,15 +56,13 @@
 	
 	<optgroup label="Properties">
 		
-		<option value="//api/name/acknowledged">acknowledged</option>
-		
-		<option value="//api/name/acknowledgementRequired">acknowledgementRequired</option>
+		<option value="//api/name/acknowledgement">acknowledgement</option>
 		
 		<option value="//api/name/attachment">attachment</option>
 		
-		<option value="//api/name/conversation">conversation</option>
+		<option value="//api/name/content">content</option>
 		
-		<option value="//api/name/creationTimestamp">creationTimestamp</option>
+		<option value="//api/name/conversation">conversation</option>
 		
 		<option value="//api/name/expiryDate">expiryDate</option>
 		
@@ -72,19 +70,15 @@
 		
 		<option value="//api/name/forwardRestricted">forwardRestricted</option>
 		
-		<option value="//api/name/plainTextMessage">plainTextMessage</option>
-		
 		<option value="//api/name/priority">priority</option>
-		
-		<option value="//api/name/recipient">recipient</option>
 		
 		<option value="//api/name/sender">sender</option>
 		
-		<option value="//api/name/server_id">server_id</option>
+		<option value="//api/name/serverId">serverId</option>
 		
 		<option value="//api/name/status">status</option>
 		
-		<option value="//api/name/token">token</option>
+		<option value="//api/name/timestamp">timestamp</option>
 		
 	</optgroup>
 	
@@ -232,8 +226,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/server_id" title="server_id"></a>
-	<h3 class="method-title"><code><a href="#//api/name/server_id">&nbsp;&nbsp;server_id</a></code>
+	<a name="//api/name/serverId" title="serverId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/serverId">&nbsp;&nbsp;serverId</a></code>
 </h3>
 
 	<div class="method-info">
@@ -248,7 +242,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) NSString *server_id</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) NSString *serverId</code></div>
 
 		    
 			
@@ -261,52 +255,6 @@
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>The unique id for the message, assigned by the server</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">CNMMessage.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/token" title="token"></a>
-	<h3 class="method-title"><code><a href="#//api/name/token">&nbsp;&nbsp;token</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>The unique token for the message, assigned by the client</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) NSString *token</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>The unique token for the message, assigned by the client</p>
 			</div>
 			
 
@@ -370,8 +318,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/acknowledged" title="acknowledged"></a>
-	<h3 class="method-title"><code><a href="#//api/name/acknowledged">&nbsp;&nbsp;acknowledged</a></code>
+	<a name="//api/name/acknowledgement" title="acknowledgement"></a>
+	<h3 class="method-title"><code><a href="#//api/name/acknowledgement">&nbsp;&nbsp;acknowledgement</a></code>
 </h3>
 
 	<div class="method-info">
@@ -381,12 +329,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Whether or not the message has been acknowledged by the <a href="#//api/name/recipient">recipient</a></p>
+				<p>Current state of acknowledgement. @See <a href="../Constants/AcknowledgementState.html">AcknowledgementState</a></p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) BOOL acknowledged</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) AcknowledgementState acknowledgement</code></div>
 
 		    
 			
@@ -398,7 +346,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Whether or not the message has been acknowledged by the <a href="#//api/name/recipient">recipient</a></p>
+				<p>Current state of acknowledgement. @See <a href="../Constants/AcknowledgementState.html">AcknowledgementState</a></p>
 			</div>
 			
 
@@ -416,54 +364,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/acknowledgementRequired" title="acknowledgementRequired"></a>
-	<h3 class="method-title"><code><a href="#//api/name/acknowledgementRequired">&nbsp;&nbsp;acknowledgementRequired</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Whether or not the <a href="#//api/name/recipient">recipient</a> must acknowledge the message before it can be read</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) BOOL acknowledgementRequired</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Whether or not the <a href="#//api/name/recipient">recipient</a> must acknowledge the message before it can be read</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">CNMMessage.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/creationTimestamp" title="creationTimestamp"></a>
-	<h3 class="method-title"><code><a href="#//api/name/creationTimestamp">&nbsp;&nbsp;creationTimestamp</a></code>
+	<a name="//api/name/timestamp" title="timestamp"></a>
+	<h3 class="method-title"><code><a href="#//api/name/timestamp">&nbsp;&nbsp;timestamp</a></code>
 </h3>
 
 	<div class="method-info">
@@ -478,7 +380,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonnull, nonatomic, strong, readonly) NSDate *creationTimestamp</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonnull, nonatomic, strong, readonly) NSDate *timestamp</code></div>
 
 		    
 			
@@ -646,52 +548,6 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/recipient" title="recipient"></a>
-	<h3 class="method-title"><code><a href="#//api/name/recipient">&nbsp;&nbsp;recipient</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>The recipient of the message (if this is a 1-to-1 <a href="#//api/name/conversation">conversation</a>)</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) CNMContact *recipient</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>The recipient of the message (if this is a 1-to-1 <a href="#//api/name/conversation">conversation</a>)</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">CNMMessage.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
 	<a name="//api/name/conversation" title="conversation"></a>
 	<h3 class="method-title"><code><a href="#//api/name/conversation">&nbsp;&nbsp;conversation</a></code>
 </h3>
@@ -708,7 +564,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) CNMConversation *conversation</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, weak, readonly) CNMConversation *conversation</code></div>
 
 		    
 			
@@ -784,8 +640,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/plainTextMessage" title="plainTextMessage"></a>
-	<h3 class="method-title"><code><a href="#//api/name/plainTextMessage">&nbsp;&nbsp;plainTextMessage</a></code>
+	<a name="//api/name/content" title="content"></a>
+	<h3 class="method-title"><code><a href="#//api/name/content">&nbsp;&nbsp;content</a></code>
 </h3>
 
 	<div class="method-info">
@@ -800,7 +656,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) NSString *plainTextMessage</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) NSString *content</code></div>
 
 		    
 			
@@ -844,7 +700,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2015 Loment. All rights reserved. Updated: 2015-10-06</p>
+						<p class="copyright">Copyright &copy; 2016 Loment. All rights reserved. Updated: 2016-08-11</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>

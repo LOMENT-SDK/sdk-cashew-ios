@@ -72,7 +72,7 @@
 		
 		<option value="//api/name/createNewGroupConversation:withContacts:withCompletion:">+ createNewGroupConversation:withContacts:withCompletion:</option>
 		
-		<option value="//api/name/declineContactRequest:withCompletion:">+ declineContactRequest:withCompletion:</option>
+		<option value="//api/name/downloadAttachment:withAttachmentTransferProgress:withCompletion:">+ downloadAttachment:withAttachmentTransferProgress:withCompletion:</option>
 		
 		<option value="//api/name/groupConversationsDeliveryController:">+ groupConversationsDeliveryController:</option>
 		
@@ -86,17 +86,19 @@
 		
 		<option value="//api/name/registerNewListener:">+ registerNewListener:</option>
 		
+		<option value="//api/name/rejectContactRequest:withCompletion:">+ rejectContactRequest:withCompletion:</option>
+		
 		<option value="//api/name/searchForContactsWithEmailAddresses:andPhoneNumbers:withCompletion:">+ searchForContactsWithEmailAddresses:andPhoneNumbers:withCompletion:</option>
 		
-		<option value="//api/name/sendContactRequestWithSuggestedContact:withCompletion:">+ sendContactRequestWithSuggestedContact:withCompletion:</option>
+		<option value="//api/name/sendContactRequestOnOutgoingContact:withCompletion:">+ sendContactRequestOnOutgoingContact:withCompletion:</option>
 		
 		<option value="//api/name/sendNewMessage:forConversation:withCompletion:">+ sendNewMessage:forConversation:withCompletion:</option>
 		
 		<option value="//api/name/sendNewMessage:options:withExpirationDuration:forConversation:withCompletion:">+ sendNewMessage:options:withExpirationDuration:forConversation:withCompletion:</option>
 		
-		<option value="//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withCompletion:">+ sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withCompletion:</option>
+		<option value="//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withAttachmentTransferProgress:withCompletion:">+ sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withAttachmentTransferProgress:withCompletion:</option>
 		
-		<option value="//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withCompletion:">+ sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withCompletion:</option>
+		<option value="//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withAttachmentTransferProgress:withCompletion:">+ sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withAttachmentTransferProgress:withCompletion:</option>
 		
 		<option value="//api/name/startServiceForCashewAccount:user:withCompletion:serviceInteruption:">+ startServiceForCashewAccount:user:withCompletion:serviceInteruption:</option>
 		
@@ -106,9 +108,9 @@
 		
 		<option value="//api/name/updateConversation:addMembers:withCompletion:">+ updateConversation:addMembers:withCompletion:</option>
 		
-		<option value="//api/name/updateConversation:newAdmin:withCompletion:">+ updateConversation:newAdmin:withCompletion:</option>
-		
 		<option value="//api/name/updateConversation:newName:withCompletion:">+ updateConversation:newName:withCompletion:</option>
+		
+		<option value="//api/name/updateConversation:newOwner:withCompletion:">+ updateConversation:newOwner:withCompletion:</option>
 		
 		<option value="//api/name/updateConversation:removeMembers:withCompletion:">+ updateConversation:removeMembers:withCompletion:</option>
 		
@@ -493,8 +495,8 @@ To send a message with one-time settings call sendNewMessage:options:withExpirat
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withCompletion:" title="sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withCompletion:">+&nbsp;sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withCompletion:</a></code>
+	<a name="//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withAttachmentTransferProgress:withCompletion:" title="sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withAttachmentTransferProgress:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withAttachmentTransferProgress:withCompletion:">+&nbsp;sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withAttachmentTransferProgress:withCompletion:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -510,7 +512,7 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)sendNewMessage:(NSString *)<em>plainText</em> withAttachmentFilename:(NSString *)<em>attachmentFilename</em> withAttachmentData:(NSData *)<em>attachmentData</em> forConversation:(CNMConversation *)<em>conversation</em> withCompletion:(CNMMessagingServiceCompletion)<em>completion</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)sendNewMessage:(NSString *)<em>plainText</em> withAttachmentFilename:(NSString *)<em>attachmentFilename</em> withAttachmentData:(NSData *)<em>attachmentData</em> forConversation:(CNMConversation *)<em>conversation</em> withAttachmentTransferProgress:(CNMAttachmentTransferProgress)<em>attachmentTransferProgress</em> withCompletion:(CNMMessagingServiceCompletion)<em>completion</em></code></div>
 
 		    
 			
@@ -536,6 +538,11 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 					<tr>
 						<th scope="row" class="argument-name"><code>conversation</code></th>
 						<td><p>The conversation to post on</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attachmentTransferProgress</code></th>
+						<td><p>Periodic called block during the time the attachment is uploaded</p></td>
 					</tr>
 				
 					<tr>
@@ -651,8 +658,8 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withCompletion:" title="sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withCompletion:">+&nbsp;sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withCompletion:</a></code>
+	<a name="//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withAttachmentTransferProgress:withCompletion:" title="sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withAttachmentTransferProgress:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withAttachmentTransferProgress:withCompletion:">+&nbsp;sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withAttachmentTransferProgress:withCompletion:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -667,7 +674,7 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)sendNewMessage:(NSString *)<em>plainText</em> withAttachmentFilename:(NSString *)<em>attachmentFilename</em> withAttachmentData:(NSData *)<em>attachmentData</em> options:(CNMMessageOptions)<em>options</em> withExpirationDuration:(NSInteger)<em>expirationDuration</em> forConversation:(CNMConversation *)<em>conversation</em> withCompletion:(CNMMessagingServiceCompletion)<em>completion</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)sendNewMessage:(NSString *)<em>plainText</em> withAttachmentFilename:(NSString *)<em>attachmentFilename</em> withAttachmentData:(NSData *)<em>attachmentData</em> options:(CNMMessageOptions)<em>options</em> withExpirationDuration:(NSInteger)<em>expirationDuration</em> forConversation:(CNMConversation *)<em>conversation</em> withAttachmentTransferProgress:(CNMAttachmentTransferProgress)<em>attachmentTransferProgress</em> withCompletion:(CNMMessagingServiceCompletion)<em>completion</em></code></div>
 
 		    
 			
@@ -703,6 +710,11 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 					<tr>
 						<th scope="row" class="argument-name"><code>conversation</code></th>
 						<td><p>The conversation to post on</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attachmentTransferProgress</code></th>
+						<td><p>Periodic called block during the time the attachment is uploaded</p></td>
 					</tr>
 				
 					<tr>
@@ -848,6 +860,76 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>Mark a message as acknowledged when the sender requires it</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadAttachment:withAttachmentTransferProgress:withCompletion:" title="downloadAttachment:withAttachmentTransferProgress:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadAttachment:withAttachmentTransferProgress:withCompletion:">+&nbsp;downloadAttachment:withAttachmentTransferProgress:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If you call data property on <a href="../Classes/CNMAttachment.html">CNMAttachment</a> and it is nil, call this method to download data. Upon completion, if success it should be safe to
+call data property again to retrieve your data</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)downloadAttachment:(CNMAttachment *)<em>cnmAttachment</em> withAttachmentTransferProgress:(CNMAttachmentTransferProgress)<em>attachmentTransferProgress</em> withCompletion:(CNMAttachmentDownloadComplete)<em>downloadComplete</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cnmAttachment</code></th>
+						<td><p>The attachment to download data on</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attachmentTransferProgress</code></th>
+						<td><p>Periodic called block during the time the attachment is downloaded</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downloadComplete</code></th>
+						<td><p>Completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If you call data property on <a href="../Classes/CNMAttachment.html">CNMAttachment</a> and it is nil, call this method to download data. Upon completion, if success it should be safe to
+call data property again to retrieve your data</p>
 			</div>
 			
 
@@ -1263,8 +1345,8 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/updateConversation:newAdmin:withCompletion:" title="updateConversation:newAdmin:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/updateConversation:newAdmin:withCompletion:">+&nbsp;updateConversation:newAdmin:withCompletion:</a></code>
+	<a name="//api/name/updateConversation:newOwner:withCompletion:" title="updateConversation:newOwner:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateConversation:newOwner:withCompletion:">+&nbsp;updateConversation:newOwner:withCompletion:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1279,7 +1361,7 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)updateConversation:(CNMConversation *)<em>conversation</em> newAdmin:(CNMContact *)<em>newAdmin</em> withCompletion:(CNMMessagingConversationCompletion)<em>completion</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)updateConversation:(CNMConversation *)<em>conversation</em> newOwner:(CNMContact *)<em>newOwner</em> withCompletion:(CNMMessagingConversationCompletion)<em>completion</em></code></div>
 
 		    
 			
@@ -1293,8 +1375,8 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>newAdmin</code></th>
-						<td><p>The new admin</p></td>
+						<th scope="row" class="argument-name"><code>newOwner</code></th>
+						<td><p>The new owner</p></td>
 					</tr>
 				
 					<tr>
@@ -1740,7 +1822,7 @@ NOTE: Historical data is kept, you will simply not receive new information on sa
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Asynchronously fetches all your CNMRequestedContacts a.k.a. &ldquo;Incoming Friend Requests&rdquo;  Note: Includes those you&rsquo;ve accepted / declined. Please check status of
+				<p>Asynchronously fetches all your CNMIncomingContacts a.k.a. &ldquo;Incoming Friend Requests&rdquo;  Note: Includes those you&rsquo;ve accepted / declined. Please check status of
 individual requests</p>
 			</div>
 			
@@ -1770,7 +1852,7 @@ individual requests</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Asynchronously fetches all your CNMRequestedContacts a.k.a. &ldquo;Incoming Friend Requests&rdquo;  Note: Includes those you&rsquo;ve accepted / declined. Please check status of
+				<p>Asynchronously fetches all your CNMIncomingContacts a.k.a. &ldquo;Incoming Friend Requests&rdquo;  Note: Includes those you&rsquo;ve accepted / declined. Please check status of
 individual requests</p>
 			</div>
 			
@@ -1789,8 +1871,8 @@ individual requests</p>
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/sendContactRequestWithSuggestedContact:withCompletion:" title="sendContactRequestWithSuggestedContact:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sendContactRequestWithSuggestedContact:withCompletion:">+&nbsp;sendContactRequestWithSuggestedContact:withCompletion:</a></code>
+	<a name="//api/name/sendContactRequestOnOutgoingContact:withCompletion:" title="sendContactRequestOnOutgoingContact:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendContactRequestOnOutgoingContact:withCompletion:">+&nbsp;sendContactRequestOnOutgoingContact:withCompletion:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1805,7 +1887,7 @@ individual requests</p>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)sendContactRequestWithSuggestedContact:(CNMSuggestedContact *)<em>suggestedContact</em> withCompletion:(CNMMessagingSendContactRequestCompletion)<em>completion</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)sendContactRequestOnOutgoingContact:(CNMOutgoingContact *)<em>outgoingContact</em> withCompletion:(CNMMessagingSendContactRequestCompletion)<em>completion</em></code></div>
 
 		    
 			
@@ -1814,8 +1896,8 @@ individual requests</p>
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>suggestedContact</code></th>
-						<td><p>The suggested contact we wish to be-friend as a contact</p></td>
+						<th scope="row" class="argument-name"><code>outgoingContact</code></th>
+						<td><p>The outgoing contact we wish to be-friend as a contact</p></td>
 					</tr>
 				
 					<tr>
@@ -1863,12 +1945,12 @@ individual requests</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Accept a contact request from a <a href="../Classes/CNMRequestedContact.html">CNMRequestedContact</a></p>
+				<p>Accept a contact request from a <a href="../Classes/CNMIncomingContact.html">CNMIncomingContact</a></p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)acceptContactRequest:(CNMRequestedContact *)<em>requestedContact</em> withCompletion:(CNMMessagingContactRequestResponseCompletion)<em>completion</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)acceptContactRequest:(CNMIncomingContact *)<em>incomingContact</em> withCompletion:(CNMMessagingContactRequestResponseCompletion)<em>completion</em></code></div>
 
 		    
 			
@@ -1877,8 +1959,8 @@ individual requests</p>
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>requestedContact</code></th>
-						<td><p>The <a href="../Classes/CNMRequestedContact.html">CNMRequestedContact</a> to accept</p></td>
+						<th scope="row" class="argument-name"><code>incomingContact</code></th>
+						<td><p>The <a href="../Classes/CNMIncomingContact.html">CNMIncomingContact</a> to accept</p></td>
 					</tr>
 				
 					<tr>
@@ -1897,7 +1979,7 @@ individual requests</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Accept a contact request from a <a href="../Classes/CNMRequestedContact.html">CNMRequestedContact</a></p>
+				<p>Accept a contact request from a <a href="../Classes/CNMIncomingContact.html">CNMIncomingContact</a></p>
 			</div>
 			
 
@@ -1915,8 +1997,8 @@ individual requests</p>
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/declineContactRequest:withCompletion:" title="declineContactRequest:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/declineContactRequest:withCompletion:">+&nbsp;declineContactRequest:withCompletion:</a></code>
+	<a name="//api/name/rejectContactRequest:withCompletion:" title="rejectContactRequest:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rejectContactRequest:withCompletion:">+&nbsp;rejectContactRequest:withCompletion:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1926,12 +2008,12 @@ individual requests</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Decline a contact request from a <a href="../Classes/CNMRequestedContact.html">CNMRequestedContact</a></p>
+				<p>Decline a contact request from a <a href="../Classes/CNMIncomingContact.html">CNMIncomingContact</a></p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)declineContactRequest:(CNMRequestedContact *)<em>requestedContact</em> withCompletion:(CNMMessagingContactRequestResponseCompletion)<em>completion</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)rejectContactRequest:(CNMIncomingContact *)<em>incomingContact</em> withCompletion:(CNMMessagingContactRequestResponseCompletion)<em>completion</em></code></div>
 
 		    
 			
@@ -1940,8 +2022,8 @@ individual requests</p>
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>requestedContact</code></th>
-						<td><p>The <a href="../Classes/CNMRequestedContact.html">CNMRequestedContact</a> to decline</p></td>
+						<th scope="row" class="argument-name"><code>incomingContact</code></th>
+						<td><p>The <a href="../Classes/CNMIncomingContact.html">CNMIncomingContact</a> to decline</p></td>
 					</tr>
 				
 					<tr>
@@ -1960,7 +2042,7 @@ individual requests</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Decline a contact request from a <a href="../Classes/CNMRequestedContact.html">CNMRequestedContact</a></p>
+				<p>Decline a contact request from a <a href="../Classes/CNMIncomingContact.html">CNMIncomingContact</a></p>
 			</div>
 			
 
@@ -1992,7 +2074,7 @@ individual requests</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2015 Loment. All rights reserved. Updated: 2015-10-06</p>
+						<p class="copyright">Copyright &copy; 2016 Loment. All rights reserved. Updated: 2016-08-11</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>

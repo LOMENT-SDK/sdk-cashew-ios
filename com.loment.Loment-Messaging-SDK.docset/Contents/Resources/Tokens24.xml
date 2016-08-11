@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/SDKFoundationError.html">
+	<File path="Constants/MessageStatus.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/SDKFoundationError</TokenIdentifier>
-			<Abstract type="html">Foundational Error codes to be used through the entire SDK</Abstract>
-			<DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/MessageStatus</TokenIdentifier>
+			<Abstract type="html">The different possibilities for a message&apos;s status</Abstract>
+			<DeclaredIn>CNMMessageEnums.h</DeclaredIn>
             
 			
 			<NodeRef refid="24"/>
@@ -14,78 +14,45 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SDKFoundationErrorMissingParameters</TokenIdentifier>
-            <Abstract type="html">Error indicating SDK user is missing parameters in method call. Check user info for details
+            <TokenIdentifier>//apple_ref/c/econst/MessageStatusPending</TokenIdentifier>
+            <Abstract type="html">Message is in the process of being sent
      </Abstract>
-            <Declaration>SDKFoundationErrorMissingParameters</Declaration>
+            <Declaration>MessageStatusPending</Declaration>
             
-            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
             
             <NodeRef refid="24"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SDKFoundationErrorSavingToDatabase</TokenIdentifier>
-            <Abstract type="html">Error indicating there was a problem when saving to the database
+            <TokenIdentifier>//apple_ref/c/econst/MessageStatusFailed</TokenIdentifier>
+            <Abstract type="html">Message failed to sent to the server
      </Abstract>
-            <Declaration>SDKFoundationErrorSavingToDatabase</Declaration>
+            <Declaration>MessageStatusFailed</Declaration>
             
-            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
             
             <NodeRef refid="24"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SDKFoundationErrorMessagingServiceAlreadyRunning</TokenIdentifier>
-            <Abstract type="html">An error indicating that the SDK is already running messagine service
+            <TokenIdentifier>//apple_ref/c/econst/MessageStatusSent</TokenIdentifier>
+            <Abstract type="html">Message has been sent to the server
      </Abstract>
-            <Declaration>SDKFoundationErrorMessagingServiceAlreadyRunning</Declaration>
+            <Declaration>MessageStatusSent</Declaration>
             
-            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
             
             <NodeRef refid="24"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SDKFoundationErrorMessagingServiceNotRunning</TokenIdentifier>
-            <Abstract type="html">An error indicating that the SDK is not running messagine service
+            <TokenIdentifier>//apple_ref/c/econst/MessageStatusRead</TokenIdentifier>
+            <Abstract type="html">Message has been read by the recipient(s)
      </Abstract>
-            <Declaration>SDKFoundationErrorMessagingServiceNotRunning</Declaration>
+            <Declaration>MessageStatusRead</Declaration>
             
-            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
-            
-            <NodeRef refid="24"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SDKFoundationErrorMessagingServiceFailedToStart</TokenIdentifier>
-            <Abstract type="html">An error indicating that the SDK could not start messaging service
-     </Abstract>
-            <Declaration>SDKFoundationErrorMessagingServiceFailedToStart</Declaration>
-            
-            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
-            
-            <NodeRef refid="24"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SDKFoundationErrorMessagingServiceFailedToSend</TokenIdentifier>
-            <Abstract type="html">An error indicating that the SDK could send message to server
-     </Abstract>
-            <Declaration>SDKFoundationErrorMessagingServiceFailedToSend</Declaration>
-            
-            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
-            
-            <NodeRef refid="24"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SDKFoundationErrorCannotSwitchAccounts</TokenIdentifier>
-            <Abstract type="html">Cannot switch accounts after successful login
-     </Abstract>
-            <Declaration>SDKFoundationErrorCannotSwitchAccounts</Declaration>
-            
-            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
             
             <NodeRef refid="24"/>
         </Token>

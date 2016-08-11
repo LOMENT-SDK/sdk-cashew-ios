@@ -157,74 +157,38 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/setAcknowledged:</TokenIdentifier>
-			<Abstract type="html">Whether or not the message has been acknowledged by the recipient</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/setAcknowledgement:</TokenIdentifier>
+			<Abstract type="html">Current state of acknowledgement. @See AcknowledgementState</Abstract>
 			<DeclaredIn>CNMMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign, readonly) BOOL acknowledged</Declaration>
+			<Declaration>@property (nonatomic, assign, readonly) AcknowledgementState acknowledgement</Declaration>
 			
 			
-			<Anchor>//api/name/acknowledged</Anchor>
+			<Anchor>//api/name/acknowledgement</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/acknowledged</TokenIdentifier>
-			<Abstract type="html">Whether or not the message has been acknowledged by the recipient</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/acknowledgement</TokenIdentifier>
+			<Abstract type="html">Current state of acknowledgement. @See AcknowledgementState</Abstract>
 			<DeclaredIn>CNMMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign, readonly) BOOL acknowledged</Declaration>
+			<Declaration>@property (nonatomic, assign, readonly) AcknowledgementState acknowledgement</Declaration>
 			
 			
-			<Anchor>//api/name/acknowledged</Anchor>
+			<Anchor>//api/name/acknowledgement</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CNMMessage/acknowledged</TokenIdentifier>
-			<Abstract type="html">Whether or not the message has been acknowledged by the recipient</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMMessage/acknowledgement</TokenIdentifier>
+			<Abstract type="html">Current state of acknowledgement. @See AcknowledgementState</Abstract>
 			<DeclaredIn>CNMMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign, readonly) BOOL acknowledged</Declaration>
+			<Declaration>@property (nonatomic, assign, readonly) AcknowledgementState acknowledgement</Declaration>
 			
 			
-			<Anchor>//api/name/acknowledged</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/setAcknowledgementRequired:</TokenIdentifier>
-			<Abstract type="html">Whether or not the recipient must acknowledge the message before it can be read</Abstract>
-			<DeclaredIn>CNMMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign, readonly) BOOL acknowledgementRequired</Declaration>
-			
-			
-			<Anchor>//api/name/acknowledgementRequired</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/acknowledgementRequired</TokenIdentifier>
-			<Abstract type="html">Whether or not the recipient must acknowledge the message before it can be read</Abstract>
-			<DeclaredIn>CNMMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign, readonly) BOOL acknowledgementRequired</Declaration>
-			
-			
-			<Anchor>//api/name/acknowledgementRequired</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CNMMessage/acknowledgementRequired</TokenIdentifier>
-			<Abstract type="html">Whether or not the recipient must acknowledge the message before it can be read</Abstract>
-			<DeclaredIn>CNMMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign, readonly) BOOL acknowledgementRequired</Declaration>
-			
-			
-			<Anchor>//api/name/acknowledgementRequired</Anchor>
+			<Anchor>//api/name/acknowledgement</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
@@ -377,7 +341,7 @@
 			<Abstract type="html">The conversation that the message belongs to</Abstract>
 			<DeclaredIn>CNMMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMConversation *conversation</Declaration>
+			<Declaration>@property (nullable, nonatomic, weak, readonly) CNMConversation *conversation</Declaration>
 			
 			
 			<Anchor>//api/name/conversation</Anchor>
@@ -389,7 +353,7 @@
 			<Abstract type="html">The conversation that the message belongs to</Abstract>
 			<DeclaredIn>CNMMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMConversation *conversation</Declaration>
+			<Declaration>@property (nullable, nonatomic, weak, readonly) CNMConversation *conversation</Declaration>
 			
 			
 			<Anchor>//api/name/conversation</Anchor>
@@ -401,7 +365,7 @@
 			<Abstract type="html">The conversation that the message belongs to</Abstract>
 			<DeclaredIn>CNMMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMConversation *conversation</Declaration>
+			<Declaration>@property (nullable, nonatomic, weak, readonly) CNMConversation *conversation</Declaration>
 			
 			
 			<Anchor>//api/name/conversation</Anchor>

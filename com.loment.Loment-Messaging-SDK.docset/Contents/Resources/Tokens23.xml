@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/OutgoingContactRequestStatus.html">
+	<File path="Constants/MessagePriorityLevel.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/OutgoingContactRequestStatus</TokenIdentifier>
-			<Abstract type="html">Status representing different states a suggested contact is in</Abstract>
-			<DeclaredIn>CNMOutgoingContact.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/MessagePriorityLevel</TokenIdentifier>
+			<Abstract type="html">The different possibilities for message priorities</Abstract>
+			<DeclaredIn>CNMMessageEnums.h</DeclaredIn>
             
 			
 			<NodeRef refid="23"/>
@@ -14,45 +14,45 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/OutgoingContactRequestStatusNotSent</TokenIdentifier>
-            <Abstract type="html">You have yet to send a request to this suggestion
+            <TokenIdentifier>//apple_ref/c/econst/MessagePriorityLevelHighest</TokenIdentifier>
+            <Abstract type="html">Highest priority
      </Abstract>
-            <Declaration>OutgoingContactRequestStatusNotSent</Declaration>
+            <Declaration>MessagePriorityLevelHighest</Declaration>
             
-            <DeclaredIn>CNMOutgoingContact.h</DeclaredIn>
+            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
             
             <NodeRef refid="23"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/OutgoingContactRequestStatusSent</TokenIdentifier>
-            <Abstract type="html">You have sent a request, waiting for response
+            <TokenIdentifier>//apple_ref/c/econst/MessagePriorityLevelHigh</TokenIdentifier>
+            <Abstract type="html">High priority
      </Abstract>
-            <Declaration>OutgoingContactRequestStatusSent</Declaration>
+            <Declaration>MessagePriorityLevelHigh</Declaration>
             
-            <DeclaredIn>CNMOutgoingContact.h</DeclaredIn>
+            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
             
             <NodeRef refid="23"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/OutgoingContactRequestStatusAccepted</TokenIdentifier>
-            <Abstract type="html">The suggested contact has accepted, and has been added to contacts
+            <TokenIdentifier>//apple_ref/c/econst/MessagePriorityLevelMedium</TokenIdentifier>
+            <Abstract type="html">Medium priority
      </Abstract>
-            <Declaration>OutgoingContactRequestStatusAccepted</Declaration>
+            <Declaration>MessagePriorityLevelMedium</Declaration>
             
-            <DeclaredIn>CNMOutgoingContact.h</DeclaredIn>
+            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
             
             <NodeRef refid="23"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/OutgoingContactRequestStatusRejected</TokenIdentifier>
-            <Abstract type="html">The suggested contact has declined, no information downloaded
+            <TokenIdentifier>//apple_ref/c/econst/MessagePriorityLevelLow</TokenIdentifier>
+            <Abstract type="html">Low priority
      </Abstract>
-            <Declaration>OutgoingContactRequestStatusRejected</Declaration>
+            <Declaration>MessagePriorityLevelLow</Declaration>
             
-            <DeclaredIn>CNMOutgoingContact.h</DeclaredIn>
+            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
             
             <NodeRef refid="23"/>
         </Token>

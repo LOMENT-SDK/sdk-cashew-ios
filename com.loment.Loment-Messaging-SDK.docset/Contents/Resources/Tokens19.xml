@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/CNMMessageOptions.html">
+	<File path="Constants/AcknowledgementState.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/CNMMessageOptions</TokenIdentifier>
-			<Abstract type="html">Bit-mask for setting various options on new messages. When you have a CNMMessage, the values will be explicit properties</Abstract>
+			<TokenIdentifier>//apple_ref/c/tdef/AcknowledgementState</TokenIdentifier>
+			<Abstract type="html">Enum representing the different states of Acknowledgement</Abstract>
 			<DeclaredIn>CNMMessageEnums.h</DeclaredIn>
             
 			
@@ -14,10 +14,10 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CNMMessageOptionsPriorityHigest</TokenIdentifier>
-            <Abstract type="html">Most important priority
+            <TokenIdentifier>//apple_ref/c/econst/AcknowledgementStateAcknowledgementOff</TokenIdentifier>
+            <Abstract type="html">No acknowledgement required
      </Abstract>
-            <Declaration>CNMMessageOptionsPriorityHigest</Declaration>
+            <Declaration>AcknowledgementStateAcknowledgementOff</Declaration>
             
             <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
             
@@ -25,10 +25,10 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CNMMessageOptionsPriorityHigh</TokenIdentifier>
-            <Abstract type="html">High priority
+            <TokenIdentifier>//apple_ref/c/econst/AcknowledgementStateUnAcknowledged</TokenIdentifier>
+            <Abstract type="html">Acknowledgement is required, but not yet acknowledged
      </Abstract>
-            <Declaration>CNMMessageOptionsPriorityHigh</Declaration>
+            <Declaration>AcknowledgementStateUnAcknowledged</Declaration>
             
             <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
             
@@ -36,10 +36,10 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CNMMessageOptionsPriorityMedium</TokenIdentifier>
-            <Abstract type="html">Medium / normal priority
+            <TokenIdentifier>//apple_ref/c/econst/AcknowledgementStatePartiallyAcknowledged</TokenIdentifier>
+            <Abstract type="html">Used only for groups, where some people acknoweledged, but not all
      </Abstract>
-            <Declaration>CNMMessageOptionsPriorityMedium</Declaration>
+            <Declaration>AcknowledgementStatePartiallyAcknowledged</Declaration>
             
             <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
             
@@ -47,56 +47,10 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CNMMessageOptionsPriorityLow</TokenIdentifier>
-            <Abstract type="html">Lowest priority message
+            <TokenIdentifier>//apple_ref/c/econst/AcknowledgementStateAcknowledged</TokenIdentifier>
+            <Abstract type="html">The recipient (or ALL recipients in a group) has acknowledged
      </Abstract>
-            <Declaration>CNMMessageOptionsPriorityLow</Declaration>
-            
-            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
-            
-            <NodeRef refid="19"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CNMMessageOptionsPriorityMask</TokenIdentifier>
-            <Abstract type="html">The first 2 bits are priorty bits.
-     </Abstract>
-            <Declaration>CNMMessageOptionsPriorityMask</Declaration>
-            
-            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
-            
-            <NodeRef refid="19"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CNMMessageOptionsForwardRestricted</TokenIdentifier>
-            <Abstract type="html">Setting this option indicates that a message should not be forwarded
-     </Abstract>
-            <Declaration>CNMMessageOptionsForwardRestricted</Declaration>
-            
-            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
-            
-            <NodeRef refid="19"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CNMMessageOptionsReadReceipt</TokenIdentifier>
-            <Abstract type="html">Setting this option indicates that a message requires a read receipt.
-Messages with this setting will not provide plain text until message is marked
-as recieved / read. See markMessageAsAcknowledged for details
-     </Abstract>
-            <Declaration>CNMMessageOptionsReadReceipt</Declaration>
-            
-            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
-            
-            <NodeRef refid="19"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CNMMessageOptionsDefault</TokenIdentifier>
-            <Abstract type="html">Default
-     </Abstract>
-            <Declaration>CNMMessageOptionsDefault</Declaration>
+            <Declaration>AcknowledgementStateAcknowledged</Declaration>
             
             <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
             

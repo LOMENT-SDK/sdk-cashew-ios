@@ -1,8 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="">
+	<File path="Constants/SDKFoundationError.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/SDKFoundationError</TokenIdentifier>
+			<Abstract type="html">Foundational Error codes to be used through the entire SDK</Abstract>
+			<DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            
+			
+			<NodeRef refid="26"/>
+		</Token>
 		
 		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDKFoundationErrorDidNotRegister</TokenIdentifier>
+            <Abstract type="html">Error indicating that the developer has not registered SDK yet
+     </Abstract>
+            <Declaration>SDKFoundationErrorDidNotRegister</Declaration>
+            
+            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDKFoundationErrorMissingParameters</TokenIdentifier>
+            <Abstract type="html">Error indicating SDK user is missing parameters in method call. Check user info for details
+     </Abstract>
+            <Declaration>SDKFoundationErrorMissingParameters</Declaration>
+            
+            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDKFoundationErrorSavingToDatabase</TokenIdentifier>
+            <Abstract type="html">Error indicating there was a problem when saving to the database
+     </Abstract>
+            <Declaration>SDKFoundationErrorSavingToDatabase</Declaration>
+            
+            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDKFoundationErrorMessagingServiceAlreadyRunning</TokenIdentifier>
+            <Abstract type="html">An error indicating that the SDK is already running messagine service
+     </Abstract>
+            <Declaration>SDKFoundationErrorMessagingServiceAlreadyRunning</Declaration>
+            
+            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDKFoundationErrorMessagingServiceNotRunning</TokenIdentifier>
+            <Abstract type="html">An error indicating that the SDK is not running messagine service
+     </Abstract>
+            <Declaration>SDKFoundationErrorMessagingServiceNotRunning</Declaration>
+            
+            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDKFoundationErrorMessagingServiceFailedToStart</TokenIdentifier>
+            <Abstract type="html">An error indicating that the SDK could not start messaging service
+     </Abstract>
+            <Declaration>SDKFoundationErrorMessagingServiceFailedToStart</Declaration>
+            
+            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDKFoundationErrorMessagingServiceFailedToSend</TokenIdentifier>
+            <Abstract type="html">An error indicating that the SDK could send message to server
+     </Abstract>
+            <Declaration>SDKFoundationErrorMessagingServiceFailedToSend</Declaration>
+            
+            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDKFoundationErrorCannotSwitchAccounts</TokenIdentifier>
+            <Abstract type="html">Cannot switch accounts after successful login
+     </Abstract>
+            <Declaration>SDKFoundationErrorCannotSwitchAccounts</Declaration>
+            
+            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
         
         
 	</File>

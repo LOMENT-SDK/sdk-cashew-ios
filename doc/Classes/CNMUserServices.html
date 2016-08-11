@@ -58,13 +58,15 @@
 	
 	<optgroup label="Class Methods">
 		
-		<option value="//api/name/addCashewUsername:forUser:withCompletion:">+ addCashewUsername:forUser:withCompletion:</option>
+		<option value="//api/name/addCashewAccount:forUser:withCompletion:">+ addCashewAccount:forUser:withCompletion:</option>
 		
-		<option value="//api/name/authenticateUser:andPassword:withCompletion:">+ authenticateUser:andPassword:withCompletion:</option>
+		<option value="//api/name/authenticateUser:withPassword:withCompletion:">+ authenticateUser:withPassword:withCompletion:</option>
 		
 		<option value="//api/name/recoverPasswordForEmail:withCompletion:">+ recoverPasswordForEmail:withCompletion:</option>
 		
 		<option value="//api/name/registerUserWithName:withPassword:withEmail:withPhone:withIsoCode:withCompletion:">+ registerUserWithName:withPassword:withEmail:withPhone:withIsoCode:withCompletion:</option>
+		
+		<option value="//api/name/registerWithSDK:partnerId:">+ registerWithSDK:partnerId:</option>
 		
 		<option value="//api/name/verifySubscriptionForUser:withCompletion:">+ verifySubscriptionForUser:withCompletion:</option>
 		
@@ -129,6 +131,74 @@ account. Once you receive a valid <a href="../Classes/CNMUser.html">CNMUser</a> 
 
 						<div class="task-list">
 							<div class="section-method">
+	<a name="//api/name/registerWithSDK:partnerId:" title="registerWithSDK:partnerId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerWithSDK:partnerId:">+&nbsp;registerWithSDK:partnerId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>In order to properly use the SDK, one must register with SDK by call this method. The method is a prereq to all other methods in the SDK</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)registerWithSDK:(NSString *)<em>clientId</em> partnerId:(NSString *)<em>partnerId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>clientId</code></th>
+						<td><p>Your client Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>partnerId</code></th>
+						<td><p>Your partner Id</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if it succeeds, NO if not. Ensure all your provided data is correct</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>In order to properly use the SDK, one must register with SDK by call this method. The method is a prereq to all other methods in the SDK</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMUserServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/registerUserWithName:withPassword:withEmail:withPhone:withIsoCode:withCompletion:" title="registerUserWithName:withPassword:withEmail:withPhone:withIsoCode:withCompletion:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/registerUserWithName:withPassword:withEmail:withPhone:withIsoCode:withCompletion:">+&nbsp;registerUserWithName:withPassword:withEmail:withPhone:withIsoCode:withCompletion:</a></code>
 </h3>
@@ -212,8 +282,8 @@ account. Once you receive a valid <a href="../Classes/CNMUser.html">CNMUser</a> 
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/authenticateUser:andPassword:withCompletion:" title="authenticateUser:andPassword:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/authenticateUser:andPassword:withCompletion:">+&nbsp;authenticateUser:andPassword:withCompletion:</a></code>
+	<a name="//api/name/authenticateUser:withPassword:withCompletion:" title="authenticateUser:withPassword:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authenticateUser:withPassword:withCompletion:">+&nbsp;authenticateUser:withPassword:withCompletion:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -228,7 +298,7 @@ account. Once you receive a valid <a href="../Classes/CNMUser.html">CNMUser</a> 
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)authenticateUser:(NSString *)<em>email</em> andPassword:(NSString *)<em>password</em> withCompletion:(CNMUserServicesCompletion)<em>completion</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)authenticateUser:(NSString *)<em>email</em> withPassword:(NSString *)<em>password</em> withCompletion:(CNMUserServicesCompletion)<em>completion</em></code></div>
 
 		    
 			
@@ -348,8 +418,8 @@ pass that selected account to MessagingServices to begin Loment Messaging.</p>
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/addCashewUsername:forUser:withCompletion:" title="addCashewUsername:forUser:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/addCashewUsername:forUser:withCompletion:">+&nbsp;addCashewUsername:forUser:withCompletion:</a></code>
+	<a name="//api/name/addCashewAccount:forUser:withCompletion:" title="addCashewAccount:forUser:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addCashewAccount:forUser:withCompletion:">+&nbsp;addCashewAccount:forUser:withCompletion:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -364,7 +434,7 @@ pass that selected account to MessagingServices to begin Loment Messaging.</p>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)addCashewUsername:(NSString *)<em>cashewUsername</em> forUser:(CNMUser *)<em>user</em> withCompletion:(CNMUserServicesCompletion)<em>completion</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)addCashewAccount:(NSString *)<em>cashewUsername</em> forUser:(CNMUser *)<em>user</em> withCompletion:(CNMUserServicesCompletion)<em>completion</em></code></div>
 
 		    
 			
@@ -493,7 +563,7 @@ pass that selected account to MessagingServices to begin Loment Messaging.</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2015 Loment. All rights reserved. Updated: 2015-10-06</p>
+						<p class="copyright">Copyright &copy; 2016 Loment. All rights reserved. Updated: 2016-08-11</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>

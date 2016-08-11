@@ -15,6 +15,26 @@ account.</Abstract>
 		
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMUserServices/registerWithSDK:partnerId:</TokenIdentifier>
+			<Abstract type="html">In order to properly use the SDK, one must register with SDK by call this method. The method is a prereq to all other methods in the SDK</Abstract>
+			<DeclaredIn>CNMUserServices.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)registerWithSDK:(NSString *)clientId partnerId:(NSString *)partnerId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>clientId</Name>
+					<Abstract type="html">Your client Id</Abstract>
+				</Parameter><Parameter>
+					<Name>partnerId</Name>
+					<Abstract type="html">Your partner Id</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if it succeeds, NO if not. Ensure all your provided data is correct</Abstract></ReturnValue>
+			<Anchor>//api/name/registerWithSDK:partnerId:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/CNMUserServices/registerUserWithName:withPassword:withEmail:withPhone:withIsoCode:withCompletion:</TokenIdentifier>
 			<Abstract type="html">Register a new user. To must excplictly call login after. See class description for more details.</Abstract>
 			<DeclaredIn>CNMUserServices.h</DeclaredIn>

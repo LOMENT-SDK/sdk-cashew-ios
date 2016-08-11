@@ -93,7 +93,7 @@ If data is not yet downloaded this will return nil and you should call the async
 			<Abstract type="html">The message to which the attachment belongs to</Abstract>
 			<DeclaredIn>CNMAttachment.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMMessage *message</Declaration>
+			<Declaration>@property (nullable, nonatomic, weak, readonly) CNMMessage *message</Declaration>
 			
 			
 			<Anchor>//api/name/message</Anchor>
@@ -105,7 +105,7 @@ If data is not yet downloaded this will return nil and you should call the async
 			<Abstract type="html">The message to which the attachment belongs to</Abstract>
 			<DeclaredIn>CNMAttachment.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMMessage *message</Declaration>
+			<Declaration>@property (nullable, nonatomic, weak, readonly) CNMMessage *message</Declaration>
 			
 			
 			<Anchor>//api/name/message</Anchor>
@@ -117,7 +117,7 @@ If data is not yet downloaded this will return nil and you should call the async
 			<Abstract type="html">The message to which the attachment belongs to</Abstract>
 			<DeclaredIn>CNMAttachment.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMMessage *message</Declaration>
+			<Declaration>@property (nullable, nonatomic, weak, readonly) CNMMessage *message</Declaration>
 			
 			
 			<Anchor>//api/name/message</Anchor>

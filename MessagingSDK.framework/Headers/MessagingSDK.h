@@ -38,3 +38,18 @@ FOUNDATION_EXPORT const unsigned char MessagingSDKVersionString[];
 #import <MessagingSDK/CNMAttachment.h>
 #import <MessagingSDK/CNMOutgoingContact.h>
 #import <MessagingSDK/CNMIncomingContact.h>
+
+/**
+ *  Object represents SDK entry point.
+ */
+
+@interface MessagingSDK : NSObject
+
+/**
+ *  Helper method to return version string from framework bundle
+ *
+ *  @return version number
+ */
++ (NSString *) getVersion;
+
+@end

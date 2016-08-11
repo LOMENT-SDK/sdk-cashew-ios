@@ -115,12 +115,12 @@ To send a message with one-time settings call sendNewMessage:options:withExpirat
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withCompletion:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withAttachmentTransferProgress:withCompletion:</TokenIdentifier>
 			<Abstract type="html">Sends a new message from the user on the specified conversation with an attachment. Uses settings stored in global settings. See CNMSettingsServices, defaults can be changed here.
 To send a message with one-time settings call sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withCompletion</Abstract>
 			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
 			
-			<Declaration>+ (void)sendNewMessage:(NSString *)plainText withAttachmentFilename:(NSString *)attachmentFilename withAttachmentData:(NSData *)attachmentData forConversation:(CNMConversation *)conversation withCompletion:(CNMMessagingServiceCompletion)completion</Declaration>
+			<Declaration>+ (void)sendNewMessage:(NSString *)plainText withAttachmentFilename:(NSString *)attachmentFilename withAttachmentData:(NSData *)attachmentData forConversation:(CNMConversation *)conversation withAttachmentTransferProgress:(CNMAttachmentTransferProgress)attachmentTransferProgress withCompletion:(CNMMessagingServiceCompletion)completion</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>plainText</Name>
@@ -135,12 +135,15 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 					<Name>conversation</Name>
 					<Abstract type="html">The conversation to post on</Abstract>
 				</Parameter><Parameter>
+					<Name>attachmentTransferProgress</Name>
+					<Abstract type="html">Periodic called block during the time the attachment is uploaded</Abstract>
+				</Parameter><Parameter>
 					<Name>completion</Name>
 					<Abstract type="html">Completion handler that is called when we are finished sending</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withCompletion:</Anchor>
+			<Anchor>//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withAttachmentTransferProgress:withCompletion:</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
@@ -174,11 +177,11 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withCompletion:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withAttachmentTransferProgress:withCompletion:</TokenIdentifier>
 			<Abstract type="html">Sends a new message from the user on the specified conversation with an attachment and customized settings.</Abstract>
 			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
 			
-			<Declaration>+ (void)sendNewMessage:(NSString *)plainText withAttachmentFilename:(NSString *)attachmentFilename withAttachmentData:(NSData *)attachmentData options:(CNMMessageOptions)options withExpirationDuration:(NSInteger)expirationDuration forConversation:(CNMConversation *)conversation withCompletion:(CNMMessagingServiceCompletion)completion</Declaration>
+			<Declaration>+ (void)sendNewMessage:(NSString *)plainText withAttachmentFilename:(NSString *)attachmentFilename withAttachmentData:(NSData *)attachmentData options:(CNMMessageOptions)options withExpirationDuration:(NSInteger)expirationDuration forConversation:(CNMConversation *)conversation withAttachmentTransferProgress:(CNMAttachmentTransferProgress)attachmentTransferProgress withCompletion:(CNMMessagingServiceCompletion)completion</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>plainText</Name>
@@ -199,12 +202,15 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 					<Name>conversation</Name>
 					<Abstract type="html">The conversation to post on</Abstract>
 				</Parameter><Parameter>
+					<Name>attachmentTransferProgress</Name>
+					<Abstract type="html">Periodic called block during the time the attachment is uploaded</Abstract>
+				</Parameter><Parameter>
 					<Name>completion</Name>
 					<Abstract type="html">Completion handler that is called when we are finished sending</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withCompletion:</Anchor>
+			<Anchor>//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withAttachmentTransferProgress:withCompletion:</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
@@ -249,23 +255,26 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/downloadAttachment:withCompletion:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/downloadAttachment:withAttachmentTransferProgress:withCompletion:</TokenIdentifier>
 			<Abstract type="html">If you call data property on CNMAttachment and it is nil, call this method to download data. Upon completion, if success it should be safe to
 call data property again to retrieve your data</Abstract>
 			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
 			
-			<Declaration>+ (void)downloadAttachment:(CNMAttachment *)cnmAttachment withCompletion:(CNMAttachmentDownloadComplete)downloadComplete</Declaration>
+			<Declaration>+ (void)downloadAttachment:(CNMAttachment *)cnmAttachment withAttachmentTransferProgress:(CNMAttachmentTransferProgress)attachmentTransferProgress withCompletion:(CNMAttachmentDownloadComplete)downloadComplete</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>cnmAttachment</Name>
 					<Abstract type="html">The attachment to download data on</Abstract>
+				</Parameter><Parameter>
+					<Name>attachmentTransferProgress</Name>
+					<Abstract type="html">Periodic called block during the time the attachment is downloaded</Abstract>
 				</Parameter><Parameter>
 					<Name>downloadComplete</Name>
 					<Abstract type="html">Completion block</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/downloadAttachment:withCompletion:</Anchor>
+			<Anchor>//api/name/downloadAttachment:withAttachmentTransferProgress:withCompletion:</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		

@@ -72,7 +72,7 @@
 		
 		<option value="//api/name/createNewGroupConversation:withContacts:withCompletion:">+ createNewGroupConversation:withContacts:withCompletion:</option>
 		
-		<option value="//api/name/downloadAttachment:withCompletion:">+ downloadAttachment:withCompletion:</option>
+		<option value="//api/name/downloadAttachment:withAttachmentTransferProgress:withCompletion:">+ downloadAttachment:withAttachmentTransferProgress:withCompletion:</option>
 		
 		<option value="//api/name/groupConversationsDeliveryController:">+ groupConversationsDeliveryController:</option>
 		
@@ -96,9 +96,9 @@
 		
 		<option value="//api/name/sendNewMessage:options:withExpirationDuration:forConversation:withCompletion:">+ sendNewMessage:options:withExpirationDuration:forConversation:withCompletion:</option>
 		
-		<option value="//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withCompletion:">+ sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withCompletion:</option>
+		<option value="//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withAttachmentTransferProgress:withCompletion:">+ sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withAttachmentTransferProgress:withCompletion:</option>
 		
-		<option value="//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withCompletion:">+ sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withCompletion:</option>
+		<option value="//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withAttachmentTransferProgress:withCompletion:">+ sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withAttachmentTransferProgress:withCompletion:</option>
 		
 		<option value="//api/name/startServiceForCashewAccount:user:withCompletion:serviceInteruption:">+ startServiceForCashewAccount:user:withCompletion:serviceInteruption:</option>
 		
@@ -495,8 +495,8 @@ To send a message with one-time settings call sendNewMessage:options:withExpirat
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withCompletion:" title="sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withCompletion:">+&nbsp;sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withCompletion:</a></code>
+	<a name="//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withAttachmentTransferProgress:withCompletion:" title="sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withAttachmentTransferProgress:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withAttachmentTransferProgress:withCompletion:">+&nbsp;sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withAttachmentTransferProgress:withCompletion:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -512,7 +512,7 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)sendNewMessage:(NSString *)<em>plainText</em> withAttachmentFilename:(NSString *)<em>attachmentFilename</em> withAttachmentData:(NSData *)<em>attachmentData</em> forConversation:(CNMConversation *)<em>conversation</em> withCompletion:(CNMMessagingServiceCompletion)<em>completion</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)sendNewMessage:(NSString *)<em>plainText</em> withAttachmentFilename:(NSString *)<em>attachmentFilename</em> withAttachmentData:(NSData *)<em>attachmentData</em> forConversation:(CNMConversation *)<em>conversation</em> withAttachmentTransferProgress:(CNMAttachmentTransferProgress)<em>attachmentTransferProgress</em> withCompletion:(CNMMessagingServiceCompletion)<em>completion</em></code></div>
 
 		    
 			
@@ -538,6 +538,11 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 					<tr>
 						<th scope="row" class="argument-name"><code>conversation</code></th>
 						<td><p>The conversation to post on</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attachmentTransferProgress</code></th>
+						<td><p>Periodic called block during the time the attachment is uploaded</p></td>
 					</tr>
 				
 					<tr>
@@ -653,8 +658,8 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withCompletion:" title="sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withCompletion:">+&nbsp;sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withCompletion:</a></code>
+	<a name="//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withAttachmentTransferProgress:withCompletion:" title="sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withAttachmentTransferProgress:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withAttachmentTransferProgress:withCompletion:">+&nbsp;sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withAttachmentTransferProgress:withCompletion:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -669,7 +674,7 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)sendNewMessage:(NSString *)<em>plainText</em> withAttachmentFilename:(NSString *)<em>attachmentFilename</em> withAttachmentData:(NSData *)<em>attachmentData</em> options:(CNMMessageOptions)<em>options</em> withExpirationDuration:(NSInteger)<em>expirationDuration</em> forConversation:(CNMConversation *)<em>conversation</em> withCompletion:(CNMMessagingServiceCompletion)<em>completion</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)sendNewMessage:(NSString *)<em>plainText</em> withAttachmentFilename:(NSString *)<em>attachmentFilename</em> withAttachmentData:(NSData *)<em>attachmentData</em> options:(CNMMessageOptions)<em>options</em> withExpirationDuration:(NSInteger)<em>expirationDuration</em> forConversation:(CNMConversation *)<em>conversation</em> withAttachmentTransferProgress:(CNMAttachmentTransferProgress)<em>attachmentTransferProgress</em> withCompletion:(CNMMessagingServiceCompletion)<em>completion</em></code></div>
 
 		    
 			
@@ -705,6 +710,11 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 					<tr>
 						<th scope="row" class="argument-name"><code>conversation</code></th>
 						<td><p>The conversation to post on</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attachmentTransferProgress</code></th>
+						<td><p>Periodic called block during the time the attachment is uploaded</p></td>
 					</tr>
 				
 					<tr>
@@ -867,8 +877,8 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/downloadAttachment:withCompletion:" title="downloadAttachment:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/downloadAttachment:withCompletion:">+&nbsp;downloadAttachment:withCompletion:</a></code>
+	<a name="//api/name/downloadAttachment:withAttachmentTransferProgress:withCompletion:" title="downloadAttachment:withAttachmentTransferProgress:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadAttachment:withAttachmentTransferProgress:withCompletion:">+&nbsp;downloadAttachment:withAttachmentTransferProgress:withCompletion:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -884,7 +894,7 @@ call data property again to retrieve your data</p>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)downloadAttachment:(CNMAttachment *)<em>cnmAttachment</em> withCompletion:(CNMAttachmentDownloadComplete)<em>downloadComplete</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)downloadAttachment:(CNMAttachment *)<em>cnmAttachment</em> withAttachmentTransferProgress:(CNMAttachmentTransferProgress)<em>attachmentTransferProgress</em> withCompletion:(CNMAttachmentDownloadComplete)<em>downloadComplete</em></code></div>
 
 		    
 			
@@ -895,6 +905,11 @@ call data property again to retrieve your data</p>
 					<tr>
 						<th scope="row" class="argument-name"><code>cnmAttachment</code></th>
 						<td><p>The attachment to download data on</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attachmentTransferProgress</code></th>
+						<td><p>Periodic called block during the time the attachment is downloaded</p></td>
 					</tr>
 				
 					<tr>
@@ -2059,7 +2074,7 @@ individual requests</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2015 Loment. All rights reserved. Updated: 2015-10-09</p>
+						<p class="copyright">Copyright &copy; 2016 Loment. All rights reserved. Updated: 2016-08-11</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
