@@ -1,5 +1,13 @@
 # Release Notes
 
+## Version 1.0.1 (Nov 28, 2016)
+- Support multi-user login
+- Display of unread message count
+- Provision to delete messages
+- Performance improvement at initial sync
+- Notifying user when screenshot is taken
+- Listing only the Conversations for that particular cashew user
+
 ## Version 0.2 (Aug 11, 2016)
 - Added getVersion in MessagingSDK
 

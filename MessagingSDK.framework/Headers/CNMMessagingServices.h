@@ -79,10 +79,10 @@ typedef void (^CNMMessagingContactRequestResponseCompletion)(CNMIncomingContact 
 /**
  *  Completion block for calling asynchronous download of attachment.
  *
- *  @param success YES if download is complete and safe to call data again
+ *  @param data    Plain data if found
  *  @param error   Error if present
  */
-typedef void(^CNMAttachmentDownloadComplete)(BOOL success, NSError * error);
+typedef void(^CNMAttachmentDownloadComplete)(NSData * data, NSError * error);
 
 /**
  *  Progress block called periodically when attachments are uploaded/downloaded
@@ -174,9 +174,10 @@ typedef void (^CNMAttachmentTransferProgress)(NSUInteger currentBytesTransferred
  *
  *  @param plainText            Plain text message
  *  @param conversation         The conversation to post on
+ *  @param msgType              Type of message (1- Normal messages, 2- Welcome message, 3- Contact, 4- Old Groups , 5- Auto Response , 6- New Groups , 7 - Screen Shot )  
  *  @param completion           Completion handler that is called when we are finished sending
  */
-+ (void)sendNewMessage:(NSString *)plainText forConversation:(CNMConversation *)conversation withCompletion:(CNMMessagingServiceCompletion)completion;
++ (void)sendNewMessage:(NSString *)plainText forConversation:(CNMConversation *)cnmConversation withType:(NSInteger)msgType withCompletion:(CNMMessagingServiceCompletion)completion;
 
 /**
  *  Sends a new message from the user on the specified conversation with an attachment. Uses settings stored in global settings. See CNMSettingsServices, defaults can be changed here.
@@ -187,10 +188,11 @@ typedef void (^CNMAttachmentTransferProgress)(NSUInteger currentBytesTransferred
  *  @param attachmentFilename           The filename of the attachment
  *  @param attachmentData               The NSData contents of the file
  *  @param conversation                 The conversation to post on
+ *  @param msgType              Type of message (1- Normal messages, 2- Welcome message, 3- Contact, 4- Old Groups , 5- Auto Response , 6- New Groups , 7 - Screen Shot )
  *  @param attachmentTransferProgress   Periodic called block during the time the attachment is uploaded
  *  @param completion                   Completion handler that is called when we are finished sending
  */
-+ (void)sendNewMessage:(NSString *)plainText withAttachmentFilename:(NSString *)attachmentFilename withAttachmentData:(NSData *)attachmentData forConversation:(CNMConversation *)conversation withAttachmentTransferProgress:(CNMAttachmentTransferProgress)attachmentTransferProgress withCompletion:(CNMMessagingServiceCompletion)completion;
++ (void)sendNewMessage:(NSString *)plainText withAttachmentFilename:(NSString *)attachmentFilename withAttachmentData:(NSData *)attachmentData forConversation:(CNMConversation *)conversation withType:(NSInteger)msgType withAttachmentTransferProgress:(CNMAttachmentTransferProgress)attachmentTransferProgress withCompletion:(CNMMessagingServiceCompletion)completion;
 
 /**
  *  Sends a new message from the user on the specified conversation with customized settings.
@@ -199,9 +201,10 @@ typedef void (^CNMAttachmentTransferProgress)(NSUInteger currentBytesTransferred
  *  @param options              Bit mask of options to set on a message
  *  @param expirationDuration   Expiration in minutes. Valid values are 1-999. Passing anything else assumes no expiration.
  *  @param conversation         The conversation to post on
+*  @param msgType              Type of message (1- Normal messages, 2- Welcome message, 3- Contact, 4- Old Groups , 5- Auto Response , 6- New Groups , 7 - Screen Shot )  
  *  @param completion           Completion handler that is called when we are finished sending
  */
-+ (void)sendNewMessage:(NSString *)plainText options:(CNMMessageOptions)options withExpirationDuration:(NSInteger)expirationDuration forConversation:(CNMConversation *)conversation withCompletion:(CNMMessagingServiceCompletion)completion;
++ (void)sendNewMessage:(NSString *)plainText options:(CNMMessageOptions)options withExpirationDuration:(NSInteger)expirationDuration forConversation:(CNMConversation *)conversation withType:(NSInteger)msgType withCompletion:(CNMMessagingServiceCompletion)completion;
 
 /**
  *  Sends a new message from the user on the specified conversation with an attachment and customized settings.
@@ -212,10 +215,11 @@ typedef void (^CNMAttachmentTransferProgress)(NSUInteger currentBytesTransferred
  *  @param options                      Bit mask of options to set on a message
  *  @param expirationDuration           Expiration in minutes. Valid values are 1-999. Passing anything else assumes no expiration.
  *  @param conversation                 The conversation to post on
+ *  @param msgType              Type of message (1- Normal messages, 2- Welcome message, 3- Contact, 4- Old Groups , 5- Auto Response , 6- New Groups , 7 - Screen Shot ) 
  *  @param attachmentTransferProgress   Periodic called block during the time the attachment is uploaded
  *  @param completion                   Completion handler that is called when we are finished sending
  */
-+ (void)sendNewMessage:(NSString *)plainText withAttachmentFilename:(NSString *)attachmentFilename withAttachmentData:(NSData *)attachmentData options:(CNMMessageOptions)options withExpirationDuration:(NSInteger)expirationDuration forConversation:(CNMConversation *)conversation withAttachmentTransferProgress:(CNMAttachmentTransferProgress)attachmentTransferProgress withCompletion:(CNMMessagingServiceCompletion)completion;
++ (void)sendNewMessage:(NSString *)plainText withAttachmentFilename:(NSString *)attachmentFilename withAttachmentData:(NSData *)attachmentData options:(CNMMessageOptions)options withExpirationDuration:(NSInteger)expirationDuration forConversation:(CNMConversation *)conversation withType:(NSInteger)msgType withAttachmentTransferProgress:(CNMAttachmentTransferProgress)attachmentTransferProgress withCompletion:(CNMMessagingServiceCompletion)completion;
 
 /**
  *  Mark a message as read
@@ -232,12 +236,19 @@ typedef void (^CNMAttachmentTransferProgress)(NSUInteger currentBytesTransferred
  *  @param completion completion handler that is called when we are finished sending
  */
 + (void)markMessageAsAcknowledged:(CNMMessage *)message withCompletion:(CNMMessagingServiceCompletion)completion;
-
+/**
+ *  Mark a message as deleted. Once the server returns to us that it has been successfully deleted, it will be removed from the app completely.
+ *
+ * Note: Please wait for completion block to return with success or failure before attempting to call this again
+ *
+ *  @param message    The message to mark
+ *  @param completion completion handler that is called when we are finished updating message
+ */
++ (void)markMessageAsDeleted:(CNMMessage *)message withCompletion:(CNMMessagingServiceCompletion)completion;
 #pragma mark - Attachments
 
 /**
- *   If you call data property on CNMAttachment and it is nil, call this method to download data. Upon completion, if success it should be safe to
- * call data property again to retrieve your data
+ *   Call this method to download data. If data is already downloaded, it will fetch from cache on disk
  *
  *  @param cnmAttachment                The attachment to download data on
  *  @param attachmentTransferProgress   Periodic called block during the time the attachment is downloaded
@@ -254,6 +265,14 @@ typedef void (^CNMAttachmentTransferProgress)(NSUInteger currentBytesTransferred
  *  @param completion     Completion block that returns CNMContact or an error if something went wrong
  */
 + (void)addContact:(NSString *)cashewUsername withCompletion:(CNMMessagingContactCompletion)completion;
+/**
+ *  Add a contact to list of known contacts. If contact does not exist in Loment system, you will get an error back
+ *
+ *  @param cashewUsername The cashew username to look up
+ 
+ *  @param completion     Completion block that returns CNMContact or an error if something went wrong
+ */
++ (void)addContact:(NSString *)cashewUsername contactName:(NSString *)contactString contactEmail:(NSString *)contactEmail contactphone:(NSString *)ContactPhone withCompletion:(CNMMessagingContactCompletion)completion;
 
 /**
  *  Creates a new 1-to-1 CNMConversation and saves it to the database.
@@ -262,15 +281,6 @@ typedef void (^CNMAttachmentTransferProgress)(NSUInteger currentBytesTransferred
  *  @param completion          Completion block that returns CNMConversation or an error if something went wrong
  */
 + (void)createNewConversationWithOtherCashewContact:(CNMContact *)otherCashewContact withCompletion:(CNMMessagingConversationCompletion)completion;
-
-/**
- *  Creates a new group conversation with the given name using the array of CNMContacts. Caller is the admin / owner of the newly created group.
- *
- *  @param groupName     The name of the group (This param is required)
- *  @param otherContacts Array of valid CNMContacts. If you instantiate your CNMContact, unexpected results may happen.
- *  @param completion    Completion block that returns CNMConversation or an error if something went wrong
- */
-+ (void)createNewGroupConversation:(NSString *)groupName withContacts:(NSArray *)otherContacts withCompletion:(CNMMessagingConversationCompletion)completion;
 
 /**
  *  Updates the conversation by adding contacts to group
@@ -318,6 +328,25 @@ typedef void (^CNMAttachmentTransferProgress)(NSUInteger currentBytesTransferred
 + (void)leaveConversation:(CNMConversation *)conversation withCompletion:(CNMMessagingConversationCompletion)completion;
 
 #pragma mark - Delivery Calls
+
+/**
+ *  Retrieves the number of unread messages on any given conversation
+ *
+ *  @param conversation The conversation in question
+ *  @param error        Error referece
+ *
+ *  @return The undread count or NSUIntegerMax if error
+ */
++ (NSUInteger)numberOfUnreadMessagesOnConversation:(CNMConversation *)conversation error:(NSError * __autoreleasing *)error;
+
+/**
+ *  Total number of unread messages
+ *
+ *  @param error        Error referece
+ *
+ *  @return Total number of unread messsages or NSUIntegerMax if error
+ */
++ (NSUInteger)numberOfUnreadMessagesError:(NSError * __autoreleasing *)error;
 
 /**
  *  Provides access to all messages in a conversation in an FRC-like fashion. Be sure to set delegate

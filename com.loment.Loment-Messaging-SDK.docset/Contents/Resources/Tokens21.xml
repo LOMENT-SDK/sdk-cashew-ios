@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/CNMMessageOptions.html">
+	<File path="Constants/CNMFetchResultsChangeType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/CNMMessageOptions</TokenIdentifier>
-			<Abstract type="html">Bit-mask for setting various options on new messages. When you have a CNMMessage, the values will be explicit properties</Abstract>
-			<DeclaredIn>CNMMessageEnums.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/CNMFetchResultsChangeType</TokenIdentifier>
+			<Abstract type="html">NSFetchedResultsChangeType like change type enum for when content changes</Abstract>
+			<DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
             
 			
 			<NodeRef refid="21"/>
@@ -14,91 +14,45 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CNMMessageOptionsPriorityHigest</TokenIdentifier>
-            <Abstract type="html">Most important priority
+            <TokenIdentifier>//apple_ref/c/econst/CNMFetchResultsChangeInsert</TokenIdentifier>
+            <Abstract type="html">Data is inserted
      </Abstract>
-            <Declaration>CNMMessageOptionsPriorityHigest</Declaration>
+            <Declaration>CNMFetchResultsChangeInsert</Declaration>
             
-            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
+            <DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
             
             <NodeRef refid="21"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CNMMessageOptionsPriorityHigh</TokenIdentifier>
-            <Abstract type="html">High priority
+            <TokenIdentifier>//apple_ref/c/econst/CNMFetchResultsChangeDelete</TokenIdentifier>
+            <Abstract type="html">Date has been deleted
      </Abstract>
-            <Declaration>CNMMessageOptionsPriorityHigh</Declaration>
+            <Declaration>CNMFetchResultsChangeDelete</Declaration>
             
-            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
+            <DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
             
             <NodeRef refid="21"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CNMMessageOptionsPriorityMedium</TokenIdentifier>
-            <Abstract type="html">Medium / normal priority
+            <TokenIdentifier>//apple_ref/c/econst/CNMFetchResultsChangeMove</TokenIdentifier>
+            <Abstract type="html">Data has moved
      </Abstract>
-            <Declaration>CNMMessageOptionsPriorityMedium</Declaration>
+            <Declaration>CNMFetchResultsChangeMove</Declaration>
             
-            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
+            <DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
             
             <NodeRef refid="21"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CNMMessageOptionsPriorityLow</TokenIdentifier>
-            <Abstract type="html">Lowest priority message
+            <TokenIdentifier>//apple_ref/c/econst/CNMFetchResultsChangeUpdate</TokenIdentifier>
+            <Abstract type="html">Data is simply updated
      </Abstract>
-            <Declaration>CNMMessageOptionsPriorityLow</Declaration>
+            <Declaration>CNMFetchResultsChangeUpdate</Declaration>
             
-            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
-            
-            <NodeRef refid="21"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CNMMessageOptionsPriorityMask</TokenIdentifier>
-            <Abstract type="html">The first 2 bits are priorty bits.
-     </Abstract>
-            <Declaration>CNMMessageOptionsPriorityMask</Declaration>
-            
-            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
-            
-            <NodeRef refid="21"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CNMMessageOptionsForwardRestricted</TokenIdentifier>
-            <Abstract type="html">Setting this option indicates that a message should not be forwarded
-     </Abstract>
-            <Declaration>CNMMessageOptionsForwardRestricted</Declaration>
-            
-            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
-            
-            <NodeRef refid="21"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CNMMessageOptionsReadReceipt</TokenIdentifier>
-            <Abstract type="html">Setting this option indicates that a message requires a read receipt.
-Messages with this setting will not provide plain text until message is marked
-as recieved / read. See markMessageAsAcknowledged for details
-     </Abstract>
-            <Declaration>CNMMessageOptionsReadReceipt</Declaration>
-            
-            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
-            
-            <NodeRef refid="21"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CNMMessageOptionsDefault</TokenIdentifier>
-            <Abstract type="html">Default
-     </Abstract>
-            <Declaration>CNMMessageOptionsDefault</Declaration>
-            
-            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
+            <DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
             
             <NodeRef refid="21"/>
         </Token>

@@ -51,11 +51,10 @@ be an indicator what type of file it is.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CNMAttachment/setData:</TokenIdentifier>
-			<Abstract type="html">The raw data of the file. Though on disk the data is encrypted, calling this property gives you the non-encrypted form.
-If data is not yet downloaded this will return nil and you should call the asynchronous version.</Abstract>
+			<Abstract type="html">The data of the file</Abstract>
 			<DeclaredIn>CNMAttachment.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) NSData *data</Declaration>
+			<Declaration>@property (nullable, nonatomic, strong) NSData *data</Declaration>
 			
 			
 			<Anchor>//api/name/data</Anchor>
@@ -64,11 +63,10 @@ If data is not yet downloaded this will return nil and you should call the async
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CNMAttachment/data</TokenIdentifier>
-			<Abstract type="html">The raw data of the file. Though on disk the data is encrypted, calling this property gives you the non-encrypted form.
-If data is not yet downloaded this will return nil and you should call the asynchronous version.</Abstract>
+			<Abstract type="html">The data of the file</Abstract>
 			<DeclaredIn>CNMAttachment.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) NSData *data</Declaration>
+			<Declaration>@property (nullable, nonatomic, strong) NSData *data</Declaration>
 			
 			
 			<Anchor>//api/name/data</Anchor>
@@ -77,11 +75,10 @@ If data is not yet downloaded this will return nil and you should call the async
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/CNMAttachment/data</TokenIdentifier>
-			<Abstract type="html">The raw data of the file. Though on disk the data is encrypted, calling this property gives you the non-encrypted form.
-If data is not yet downloaded this will return nil and you should call the asynchronous version.</Abstract>
+			<Abstract type="html">The data of the file</Abstract>
 			<DeclaredIn>CNMAttachment.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) NSData *data</Declaration>
+			<Declaration>@property (nullable, nonatomic, strong) NSData *data</Declaration>
 			
 			
 			<Anchor>//api/name/data</Anchor>

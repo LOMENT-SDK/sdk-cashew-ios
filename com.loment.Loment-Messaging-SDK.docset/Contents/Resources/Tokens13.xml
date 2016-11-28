@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/CNMUser.html">
+	<File path="Classes/CNMReachability.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/CNMUser</TokenIdentifier>
-			<Abstract type="html">Object represents a Loment user in the Loment system.</Abstract>
-			<DeclaredIn>CNMUser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/CNMReachability</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
             
 			
 			<NodeRef refid="13"/>
@@ -13,218 +13,338 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/setUserName:</TokenIdentifier>
-			<Abstract type="html">The Loment user&apos;s name</Abstract>
-			<DeclaredIn>CNMUser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMReachability/setReachableBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userName</Declaration>
+			<Declaration>@property (nonatomic, copy) NetworkReachable reachableBlock</Declaration>
 			
 			
-			<Anchor>//api/name/userName</Anchor>
+			<Anchor>//api/name/reachableBlock</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/userName</TokenIdentifier>
-			<Abstract type="html">The Loment user&apos;s name</Abstract>
-			<DeclaredIn>CNMUser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMReachability/reachableBlock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userName</Declaration>
+			<Declaration>@property (nonatomic, copy) NetworkReachable reachableBlock</Declaration>
 			
 			
-			<Anchor>//api/name/userName</Anchor>
+			<Anchor>//api/name/reachableBlock</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CNMUser/userName</TokenIdentifier>
-			<Abstract type="html">The Loment user&apos;s name</Abstract>
-			<DeclaredIn>CNMUser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMReachability/reachableBlock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userName</Declaration>
+			<Declaration>@property (nonatomic, copy) NetworkReachable reachableBlock</Declaration>
 			
 			
-			<Anchor>//api/name/userName</Anchor>
+			<Anchor>//api/name/reachableBlock</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/setUserEmail:</TokenIdentifier>
-			<Abstract type="html">The Loment user&apos;s email</Abstract>
-			<DeclaredIn>CNMUser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMReachability/setUnreachableBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userEmail</Declaration>
+			<Declaration>@property (nonatomic, copy) NetworkUnreachable unreachableBlock</Declaration>
 			
 			
-			<Anchor>//api/name/userEmail</Anchor>
+			<Anchor>//api/name/unreachableBlock</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/userEmail</TokenIdentifier>
-			<Abstract type="html">The Loment user&apos;s email</Abstract>
-			<DeclaredIn>CNMUser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMReachability/unreachableBlock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userEmail</Declaration>
+			<Declaration>@property (nonatomic, copy) NetworkUnreachable unreachableBlock</Declaration>
 			
 			
-			<Anchor>//api/name/userEmail</Anchor>
+			<Anchor>//api/name/unreachableBlock</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CNMUser/userEmail</TokenIdentifier>
-			<Abstract type="html">The Loment user&apos;s email</Abstract>
-			<DeclaredIn>CNMUser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMReachability/unreachableBlock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userEmail</Declaration>
+			<Declaration>@property (nonatomic, copy) NetworkUnreachable unreachableBlock</Declaration>
 			
 			
-			<Anchor>//api/name/userEmail</Anchor>
+			<Anchor>//api/name/unreachableBlock</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/setUserPhone:</TokenIdentifier>
-			<Abstract type="html">The Loment user&apos;s mobile phone</Abstract>
-			<DeclaredIn>CNMUser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMReachability/setReachableOnWWAN:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userPhone</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL reachableOnWWAN</Declaration>
 			
 			
-			<Anchor>//api/name/userPhone</Anchor>
+			<Anchor>//api/name/reachableOnWWAN</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/userPhone</TokenIdentifier>
-			<Abstract type="html">The Loment user&apos;s mobile phone</Abstract>
-			<DeclaredIn>CNMUser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMReachability/reachableOnWWAN</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userPhone</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL reachableOnWWAN</Declaration>
 			
 			
-			<Anchor>//api/name/userPhone</Anchor>
+			<Anchor>//api/name/reachableOnWWAN</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CNMUser/userPhone</TokenIdentifier>
-			<Abstract type="html">The Loment user&apos;s mobile phone</Abstract>
-			<DeclaredIn>CNMUser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMReachability/reachableOnWWAN</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userPhone</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL reachableOnWWAN</Declaration>
 			
 			
-			<Anchor>//api/name/userPhone</Anchor>
+			<Anchor>//api/name/reachableOnWWAN</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/setDevice:</TokenIdentifier>
-			<Abstract type="html">The Loment user&apos;s device</Abstract>
-			<DeclaredIn>CNMUser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMReachability/reachabilityWithHostname:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMDevice *device</Declaration>
+			<Declaration>+ (CNMReachability *)reachabilityWithHostname:(NSString *)hostname</Declaration>
 			
 			
-			<Anchor>//api/name/device</Anchor>
+			<Anchor>//api/name/reachabilityWithHostname:</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/device</TokenIdentifier>
-			<Abstract type="html">The Loment user&apos;s device</Abstract>
-			<DeclaredIn>CNMUser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMReachability/reachabilityWithHostName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMDevice *device</Declaration>
+			<Declaration>+ (CNMReachability *)reachabilityWithHostName:(NSString *)hostname</Declaration>
 			
 			
-			<Anchor>//api/name/device</Anchor>
+			<Anchor>//api/name/reachabilityWithHostName:</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CNMUser/device</TokenIdentifier>
-			<Abstract type="html">The Loment user&apos;s device</Abstract>
-			<DeclaredIn>CNMUser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMReachability/reachabilityForInternetConnection</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMDevice *device</Declaration>
+			<Declaration>+ (CNMReachability *)reachabilityForInternetConnection</Declaration>
 			
 			
-			<Anchor>//api/name/device</Anchor>
+			<Anchor>//api/name/reachabilityForInternetConnection</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/setCashewAccounts:</TokenIdentifier>
-			<Abstract type="html">The Loment user&apos;s set of cashew account</Abstract>
-			<DeclaredIn>CNMUser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMReachability/reachabilityWithAddress:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) NSArray *cashewAccounts</Declaration>
+			<Declaration>+ (CNMReachability *)reachabilityWithAddress:(void *)hostAddress</Declaration>
 			
 			
-			<Anchor>//api/name/cashewAccounts</Anchor>
+			<Anchor>//api/name/reachabilityWithAddress:</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/cashewAccounts</TokenIdentifier>
-			<Abstract type="html">The Loment user&apos;s set of cashew account</Abstract>
-			<DeclaredIn>CNMUser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMReachability/reachabilityForLocalWiFi</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) NSArray *cashewAccounts</Declaration>
+			<Declaration>+ (CNMReachability *)reachabilityForLocalWiFi</Declaration>
 			
 			
-			<Anchor>//api/name/cashewAccounts</Anchor>
+			<Anchor>//api/name/reachabilityForLocalWiFi</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CNMUser/cashewAccounts</TokenIdentifier>
-			<Abstract type="html">The Loment user&apos;s set of cashew account</Abstract>
-			<DeclaredIn>CNMUser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMReachability/initWithReachabilityRef:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) NSArray *cashewAccounts</Declaration>
+			<Declaration>- (CNMReachability *)initWithReachabilityRef:(SCNetworkReachabilityRef)ref</Declaration>
 			
 			
-			<Anchor>//api/name/cashewAccounts</Anchor>
+			<Anchor>//api/name/initWithReachabilityRef:</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/setPassword:</TokenIdentifier>
-			<Abstract type="html">The users password</Abstract>
-			<DeclaredIn>CNMUser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMReachability/startNotifier</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *password</Declaration>
+			<Declaration>- (BOOL)startNotifier</Declaration>
 			
 			
-			<Anchor>//api/name/password</Anchor>
+			<Anchor>//api/name/startNotifier</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/password</TokenIdentifier>
-			<Abstract type="html">The users password</Abstract>
-			<DeclaredIn>CNMUser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMReachability/stopNotifier</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *password</Declaration>
+			<Declaration>- (void)stopNotifier</Declaration>
 			
 			
-			<Anchor>//api/name/password</Anchor>
+			<Anchor>//api/name/stopNotifier</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CNMUser/password</TokenIdentifier>
-			<Abstract type="html">The users password</Abstract>
-			<DeclaredIn>CNMUser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMReachability/isReachable</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *password</Declaration>
+			<Declaration>- (BOOL)isReachable</Declaration>
 			
 			
-			<Anchor>//api/name/password</Anchor>
+			<Anchor>//api/name/isReachable</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMReachability/isReachableViaWWAN</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isReachableViaWWAN</Declaration>
+			
+			
+			<Anchor>//api/name/isReachableViaWWAN</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMReachability/isReachableViaWiFi</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isReachableViaWiFi</Declaration>
+			
+			
+			<Anchor>//api/name/isReachableViaWiFi</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMReachability/isConnectionRequired</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isConnectionRequired</Declaration>
+			
+			
+			<Anchor>//api/name/isConnectionRequired</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMReachability/connectionRequired</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)connectionRequired</Declaration>
+			
+			
+			<Anchor>//api/name/connectionRequired</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMReachability/isConnectionOnDemand</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isConnectionOnDemand</Declaration>
+			
+			
+			<Anchor>//api/name/isConnectionOnDemand</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMReachability/isInterventionRequired</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isInterventionRequired</Declaration>
+			
+			
+			<Anchor>//api/name/isInterventionRequired</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMReachability/currentReachabilityStatus</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
+			
+			<Declaration>- (NetworkStatus)currentReachabilityStatus</Declaration>
+			
+			
+			<Anchor>//api/name/currentReachabilityStatus</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMReachability/reachabilityFlags</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
+			
+			<Declaration>- (SCNetworkReachabilityFlags)reachabilityFlags</Declaration>
+			
+			
+			<Anchor>//api/name/reachabilityFlags</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMReachability/currentReachabilityString</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)currentReachabilityString</Declaration>
+			
+			
+			<Anchor>//api/name/currentReachabilityString</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMReachability/currentReachabilityFlags</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMReachability.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)currentReachabilityFlags</Declaration>
+			
+			
+			<Anchor>//api/name/currentReachabilityFlags</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		

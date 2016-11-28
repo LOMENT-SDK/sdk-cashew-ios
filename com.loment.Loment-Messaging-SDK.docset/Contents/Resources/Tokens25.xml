@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/OutgoingContactRequestStatus.html">
+	<File path="Constants/MessageStatus.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/OutgoingContactRequestStatus</TokenIdentifier>
-			<Abstract type="html">Status representing different states a suggested contact is in</Abstract>
-			<DeclaredIn>CNMOutgoingContact.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/MessageStatus</TokenIdentifier>
+			<Abstract type="html">The different possibilities for a message&apos;s status</Abstract>
+			<DeclaredIn>CNMMessageEnums.h</DeclaredIn>
             
 			
 			<NodeRef refid="25"/>
@@ -14,45 +14,45 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/OutgoingContactRequestStatusNotSent</TokenIdentifier>
-            <Abstract type="html">You have yet to send a request to this suggestion
+            <TokenIdentifier>//apple_ref/c/econst/MessageStatusPending</TokenIdentifier>
+            <Abstract type="html">Message is in the process of being sent
      </Abstract>
-            <Declaration>OutgoingContactRequestStatusNotSent</Declaration>
+            <Declaration>MessageStatusPending</Declaration>
             
-            <DeclaredIn>CNMOutgoingContact.h</DeclaredIn>
+            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
             
             <NodeRef refid="25"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/OutgoingContactRequestStatusSent</TokenIdentifier>
-            <Abstract type="html">You have sent a request, waiting for response
+            <TokenIdentifier>//apple_ref/c/econst/MessageStatusFailed</TokenIdentifier>
+            <Abstract type="html">Message failed to sent to the server
      </Abstract>
-            <Declaration>OutgoingContactRequestStatusSent</Declaration>
+            <Declaration>MessageStatusFailed</Declaration>
             
-            <DeclaredIn>CNMOutgoingContact.h</DeclaredIn>
+            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
             
             <NodeRef refid="25"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/OutgoingContactRequestStatusAccepted</TokenIdentifier>
-            <Abstract type="html">The suggested contact has accepted, and has been added to contacts
+            <TokenIdentifier>//apple_ref/c/econst/MessageStatusSent</TokenIdentifier>
+            <Abstract type="html">Message has been sent to the server
      </Abstract>
-            <Declaration>OutgoingContactRequestStatusAccepted</Declaration>
+            <Declaration>MessageStatusSent</Declaration>
             
-            <DeclaredIn>CNMOutgoingContact.h</DeclaredIn>
+            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
             
             <NodeRef refid="25"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/OutgoingContactRequestStatusRejected</TokenIdentifier>
-            <Abstract type="html">The suggested contact has declined, no information downloaded
+            <TokenIdentifier>//apple_ref/c/econst/MessageStatusRead</TokenIdentifier>
+            <Abstract type="html">Message has been read by the recipient(s)
      </Abstract>
-            <Declaration>OutgoingContactRequestStatusRejected</Declaration>
+            <Declaration>MessageStatusRead</Declaration>
             
-            <DeclaredIn>CNMOutgoingContact.h</DeclaredIn>
+            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
             
             <NodeRef refid="25"/>
         </Token>

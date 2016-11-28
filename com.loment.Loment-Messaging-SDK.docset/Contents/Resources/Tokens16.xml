@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/CNMContentDeliveryControllerDelegate.html">
+	<File path="Classes/MessagingSDK.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/CNMContentDeliveryControllerDelegate</TokenIdentifier>
-			<Abstract type="html">NSFetchedResultsControllerDelegate like delegate method collection for when the CNMContentDeliveryController updates</Abstract>
-			<DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/MessagingSDK</TokenIdentifier>
+			<Abstract type="html">Object represents SDK entry point.</Abstract>
+			<DeclaredIn>MessagingSDK.h</DeclaredIn>
             
 			
 			<NodeRef refid="16"/>
@@ -13,65 +13,14 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/CNMContentDeliveryControllerDelegate/controllerWillChangeContent:</TokenIdentifier>
-			<Abstract type="html">The controller is about to change content</Abstract>
-			<DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/MessagingSDK/getVersion</TokenIdentifier>
+			<Abstract type="html">Helper method to return version string from framework bundle</Abstract>
+			<DeclaredIn>MessagingSDK.h</DeclaredIn>
 			
-			<Declaration>- (void)controllerWillChangeContent:(CNMContentDeliveryController *)controller</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>controller</Name>
-					<Abstract type="html">The controller in question</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>+ (NSString *)getVersion</Declaration>
 			
-			<Anchor>//api/name/controllerWillChangeContent:</Anchor>
-            <NodeRef refid="16"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/CNMContentDeliveryControllerDelegate/controller:didChangeObject:atIndexPath:forChangeType:newIndexPath:</TokenIdentifier>
-			<Abstract type="html">Invidual calls for object CRUT</Abstract>
-			<DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
-			
-			<Declaration>- (void)controller:(CNMContentDeliveryController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(CNMFetchResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>controller</Name>
-					<Abstract type="html">The controller in queustion</Abstract>
-				</Parameter><Parameter>
-					<Name>anObject</Name>
-					<Abstract type="html">The CNMObject that is being updated</Abstract>
-				</Parameter><Parameter>
-					<Name>indexPath</Name>
-					<Abstract type="html">The index path of the object</Abstract>
-				</Parameter><Parameter>
-					<Name>type</Name>
-					<Abstract type="html">The type of change</Abstract>
-				</Parameter><Parameter>
-					<Name>newIndexPath</Name>
-					<Abstract type="html">The new indexpath</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/controller:didChangeObject:atIndexPath:forChangeType:newIndexPath:</Anchor>
-            <NodeRef refid="16"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/CNMContentDeliveryControllerDelegate/controllerDidChangeContent:</TokenIdentifier>
-			<Abstract type="html">The controller did change content</Abstract>
-			<DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
-			
-			<Declaration>- (void)controllerDidChangeContent:(CNMContentDeliveryController *)controller</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>controller</Name>
-					<Abstract type="html">The controller in question</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/controllerDidChangeContent:</Anchor>
+			<ReturnValue><Abstract type="html">version number</Abstract></ReturnValue>
+			<Anchor>//api/name/getVersion</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		

@@ -6,11 +6,11 @@
 	<dict>
 		<key>CNMCashewModel.momd/CNMCashewModel.mom</key>
 		<data>
-		ylbI91FDRmRgu2/zbVT5+hMSrlM=
+		fN8lP2/kJh4nEaeaCuzhp77J1Y4=
 		</data>
 		<key>CNMCashewModel.momd/VersionInfo.plist</key>
 		<data>
-		ZaHPk+UhJDvN/GvD+0BVyyUmld0=
+		WDqPrNVIZQaKET2rNq93+9ZF1fI=
 		</data>
 		<key>CNMLomentModel.momd/CNMLomentModel.mom</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/CNMAttachment.h</key>
 		<data>
-		7thGOhKsO7IGFNmibMsdqJ6QYLo=
+		XdfM8Key3evnYwQPpzNwY7mrtlM=
 		</data>
 		<key>Headers/CNMCashewAccount.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/CNMConversation.h</key>
 		<data>
-		jKI+W/GrXlOg3IdWeG7stFi33fs=
+		BDHWjMRAbSezqqKP9iL+HacnIeg=
 		</data>
 		<key>Headers/CNMCryptoServices.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/CNMErrorCodes.h</key>
 		<data>
-		WV18si3+4pHAWpDiHyWWZO+S9ec=
+		R/XCyGgL2prAjsTqrztRGaIeDLk=
 		</data>
 		<key>Headers/CNMIncomingContact.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Headers/CNMMessage.h</key>
 		<data>
-		I9JoSh19DLbl0Felk3vFwIG4mKQ=
+		++vbB7hJJhwPTsZ34a4GSLGRiHA=
 		</data>
 		<key>Headers/CNMMessageDefaultsServices.h</key>
 		<data>
@@ -70,11 +70,15 @@
 		</data>
 		<key>Headers/CNMMessagingServices.h</key>
 		<data>
-		eWFpZRjRxluCkek+43f9qHbR8yc=
+		3addzBRvmLkgeO8J//wEKtwrNAE=
 		</data>
 		<key>Headers/CNMOutgoingContact.h</key>
 		<data>
 		Z9O6vheG1CrLjRFwylGN6saxwDM=
+		</data>
+		<key>Headers/CNMReachability.h</key>
+		<data>
+		hVvV9itG0xf9zsc7CjATvJ9YYwk=
 		</data>
 		<key>Headers/CNMUser.h</key>
 		<data>
@@ -90,7 +94,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		B0lJ2WVUmRMMyF85Vdqvr4hjUhA=
+		LyuF3NW7qVIuukkSASFtuPNNX+w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -103,22 +107,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ylbI91FDRmRgu2/zbVT5+hMSrlM=
+			fN8lP2/kJh4nEaeaCuzhp77J1Y4=
 			</data>
 			<key>hash2</key>
 			<data>
-			tCgkz2FlmayzAKGSpKGHG58UjPiyQTrUNl1fus4AtEM=
+			l6df7x+mZFCWn1Kd7jqEf2LvZhjutEHR5U6dArt/0wQ=
 			</data>
 		</dict>
 		<key>CNMCashewModel.momd/VersionInfo.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZaHPk+UhJDvN/GvD+0BVyyUmld0=
+			WDqPrNVIZQaKET2rNq93+9ZF1fI=
 			</data>
 			<key>hash2</key>
 			<data>
-			SPCigz1I50hb1fY5eKi+uCLefA+Z7VedC5nPZuBA8Us=
+			YMEzlWf5ZqRRcgoDWoF40WgV+2cmBHqEOj5R0+j28P8=
 			</data>
 		</dict>
 		<key>CNMLomentModel.momd/CNMLomentModel.mom</key>
@@ -147,11 +151,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7thGOhKsO7IGFNmibMsdqJ6QYLo=
+			XdfM8Key3evnYwQPpzNwY7mrtlM=
 			</data>
 			<key>hash2</key>
 			<data>
-			oHTuCSrPKadfzgHgMjIiKnJpVo+4/zeiU5EW5FLy1ts=
+			nj4iqoMWuDkAviXrFYeFZB79JXAqsLA8xAPpfJMJ2f8=
 			</data>
 		</dict>
 		<key>Headers/CNMCashewAccount.h</key>
@@ -191,11 +195,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jKI+W/GrXlOg3IdWeG7stFi33fs=
+			BDHWjMRAbSezqqKP9iL+HacnIeg=
 			</data>
 			<key>hash2</key>
 			<data>
-			7ajIFX74vv02j8YNGApMg3ToRTVyeKYzH07DaFpLB6U=
+			iaF8etuNrLxU2e11hHv3v7SRGWkMuFy5HUwrJY79bqQ=
 			</data>
 		</dict>
 		<key>Headers/CNMCryptoServices.h</key>
@@ -224,11 +228,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WV18si3+4pHAWpDiHyWWZO+S9ec=
+			R/XCyGgL2prAjsTqrztRGaIeDLk=
 			</data>
 			<key>hash2</key>
 			<data>
-			cyfMhlwZrq5D4TP8+ISxxxxh2H58bhg5O4vCvYk0Dpw=
+			N9OHv1E24o1cesL6kvSeugBWlsqYdnE43lgtNz34Iyg=
 			</data>
 		</dict>
 		<key>Headers/CNMIncomingContact.h</key>
@@ -246,11 +250,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I9JoSh19DLbl0Felk3vFwIG4mKQ=
+			++vbB7hJJhwPTsZ34a4GSLGRiHA=
 			</data>
 			<key>hash2</key>
 			<data>
-			7N4cgIf53jSAi3FceTCf6yccvcuAekjOvHmYTzbSOck=
+			5a7sjjYBjEiLDrkWCBDYBt4NBSTyCPjaGsUsUl2aRgk=
 			</data>
 		</dict>
 		<key>Headers/CNMMessageDefaultsServices.h</key>
@@ -279,11 +283,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eWFpZRjRxluCkek+43f9qHbR8yc=
+			3addzBRvmLkgeO8J//wEKtwrNAE=
 			</data>
 			<key>hash2</key>
 			<data>
-			vS77m5Vj7pqpTos/5cNj7EwOJia0FMRUItmC0tSF1/k=
+			Sv163SGmJN70vZbubxDahnOhQgTbBIQ5eaVOP0dbr48=
 			</data>
 		</dict>
 		<key>Headers/CNMOutgoingContact.h</key>
@@ -295,6 +299,17 @@
 			<key>hash2</key>
 			<data>
 			eAk1cxdphIZGdDCsLmBE1tVSw/4agx0DlQsp8F0FLpk=
+			</data>
+		</dict>
+		<key>Headers/CNMReachability.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hVvV9itG0xf9zsc7CjATvJ9YYwk=
+			</data>
+			<key>hash2</key>
+			<data>
+			SLPwrVc606kWVZHcsOAMDUpKxkzsL/A4how2veMAHDc=
 			</data>
 		</dict>
 		<key>Headers/CNMUser.h</key>

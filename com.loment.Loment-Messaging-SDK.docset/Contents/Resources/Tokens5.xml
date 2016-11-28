@@ -240,6 +240,23 @@
             <NodeRef refid="5"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/numberOfUnreadMessagesError:</TokenIdentifier>
+			<Abstract type="html">Total number of unread messages</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>- (NSUInteger)numberOfUnreadMessagesError:(NSError *__autoreleasing _Nullable *_Nullable)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Error referece</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Total number of unread messsages or NSUIntegerMax if error</Abstract></ReturnValue>
+			<Anchor>//api/name/numberOfUnreadMessagesError:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
         
         
 	</File>

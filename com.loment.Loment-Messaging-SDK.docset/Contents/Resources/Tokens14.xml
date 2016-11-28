@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/CNMUserServices.html">
+	<File path="Classes/CNMUser.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/CNMUserServices</TokenIdentifier>
-			<Abstract type="html">This class provides all the necessary methods required to work with a Loment account. It includes methods to register &amp;amp; authenticate
-as well as methods to initiate password recovery, verify current subscription and lastly add Cashew messaging accounts to the Loment
-account.</Abstract>
-			<DeclaredIn>CNMUserServices.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/CNMUser</TokenIdentifier>
+			<Abstract type="html">Object represents a Loment user in the Loment system.</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
             
 			
 			<NodeRef refid="14"/>
@@ -15,140 +13,218 @@ account.</Abstract>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/CNMUserServices/registerWithSDK:partnerId:</TokenIdentifier>
-			<Abstract type="html">In order to properly use the SDK, one must register with SDK by call this method. The method is a prereq to all other methods in the SDK</Abstract>
-			<DeclaredIn>CNMUserServices.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/setUserName:</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s name</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
 			
-			<Declaration>+ (BOOL)registerWithSDK:(NSString *)clientId partnerId:(NSString *)partnerId</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>clientId</Name>
-					<Abstract type="html">Your client Id</Abstract>
-				</Parameter><Parameter>
-					<Name>partnerId</Name>
-					<Abstract type="html">Your partner Id</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">YES if it succeeds, NO if not. Ensure all your provided data is correct</Abstract></ReturnValue>
-			<Anchor>//api/name/registerWithSDK:partnerId:</Anchor>
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userName</Declaration>
+			
+			
+			<Anchor>//api/name/userName</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/CNMUserServices/registerUserWithName:withPassword:withEmail:withPhone:withIsoCode:withCompletion:</TokenIdentifier>
-			<Abstract type="html">Register a new user. To must excplictly call login after. See class description for more details.</Abstract>
-			<DeclaredIn>CNMUserServices.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/userName</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s name</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
 			
-			<Declaration>+ (void)registerUserWithName:(NSString *)name withPassword:(NSString *)password withEmail:(NSString *)email withPhone:(NSString *)phone withIsoCode:(NSString *)isoCode withCompletion:(CNMUserServicesCompletion)completion</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>name</Name>
-					<Abstract type="html">This is the user&apos;s name (i.e. John Smith)</Abstract>
-				</Parameter><Parameter>
-					<Name>password</Name>
-					<Abstract type="html">User&apos;s password</Abstract>
-				</Parameter><Parameter>
-					<Name>email</Name>
-					<Abstract type="html">User&apos;s email. This will be their Loment ID</Abstract>
-				</Parameter><Parameter>
-					<Name>phone</Name>
-					<Abstract type="html">User&apos;s phone number. Must be prefixed with correct country code</Abstract>
-				</Parameter><Parameter>
-					<Name>isoCode</Name>
-					<Abstract type="html">iso code for country of phone number provided</Abstract>
-				</Parameter><Parameter>
-					<Name>completion</Name>
-					<Abstract type="html">Completion block executed when the network block completes</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userName</Declaration>
 			
-			<Anchor>//api/name/registerUserWithName:withPassword:withEmail:withPhone:withIsoCode:withCompletion:</Anchor>
+			
+			<Anchor>//api/name/userName</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/CNMUserServices/authenticateUser:withPassword:withCompletion:</TokenIdentifier>
-			<Abstract type="html">Authenticate user to start communicating with the server.</Abstract>
-			<DeclaredIn>CNMUserServices.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMUser/userName</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s name</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
 			
-			<Declaration>+ (void)authenticateUser:(NSString *)email withPassword:(NSString *)password withCompletion:(CNMUserServicesCompletion)completion</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>email</Name>
-					<Abstract type="html">User&apos;s email</Abstract>
-				</Parameter><Parameter>
-					<Name>password</Name>
-					<Abstract type="html">User&apos;s password</Abstract>
-				</Parameter><Parameter>
-					<Name>completion</Name>
-					<Abstract type="html">Completion block executed when the network block completes</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userName</Declaration>
 			
-			<Anchor>//api/name/authenticateUser:withPassword:withCompletion:</Anchor>
+			
+			<Anchor>//api/name/userName</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/CNMUserServices/recoverPasswordForEmail:withCompletion:</TokenIdentifier>
-			<Abstract type="html">Sends recover password email to the specified email address</Abstract>
-			<DeclaredIn>CNMUserServices.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/setUserEmail:</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s email</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
 			
-			<Declaration>+ (void)recoverPasswordForEmail:(NSString *)email withCompletion:(CNMUserServicesCompletion)completion</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>email</Name>
-					<Abstract type="html">Email address to the recover password email to</Abstract>
-				</Parameter><Parameter>
-					<Name>completion</Name>
-					<Abstract type="html">Completion block excuted when the network block completes (CNMUser will not be set)</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userEmail</Declaration>
 			
-			<Anchor>//api/name/recoverPasswordForEmail:withCompletion:</Anchor>
+			
+			<Anchor>//api/name/userEmail</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/CNMUserServices/addCashewAccount:forUser:withCompletion:</TokenIdentifier>
-			<Abstract type="html">Creates the Cashew Username for the specified user</Abstract>
-			<DeclaredIn>CNMUserServices.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/userEmail</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s email</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
 			
-			<Declaration>+ (void)addCashewAccount:(NSString *)cashewUsername forUser:(CNMUser *)user withCompletion:(CNMUserServicesCompletion)completion</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>cashewUsername</Name>
-					<Abstract type="html">New Cashew Username</Abstract>
-				</Parameter><Parameter>
-					<Name>user</Name>
-					<Abstract type="html">User for which the ID will be associated with</Abstract>
-				</Parameter><Parameter>
-					<Name>completion</Name>
-					<Abstract type="html">Completion block executed when the network block completes</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userEmail</Declaration>
 			
-			<Anchor>//api/name/addCashewAccount:forUser:withCompletion:</Anchor>
+			
+			<Anchor>//api/name/userEmail</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/CNMUserServices/verifySubscriptionForUser:withCompletion:</TokenIdentifier>
-			<Abstract type="html">Verify the given Loment account represented by CNMUser</Abstract>
-			<DeclaredIn>CNMUserServices.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMUser/userEmail</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s email</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
 			
-			<Declaration>+ (void)verifySubscriptionForUser:(CNMUser *)user withCompletion:(CNMUserServicesCompletion)completion</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>user</Name>
-					<Abstract type="html">User account object to validate</Abstract>
-				</Parameter><Parameter>
-					<Name>completion</Name>
-					<Abstract type="html">Completion block executed when the network block completes</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userEmail</Declaration>
 			
-			<Anchor>//api/name/verifySubscriptionForUser:withCompletion:</Anchor>
+			
+			<Anchor>//api/name/userEmail</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/setUserPhone:</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s mobile phone</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userPhone</Declaration>
+			
+			
+			<Anchor>//api/name/userPhone</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/userPhone</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s mobile phone</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userPhone</Declaration>
+			
+			
+			<Anchor>//api/name/userPhone</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMUser/userPhone</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s mobile phone</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *userPhone</Declaration>
+			
+			
+			<Anchor>//api/name/userPhone</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/setDevice:</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s device</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMDevice *device</Declaration>
+			
+			
+			<Anchor>//api/name/device</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/device</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s device</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMDevice *device</Declaration>
+			
+			
+			<Anchor>//api/name/device</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMUser/device</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s device</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) CNMDevice *device</Declaration>
+			
+			
+			<Anchor>//api/name/device</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/setCashewAccounts:</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s set of cashew account</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSArray *cashewAccounts</Declaration>
+			
+			
+			<Anchor>//api/name/cashewAccounts</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/cashewAccounts</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s set of cashew account</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSArray *cashewAccounts</Declaration>
+			
+			
+			<Anchor>//api/name/cashewAccounts</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMUser/cashewAccounts</TokenIdentifier>
+			<Abstract type="html">The Loment user&apos;s set of cashew account</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSArray *cashewAccounts</Declaration>
+			
+			
+			<Anchor>//api/name/cashewAccounts</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/setPassword:</TokenIdentifier>
+			<Abstract type="html">The users password</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *password</Declaration>
+			
+			
+			<Anchor>//api/name/password</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMUser/password</TokenIdentifier>
+			<Abstract type="html">The users password</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *password</Declaration>
+			
+			
+			<Anchor>//api/name/password</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMUser/password</TokenIdentifier>
+			<Abstract type="html">The users password</Abstract>
+			<DeclaredIn>CNMUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *password</Declaration>
+			
+			
+			<Anchor>//api/name/password</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		

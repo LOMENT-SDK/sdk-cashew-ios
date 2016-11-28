@@ -42,7 +42,12 @@ typedef NS_ENUM(NSUInteger, SDKFoundationError)
     /**
      *  Cannot switch accounts after successful login
      */
-    SDKFoundationErrorCannotSwitchAccounts               = -1007
+    SDKFoundationErrorCannotSwitchAccounts               = -1007,
+    /**
+     *  Error if attachment is already being downloaded
+     */
+    SDKFoundationErrorAlreadyDownloadingAttachment       = -1008
+
 };
 
 /**

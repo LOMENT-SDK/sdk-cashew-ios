@@ -79,4 +79,6 @@
  */
 @property (nullable, nonatomic, strong, readonly) NSString * content;
 
+@property (nonatomic, assign, readonly) NSInteger msgType;
+
 @end

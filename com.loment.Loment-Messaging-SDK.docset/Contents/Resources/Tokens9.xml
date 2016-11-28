@@ -444,6 +444,42 @@
             <NodeRef refid="9"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/setMsgType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSInteger msgType</Declaration>
+			
+			
+			<Anchor>//api/name/msgType</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMMessage/msgType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSInteger msgType</Declaration>
+			
+			
+			<Anchor>//api/name/msgType</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMMessage/msgType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSInteger msgType</Declaration>
+			
+			
+			<Anchor>//api/name/msgType</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
         
         
 	</File>

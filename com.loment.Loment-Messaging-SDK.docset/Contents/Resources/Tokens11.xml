@@ -91,36 +91,39 @@ until you start up services again. As a special reminder, all CNMContentDelivery
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/sendNewMessage:forConversation:withCompletion:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/sendNewMessage:forConversation:withType:withCompletion:</TokenIdentifier>
 			<Abstract type="html">Sends a new message from the user on the specified conversation. Uses settings stored in global settings. See CNMSettingsServices, defaults can be changed here.
 To send a message with one-time settings call sendNewMessage:options:withExpirationDuration:forConversation:withCompletion</Abstract>
 			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
 			
-			<Declaration>+ (void)sendNewMessage:(NSString *)plainText forConversation:(CNMConversation *)conversation withCompletion:(CNMMessagingServiceCompletion)completion</Declaration>
+			<Declaration>+ (void)sendNewMessage:(NSString *)plainText forConversation:(CNMConversation *)cnmConversation withType:(NSInteger)msgType withCompletion:(CNMMessagingServiceCompletion)completion</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>plainText</Name>
 					<Abstract type="html">Plain text message</Abstract>
 				</Parameter><Parameter>
-					<Name>conversation</Name>
-					<Abstract type="html">The conversation to post on</Abstract>
+					<Name>msgType</Name>
+					<Abstract type="html">Type of message (1- Normal messages, 2- Welcome message, 3- Contact, 4- Old Groups , 5- Auto Response , 6- New Groups , 7 - Screen Shot )</Abstract>
 				</Parameter><Parameter>
 					<Name>completion</Name>
 					<Abstract type="html">Completion handler that is called when we are finished sending</Abstract>
+				</Parameter><Parameter>
+					<Name>conversation</Name>
+					<Abstract type="html">The conversation to post on</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/sendNewMessage:forConversation:withCompletion:</Anchor>
+			<Anchor>//api/name/sendNewMessage:forConversation:withType:withCompletion:</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withAttachmentTransferProgress:withCompletion:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withType:withAttachmentTransferProgress:withCompletion:</TokenIdentifier>
 			<Abstract type="html">Sends a new message from the user on the specified conversation with an attachment. Uses settings stored in global settings. See CNMSettingsServices, defaults can be changed here.
 To send a message with one-time settings call sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withCompletion</Abstract>
 			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
 			
-			<Declaration>+ (void)sendNewMessage:(NSString *)plainText withAttachmentFilename:(NSString *)attachmentFilename withAttachmentData:(NSData *)attachmentData forConversation:(CNMConversation *)conversation withAttachmentTransferProgress:(CNMAttachmentTransferProgress)attachmentTransferProgress withCompletion:(CNMMessagingServiceCompletion)completion</Declaration>
+			<Declaration>+ (void)sendNewMessage:(NSString *)plainText withAttachmentFilename:(NSString *)attachmentFilename withAttachmentData:(NSData *)attachmentData forConversation:(CNMConversation *)conversation withType:(NSInteger)msgType withAttachmentTransferProgress:(CNMAttachmentTransferProgress)attachmentTransferProgress withCompletion:(CNMMessagingServiceCompletion)completion</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>plainText</Name>
@@ -135,6 +138,9 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 					<Name>conversation</Name>
 					<Abstract type="html">The conversation to post on</Abstract>
 				</Parameter><Parameter>
+					<Name>msgType</Name>
+					<Abstract type="html">Type of message (1- Normal messages, 2- Welcome message, 3- Contact, 4- Old Groups , 5- Auto Response , 6- New Groups , 7 - Screen Shot )</Abstract>
+				</Parameter><Parameter>
 					<Name>attachmentTransferProgress</Name>
 					<Abstract type="html">Periodic called block during the time the attachment is uploaded</Abstract>
 				</Parameter><Parameter>
@@ -143,16 +149,16 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withAttachmentTransferProgress:withCompletion:</Anchor>
+			<Anchor>//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withType:withAttachmentTransferProgress:withCompletion:</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/sendNewMessage:options:withExpirationDuration:forConversation:withCompletion:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/sendNewMessage:options:withExpirationDuration:forConversation:withType:withCompletion:</TokenIdentifier>
 			<Abstract type="html">Sends a new message from the user on the specified conversation with customized settings.</Abstract>
 			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
 			
-			<Declaration>+ (void)sendNewMessage:(NSString *)plainText options:(CNMMessageOptions)options withExpirationDuration:(NSInteger)expirationDuration forConversation:(CNMConversation *)conversation withCompletion:(CNMMessagingServiceCompletion)completion</Declaration>
+			<Declaration>+ (void)sendNewMessage:(NSString *)plainText options:(CNMMessageOptions)options withExpirationDuration:(NSInteger)expirationDuration forConversation:(CNMConversation *)conversation withType:(NSInteger)msgType withCompletion:(CNMMessagingServiceCompletion)completion</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>plainText</Name>
@@ -167,21 +173,24 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 					<Name>conversation</Name>
 					<Abstract type="html">The conversation to post on</Abstract>
 				</Parameter><Parameter>
+					<Name>msgType</Name>
+					<Abstract type="html">Type of message (1- Normal messages, 2- Welcome message, 3- Contact, 4- Old Groups , 5- Auto Response , 6- New Groups , 7 - Screen Shot )</Abstract>
+				</Parameter><Parameter>
 					<Name>completion</Name>
 					<Abstract type="html">Completion handler that is called when we are finished sending</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/sendNewMessage:options:withExpirationDuration:forConversation:withCompletion:</Anchor>
+			<Anchor>//api/name/sendNewMessage:options:withExpirationDuration:forConversation:withType:withCompletion:</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withAttachmentTransferProgress:withCompletion:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withType:withAttachmentTransferProgress:withCompletion:</TokenIdentifier>
 			<Abstract type="html">Sends a new message from the user on the specified conversation with an attachment and customized settings.</Abstract>
 			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
 			
-			<Declaration>+ (void)sendNewMessage:(NSString *)plainText withAttachmentFilename:(NSString *)attachmentFilename withAttachmentData:(NSData *)attachmentData options:(CNMMessageOptions)options withExpirationDuration:(NSInteger)expirationDuration forConversation:(CNMConversation *)conversation withAttachmentTransferProgress:(CNMAttachmentTransferProgress)attachmentTransferProgress withCompletion:(CNMMessagingServiceCompletion)completion</Declaration>
+			<Declaration>+ (void)sendNewMessage:(NSString *)plainText withAttachmentFilename:(NSString *)attachmentFilename withAttachmentData:(NSData *)attachmentData options:(CNMMessageOptions)options withExpirationDuration:(NSInteger)expirationDuration forConversation:(CNMConversation *)conversation withType:(NSInteger)msgType withAttachmentTransferProgress:(CNMAttachmentTransferProgress)attachmentTransferProgress withCompletion:(CNMMessagingServiceCompletion)completion</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>plainText</Name>
@@ -202,6 +211,9 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 					<Name>conversation</Name>
 					<Abstract type="html">The conversation to post on</Abstract>
 				</Parameter><Parameter>
+					<Name>msgType</Name>
+					<Abstract type="html">Type of message (1- Normal messages, 2- Welcome message, 3- Contact, 4- Old Groups , 5- Auto Response , 6- New Groups , 7 - Screen Shot )</Abstract>
+				</Parameter><Parameter>
 					<Name>attachmentTransferProgress</Name>
 					<Abstract type="html">Periodic called block during the time the attachment is uploaded</Abstract>
 				</Parameter><Parameter>
@@ -210,7 +222,7 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withAttachmentTransferProgress:withCompletion:</Anchor>
+			<Anchor>//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withType:withAttachmentTransferProgress:withCompletion:</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
@@ -255,9 +267,28 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/markMessageAsDeleted:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Mark a message as deleted. Once the server returns to us that it has been successfully deleted, it will be removed from the app completely.</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)markMessageAsDeleted:(CNMMessage *)message withCompletion:(CNMMessagingServiceCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The message to mark</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">completion handler that is called when we are finished updating message</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/markMessageAsDeleted:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/downloadAttachment:withAttachmentTransferProgress:withCompletion:</TokenIdentifier>
-			<Abstract type="html">If you call data property on CNMAttachment and it is nil, call this method to download data. Upon completion, if success it should be safe to
-call data property again to retrieve your data</Abstract>
+			<Abstract type="html">Call this method to download data. If data is already downloaded, it will fetch from cache on disk</Abstract>
 			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
 			
 			<Declaration>+ (void)downloadAttachment:(CNMAttachment *)cnmAttachment withAttachmentTransferProgress:(CNMAttachmentTransferProgress)attachmentTransferProgress withCompletion:(CNMAttachmentDownloadComplete)downloadComplete</Declaration>
@@ -299,6 +330,20 @@ call data property again to retrieve your data</Abstract>
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/addContact:contactName:contactEmail:contactphone:withCompletion:</TokenIdentifier>
+			<Abstract type="html">*  Add a contact to list of known contacts. If contact does not exist in Loment system, you will get an error back
+*
+*  @param cashewUsername The cashew username to look up</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)addContact:(NSString *)cashewUsername contactName:(NSString *)contactString contactEmail:(NSString *)contactEmail contactphone:(NSString *)ContactPhone withCompletion:(CNMMessagingContactCompletion)completion</Declaration>
+			
+			
+			<Anchor>//api/name/addContact:contactName:contactEmail:contactphone:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/createNewConversationWithOtherCashewContact:withCompletion:</TokenIdentifier>
 			<Abstract type="html">Creates a new 1-to-1 CNMConversation and saves it to the database.</Abstract>
 			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
@@ -315,29 +360,6 @@ call data property again to retrieve your data</Abstract>
 			</Parameters>
 			
 			<Anchor>//api/name/createNewConversationWithOtherCashewContact:withCompletion:</Anchor>
-            <NodeRef refid="11"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/createNewGroupConversation:withContacts:withCompletion:</TokenIdentifier>
-			<Abstract type="html">Creates a new group conversation with the given name using the array of CNMContacts. Caller is the admin / owner of the newly created group.</Abstract>
-			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
-			
-			<Declaration>+ (void)createNewGroupConversation:(NSString *)groupName withContacts:(NSArray *)otherContacts withCompletion:(CNMMessagingConversationCompletion)completion</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>groupName</Name>
-					<Abstract type="html">The name of the group (This param is required)</Abstract>
-				</Parameter><Parameter>
-					<Name>otherContacts</Name>
-					<Abstract type="html">Array of valid CNMContacts. If you instantiate your CNMContact, unexpected results may happen.</Abstract>
-				</Parameter><Parameter>
-					<Name>completion</Name>
-					<Abstract type="html">Completion block that returns CNMConversation or an error if something went wrong</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/createNewGroupConversation:withContacts:withCompletion:</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
@@ -451,6 +473,43 @@ NOTE: Historical data is kept, you will simply not receive new information on sa
 			</Parameters>
 			
 			<Anchor>//api/name/leaveConversation:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/numberOfUnreadMessagesOnConversation:error:</TokenIdentifier>
+			<Abstract type="html">Retrieves the number of unread messages on any given conversation</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (NSUInteger)numberOfUnreadMessagesOnConversation:(CNMConversation *)conversation error:(NSError *__autoreleasing *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>conversation</Name>
+					<Abstract type="html">The conversation in question</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Error referece</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The undread count or NSUIntegerMax if error</Abstract></ReturnValue>
+			<Anchor>//api/name/numberOfUnreadMessagesOnConversation:error:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/numberOfUnreadMessagesError:</TokenIdentifier>
+			<Abstract type="html">Total number of unread messages</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (NSUInteger)numberOfUnreadMessagesError:(NSError *__autoreleasing *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Error referece</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Total number of unread messsages or NSUIntegerMax if error</Abstract></ReturnValue>
+			<Anchor>//api/name/numberOfUnreadMessagesError:</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		

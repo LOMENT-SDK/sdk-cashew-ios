@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/CNMFetchResultsChangeType.html">
+	<File path="Constants/AcknowledgementState.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/CNMFetchResultsChangeType</TokenIdentifier>
-			<Abstract type="html">NSFetchedResultsChangeType like change type enum for when content changes</Abstract>
-			<DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/AcknowledgementState</TokenIdentifier>
+			<Abstract type="html">Enum representing the different states of Acknowledgement</Abstract>
+			<DeclaredIn>CNMMessageEnums.h</DeclaredIn>
             
 			
 			<NodeRef refid="20"/>
@@ -14,45 +14,45 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CNMFetchResultsChangeInsert</TokenIdentifier>
-            <Abstract type="html">Data is inserted
+            <TokenIdentifier>//apple_ref/c/econst/AcknowledgementStateAcknowledgementOff</TokenIdentifier>
+            <Abstract type="html">No acknowledgement required
      </Abstract>
-            <Declaration>CNMFetchResultsChangeInsert</Declaration>
+            <Declaration>AcknowledgementStateAcknowledgementOff</Declaration>
             
-            <DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
+            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
             
             <NodeRef refid="20"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CNMFetchResultsChangeDelete</TokenIdentifier>
-            <Abstract type="html">Date has been deleted
+            <TokenIdentifier>//apple_ref/c/econst/AcknowledgementStateUnAcknowledged</TokenIdentifier>
+            <Abstract type="html">Acknowledgement is required, but not yet acknowledged
      </Abstract>
-            <Declaration>CNMFetchResultsChangeDelete</Declaration>
+            <Declaration>AcknowledgementStateUnAcknowledged</Declaration>
             
-            <DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
+            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
             
             <NodeRef refid="20"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CNMFetchResultsChangeMove</TokenIdentifier>
-            <Abstract type="html">Data has moved
+            <TokenIdentifier>//apple_ref/c/econst/AcknowledgementStatePartiallyAcknowledged</TokenIdentifier>
+            <Abstract type="html">Used only for groups, where some people acknoweledged, but not all
      </Abstract>
-            <Declaration>CNMFetchResultsChangeMove</Declaration>
+            <Declaration>AcknowledgementStatePartiallyAcknowledged</Declaration>
             
-            <DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
+            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
             
             <NodeRef refid="20"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CNMFetchResultsChangeUpdate</TokenIdentifier>
-            <Abstract type="html">Data is simply updated
+            <TokenIdentifier>//apple_ref/c/econst/AcknowledgementStateAcknowledged</TokenIdentifier>
+            <Abstract type="html">The recipient (or ALL recipients in a group) has acknowledged
      </Abstract>
-            <Declaration>CNMFetchResultsChangeUpdate</Declaration>
+            <Declaration>AcknowledgementStateAcknowledged</Declaration>
             
-            <DeclaredIn>CNMContentDeliveryController.h</DeclaredIn>
+            <DeclaredIn>CNMMessageEnums.h</DeclaredIn>
             
             <NodeRef refid="20"/>
         </Token>

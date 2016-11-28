@@ -22,10 +22,10 @@
 @property (nullable, nonatomic, strong, readonly) NSString * filename;
 
 /**
- *  The raw data of the file. Though on disk the data is encrypted, calling this property gives you the non-encrypted form.
- * If data is not yet downloaded this will return nil and you should call the asynchronous version.
+ *  The data of the file
  */
-@property (nullable, nonatomic, strong, readonly) NSData * data;
+@property (nullable, nonatomic, strong) NSData * data;
+
 
 /**
  *  The message to which the attachment belongs to
