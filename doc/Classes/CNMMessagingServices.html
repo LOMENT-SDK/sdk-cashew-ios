@@ -72,7 +72,13 @@
 		
 		<option value="//api/name/createNewConversationWithOtherCashewContact:withCompletion:">+ createNewConversationWithOtherCashewContact:withCompletion:</option>
 		
+		<option value="//api/name/createNewGroupConversation:withContacts:withCompletion:">+ createNewGroupConversation:withContacts:withCompletion:</option>
+		
 		<option value="//api/name/downloadAttachment:withAttachmentTransferProgress:withCompletion:">+ downloadAttachment:withAttachmentTransferProgress:withCompletion:</option>
+		
+		<option value="//api/name/getGroupConfig:">+ getGroupConfig:</option>
+		
+		<option value="//api/name/getGroupConfig:withCompletion:">+ getGroupConfig:withCompletion:</option>
 		
 		<option value="//api/name/groupConversationsDeliveryController:">+ groupConversationsDeliveryController:</option>
 		
@@ -112,13 +118,21 @@
 		
 		<option value="//api/name/unregisterListener:">+ unregisterListener:</option>
 		
+		<option value="//api/name/updateConversation:addAdmins:withCompletion:">+ updateConversation:addAdmins:withCompletion:</option>
+		
 		<option value="//api/name/updateConversation:addMembers:withCompletion:">+ updateConversation:addMembers:withCompletion:</option>
 		
 		<option value="//api/name/updateConversation:newName:withCompletion:">+ updateConversation:newName:withCompletion:</option>
 		
 		<option value="//api/name/updateConversation:newOwner:withCompletion:">+ updateConversation:newOwner:withCompletion:</option>
 		
+		<option value="//api/name/updateConversation:removeAdmins:withCompletion:">+ updateConversation:removeAdmins:withCompletion:</option>
+		
 		<option value="//api/name/updateConversation:removeMembers:withCompletion:">+ updateConversation:removeMembers:withCompletion:</option>
+		
+		<option value="//api/name/updateConversationFeaturesAdded:withCompletion:">+ updateConversationFeaturesAdded:withCompletion:</option>
+		
+		<option value="//api/name/updateConversationFeaturesRemoved:withCompletion:">+ updateConversationFeaturesRemoved:withCompletion:</option>
 		
 	</optgroup>
 	
@@ -1219,6 +1233,74 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/createNewGroupConversation:withContacts:withCompletion:" title="createNewGroupConversation:withContacts:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createNewGroupConversation:withContacts:withCompletion:">+&nbsp;createNewGroupConversation:withContacts:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a new group conversation with the given name using the array of CNMContacts. Caller is the admin / owner of the newly created group.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)createNewGroupConversation:(NSString *)<em>groupName</em> withContacts:(NSArray *)<em>otherContacts</em> withCompletion:(CNMMessagingConversationCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupName</code></th>
+						<td><p>The name of the group (This param is required)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>otherContacts</code></th>
+						<td><p>Array of valid CNMContacts. If you instantiate your <a href="../Classes/CNMContact.html">CNMContact</a>, unexpected results may happen.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that returns <a href="../Classes/CNMConversation.html">CNMConversation</a> or an error if something went wrong</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates a new group conversation with the given name using the array of CNMContacts. Caller is the admin / owner of the newly created group.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/updateConversation:addMembers:withCompletion:" title="updateConversation:addMembers:withCompletion:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/updateConversation:addMembers:withCompletion:">+&nbsp;updateConversation:addMembers:withCompletion:</a></code>
 </h3>
@@ -1423,6 +1505,132 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/updateConversationFeaturesAdded:withCompletion:" title="updateConversationFeaturesAdded:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateConversationFeaturesAdded:withCompletion:">+&nbsp;updateConversationFeaturesAdded:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the conversation by changing the Features status to all members belonging to the group can add members.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)updateConversationFeaturesAdded:(CNMConversation *)<em>cnmConversationParam</em> withCompletion:(CNMMessagingConversationCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that returns <a href="../Classes/CNMConversation.html">CNMConversation</a> or an error if something went wrong</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The group conversation you wish to update</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Updates the conversation by changing the Features status to all members belonging to the group can add members.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateConversationFeaturesRemoved:withCompletion:" title="updateConversationFeaturesRemoved:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateConversationFeaturesRemoved:withCompletion:">+&nbsp;updateConversationFeaturesRemoved:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the conversation by changing the Feature Status to only Main Admin and Admin can add members to group</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)updateConversationFeaturesRemoved:(CNMConversation *)<em>cnmConversationParam</em> withCompletion:(CNMMessagingConversationCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that returns <a href="../Classes/CNMConversation.html">CNMConversation</a> or an error if something went wrong</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The group conversation you wish to update</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Updates the conversation by changing the Feature Status to only Main Admin and Admin can add members to group</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/updateConversation:newOwner:withCompletion:" title="updateConversation:newOwner:withCompletion:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/updateConversation:newOwner:withCompletion:">+&nbsp;updateConversation:newOwner:withCompletion:</a></code>
 </h3>
@@ -1434,7 +1642,7 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Updates the conversation by changing the group admin</p>
+				<p>Updates the conversation by changing the group Mainadmin</p>
 			</div>
 			
 		    
@@ -1473,7 +1681,7 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Updates the conversation by changing the group admin</p>
+				<p>Updates the conversation by changing the group Mainadmin</p>
 			</div>
 			
 
@@ -1553,6 +1761,174 @@ NOTE: Historical data is kept, you will simply not receive new information on sa
 			</div>
 			
 			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateConversation:addAdmins:withCompletion:" title="updateConversation:addAdmins:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateConversation:addAdmins:withCompletion:">+&nbsp;updateConversation:addAdmins:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the conversation by changing the group Member to Admin&rsquo;s</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)updateConversation:(CNMConversation *)<em>cnmConversationParam</em> addAdmins:(NSArray *)<em>adminsToAdd</em> withCompletion:(CNMMessagingConversationCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that returns <a href="../Classes/CNMConversation.html">CNMConversation</a> or an error if something went wrong</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>addAdmins</code></th>
+						<td><p>Array of valid CNMContacts</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The group conversation you wish to update</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Updates the conversation by changing the group Member to Admin&rsquo;s</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateConversation:removeAdmins:withCompletion:" title="updateConversation:removeAdmins:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateConversation:removeAdmins:withCompletion:">+&nbsp;updateConversation:removeAdmins:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the conversation by changing the group Admin&rsquo;s to Members</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)updateConversation:(CNMConversation *)<em>cnmConversationParam</em> removeAdmins:(NSArray *)<em>removeAdmins</em> withCompletion:(CNMMessagingConversationCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>removeAdmins</code></th>
+						<td><p>Array of valid CNMContacts</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that returns <a href="../Classes/CNMConversation.html">CNMConversation</a> or an error if something went wrong</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The group conversation you wish to update</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Updates the conversation by changing the group Admin&rsquo;s to Members</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getGroupConfig:" title="getGroupConfig:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getGroupConfig:">+&nbsp;getGroupConfig:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)getGroupConfig:(CNMConversation *)<em>cnmConversationParam</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getGroupConfig:withCompletion:" title="getGroupConfig:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getGroupConfig:withCompletion:">+&nbsp;getGroupConfig:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)getGroupConfig:(NSString *)<em>groupId</em> withCompletion:(CNMMessagingConversationCompletion)<em>completion</em></code></div>
+
+		    
 		</div>
 	</div>
 </div><div class="section-method">
@@ -2283,7 +2659,7 @@ individual requests</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 Loment. All rights reserved. Updated: 2016-11-28</p>
+						<p class="copyright">Copyright &copy; 2017 Loment. All rights reserved. Updated: 2017-01-02</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>

@@ -56,6 +56,10 @@
 	
 	<optgroup label="Properties">
 		
+		<option value="//api/name/adminString">adminString</option>
+		
+		<option value="//api/name/features">features</option>
+		
 		<option value="//api/name/groupId">groupId</option>
 		
 		<option value="//api/name/groupName">groupName</option>
@@ -67,6 +71,10 @@
 		<option value="//api/name/participants">participants</option>
 		
 		<option value="//api/name/participantsString">participantsString</option>
+		
+		<option value="//api/name/selectedCashewID">selectedCashewID</option>
+		
+		<option value="//api/name/timestamp">timestamp</option>
 		
 	</optgroup>
 	
@@ -314,6 +322,66 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/features" title="features"></a>
+	<h3 class="method-title"><code><a href="#//api/name/features">&nbsp;&nbsp;features</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>Returns Features list the group has
+1 - Restricted Groups (Once group created No operations on Group) ,
+2 - Will get Group messages and Group update messages that were happened after he has added to the group.
+3 - Will get all Group messages and Group update mesaages irrespective of the ime he added to group.
+4 - Every member of group can add <a href="#//api/name/participants">participants</a>.</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) NSString *features</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>Returns Features list the group has
+1 - Restricted Groups (Once group created No operations on Group) ,
+2 - Will get Group messages and Group update messages that were happened after he has added to the group.
+3 - Will get all Group messages and Group update mesaages irrespective of the ime he added to group.
+4 - Every member of group can add <a href="#//api/name/participants">participants</a>.</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/participants" title="participants"></a>
 	<h3 class="method-title"><code><a href="#//api/name/participants">&nbsp;&nbsp;participants</a></code>
 </h3>
@@ -360,6 +428,52 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/adminString" title="adminString"></a>
+	<h3 class="method-title"><code><a href="#//api/name/adminString">&nbsp;&nbsp;adminString</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns all the admins in the conversation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) NSString *adminString</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns all the admins in the conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/latestMessage" title="latestMessage"></a>
 	<h3 class="method-title"><code><a href="#//api/name/latestMessage">&nbsp;&nbsp;latestMessage</a></code>
 </h3>
@@ -389,6 +503,98 @@
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>The latest message on the conversation</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/timestamp" title="timestamp"></a>
+	<h3 class="method-title"><code><a href="#//api/name/timestamp">&nbsp;&nbsp;timestamp</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The time at which the message was updated</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonnull, nonatomic, strong, readonly) NSDate *timestamp</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The time at which the message was updated</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/selectedCashewID" title="selectedCashewID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/selectedCashewID">&nbsp;&nbsp;selectedCashewID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns Current loggedin user cashew ID.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) NSString *selectedCashewID</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns Current loggedin user cashew ID.</p>
 			</div>
 			
 
@@ -534,7 +740,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 Loment. All rights reserved. Updated: 2016-11-28</p>
+						<p class="copyright">Copyright &copy; 2017 Loment. All rights reserved. Updated: 2017-01-02</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>

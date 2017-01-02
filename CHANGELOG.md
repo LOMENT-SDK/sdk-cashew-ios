@@ -1,5 +1,11 @@
 # Release Notes
 
+## Version 1.1 (Dec 30, 2016)
+- Support for Groups chat
+- Support for Group update messages
+- Unread message count issue fix
+- Partner ID is parameterised
+
 ## Version 1.0.1 (Nov 28, 2016)
 - Support multi-user login
 - Display of unread message count

@@ -48,14 +48,39 @@ extern NSString * __nonnull const CNMNewConversationKey;
 #pragma mark - Common Attributes
 
 /**
+ *  Returns Features list the group has 
+ 1 - Restricted Groups (Once group created No operations on Group) , 
+ 2 - Will get Group messages and Group update messages that were happened after he has added to the group.
+ 3 - Will get all Group messages and Group update mesaages irrespective of the ime he added to group.
+ 4 - Every member of group can add participants.
+ */
+@property (nullable, nonatomic, strong, readonly) NSString *features;
+
+/**
  *  Returns all the participants in the conversation.
  */
 @property (nullable, nonatomic, strong, readonly) NSSet * participants;
 
 /**
+ *  Returns all the admins in the conversation.
+ */
+@property (nullable, nonatomic, strong, readonly) NSString * adminString;
+
+/**
  *  The latest message on the conversation
  */
 @property (nullable, nonatomic, strong, readonly) CNMMessage * latestMessage;
+
+/**
+ *  The time at which the message was updated
+ */
+@property (nonnull, nonatomic, strong, readonly) NSDate * timestamp;
+
+/**
+ *  Returns Current loggedin user cashew ID.
+ */
+@property (nullable, nonatomic, strong, readonly) NSString * selectedCashewID;
+
 
 //@property (nullable, nonatomic, strong) NSSet *messages; // Maybe later
 

@@ -6,11 +6,11 @@
 	<dict>
 		<key>CNMCashewModel.momd/CNMCashewModel.mom</key>
 		<data>
-		fN8lP2/kJh4nEaeaCuzhp77J1Y4=
+		jtguuOZ2x3j/bYoB44fsZtB9exY=
 		</data>
 		<key>CNMCashewModel.momd/VersionInfo.plist</key>
 		<data>
-		WDqPrNVIZQaKET2rNq93+9ZF1fI=
+		yvmx2CL/Tyg4Pi5BFmM2bVFgypk=
 		</data>
 		<key>CNMLomentModel.momd/CNMLomentModel.mom</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/CNMConversation.h</key>
 		<data>
-		BDHWjMRAbSezqqKP9iL+HacnIeg=
+		Qd4q6pZdaLB/WRuRHux0f+ks3ic=
 		</data>
 		<key>Headers/CNMCryptoServices.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/CNMErrorCodes.h</key>
 		<data>
-		R/XCyGgL2prAjsTqrztRGaIeDLk=
+		OgTURJT87zH8eBEZiRx3ySmV+aw=
 		</data>
 		<key>Headers/CNMIncomingContact.h</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Headers/CNMMessagingServices.h</key>
 		<data>
-		3addzBRvmLkgeO8J//wEKtwrNAE=
+		mEpY3wTz19DWijMUG+kMkRZg59M=
 		</data>
 		<key>Headers/CNMOutgoingContact.h</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LyuF3NW7qVIuukkSASFtuPNNX+w=
+		NkEJzEngzbpPVwwQYvPyfQfppQ0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -107,22 +107,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fN8lP2/kJh4nEaeaCuzhp77J1Y4=
+			jtguuOZ2x3j/bYoB44fsZtB9exY=
 			</data>
 			<key>hash2</key>
 			<data>
-			l6df7x+mZFCWn1Kd7jqEf2LvZhjutEHR5U6dArt/0wQ=
+			xyp7fMO8UF0SHIWIELI0Jrg+BsgkjetRAACbSDfjYSA=
 			</data>
 		</dict>
 		<key>CNMCashewModel.momd/VersionInfo.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WDqPrNVIZQaKET2rNq93+9ZF1fI=
+			yvmx2CL/Tyg4Pi5BFmM2bVFgypk=
 			</data>
 			<key>hash2</key>
 			<data>
-			YMEzlWf5ZqRRcgoDWoF40WgV+2cmBHqEOj5R0+j28P8=
+			qhbhNdAbHAyw5qI3PanzXhNnyYsov/FT8Oo5cjpQRBk=
 			</data>
 		</dict>
 		<key>CNMLomentModel.momd/CNMLomentModel.mom</key>
@@ -195,11 +195,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BDHWjMRAbSezqqKP9iL+HacnIeg=
+			Qd4q6pZdaLB/WRuRHux0f+ks3ic=
 			</data>
 			<key>hash2</key>
 			<data>
-			iaF8etuNrLxU2e11hHv3v7SRGWkMuFy5HUwrJY79bqQ=
+			YQvz291c7XHihrk22glkcevLtFQHsSGJruEAyKMs8e8=
 			</data>
 		</dict>
 		<key>Headers/CNMCryptoServices.h</key>
@@ -228,11 +228,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R/XCyGgL2prAjsTqrztRGaIeDLk=
+			OgTURJT87zH8eBEZiRx3ySmV+aw=
 			</data>
 			<key>hash2</key>
 			<data>
-			N9OHv1E24o1cesL6kvSeugBWlsqYdnE43lgtNz34Iyg=
+			Oe9JBRhXeT400I1LTT0pdf6TzAniK4uiVCZ+ovFU8Aw=
 			</data>
 		</dict>
 		<key>Headers/CNMIncomingContact.h</key>
@@ -283,11 +283,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3addzBRvmLkgeO8J//wEKtwrNAE=
+			mEpY3wTz19DWijMUG+kMkRZg59M=
 			</data>
 			<key>hash2</key>
 			<data>
-			Sv163SGmJN70vZbubxDahnOhQgTbBIQ5eaVOP0dbr48=
+			tsQVJ/zEbwvEaYN78AVhbkioB/I5XM8kA3wvwPvndO0=
 			</data>
 		</dict>
 		<key>Headers/CNMOutgoingContact.h</key>

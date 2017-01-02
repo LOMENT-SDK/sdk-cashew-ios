@@ -157,6 +157,54 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/setFeatures:</TokenIdentifier>
+			<Abstract type="html">*  Returns Features list the group has
+1 - Restricted Groups (Once group created No operations on Group) ,
+2 - Will get Group messages and Group update messages that were happened after he has added to the group.
+3 - Will get all Group messages and Group update mesaages irrespective of the ime he added to group.
+4 - Every member of group can add participants.</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *features</Declaration>
+			
+			
+			<Anchor>//api/name/features</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/features</TokenIdentifier>
+			<Abstract type="html">*  Returns Features list the group has
+1 - Restricted Groups (Once group created No operations on Group) ,
+2 - Will get Group messages and Group update messages that were happened after he has added to the group.
+3 - Will get all Group messages and Group update mesaages irrespective of the ime he added to group.
+4 - Every member of group can add participants.</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *features</Declaration>
+			
+			
+			<Anchor>//api/name/features</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMConversation/features</TokenIdentifier>
+			<Abstract type="html">*  Returns Features list the group has
+1 - Restricted Groups (Once group created No operations on Group) ,
+2 - Will get Group messages and Group update messages that were happened after he has added to the group.
+3 - Will get all Group messages and Group update mesaages irrespective of the ime he added to group.
+4 - Every member of group can add participants.</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *features</Declaration>
+			
+			
+			<Anchor>//api/name/features</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/setParticipants:</TokenIdentifier>
 			<Abstract type="html">Returns all the participants in the conversation.</Abstract>
 			<DeclaredIn>CNMConversation.h</DeclaredIn>
@@ -193,6 +241,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/setAdminString:</TokenIdentifier>
+			<Abstract type="html">Returns all the admins in the conversation.</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *adminString</Declaration>
+			
+			
+			<Anchor>//api/name/adminString</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/adminString</TokenIdentifier>
+			<Abstract type="html">Returns all the admins in the conversation.</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *adminString</Declaration>
+			
+			
+			<Anchor>//api/name/adminString</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMConversation/adminString</TokenIdentifier>
+			<Abstract type="html">Returns all the admins in the conversation.</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *adminString</Declaration>
+			
+			
+			<Anchor>//api/name/adminString</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/setLatestMessage:</TokenIdentifier>
 			<Abstract type="html">The latest message on the conversation</Abstract>
 			<DeclaredIn>CNMConversation.h</DeclaredIn>
@@ -225,6 +309,78 @@
 			
 			
 			<Anchor>//api/name/latestMessage</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/setTimestamp:</TokenIdentifier>
+			<Abstract type="html">The time at which the message was updated</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nonnull, nonatomic, strong, readonly) NSDate *timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/timestamp</TokenIdentifier>
+			<Abstract type="html">The time at which the message was updated</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nonnull, nonatomic, strong, readonly) NSDate *timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMConversation/timestamp</TokenIdentifier>
+			<Abstract type="html">The time at which the message was updated</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nonnull, nonatomic, strong, readonly) NSDate *timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/setSelectedCashewID:</TokenIdentifier>
+			<Abstract type="html">Returns Current loggedin user cashew ID.</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *selectedCashewID</Declaration>
+			
+			
+			<Anchor>//api/name/selectedCashewID</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/selectedCashewID</TokenIdentifier>
+			<Abstract type="html">Returns Current loggedin user cashew ID.</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *selectedCashewID</Declaration>
+			
+			
+			<Anchor>//api/name/selectedCashewID</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMConversation/selectedCashewID</TokenIdentifier>
+			<Abstract type="html">Returns Current loggedin user cashew ID.</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *selectedCashewID</Declaration>
+			
+			
+			<Anchor>//api/name/selectedCashewID</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		

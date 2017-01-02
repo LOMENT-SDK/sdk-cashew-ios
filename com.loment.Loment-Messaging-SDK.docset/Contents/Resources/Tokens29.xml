@@ -597,6 +597,171 @@
         </Token>
         
         <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDKNetworkErrorForGroupNotExist</TokenIdentifier>
+            <Abstract type="html">Needs documentation
+     </Abstract>
+            <Declaration>SDKNetworkErrorForGroupNotExist</Declaration>
+            
+            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDKNetworkErrorForGroupInvalidParameter</TokenIdentifier>
+            <Abstract type="html">Needs documentation
+     </Abstract>
+            <Declaration>SDKNetworkErrorForGroupInvalidParameter</Declaration>
+            
+            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDKNetworkErrorForGroupAddMemberInvalidParameter</TokenIdentifier>
+            <Abstract type="html">Needs documentation
+     </Abstract>
+            <Declaration>SDKNetworkErrorForGroupAddMemberInvalidParameter</Declaration>
+            
+            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDKNetworkErrorForGroupAddMemberInvalidGroupType</TokenIdentifier>
+            <Abstract type="html">Needs documentation
+     </Abstract>
+            <Declaration>SDKNetworkErrorForGroupAddMemberInvalidGroupType</Declaration>
+            
+            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDKNetworkErrorForGroupAddMemberInvalidOwner</TokenIdentifier>
+            <Abstract type="html">Needs documentation
+     </Abstract>
+            <Declaration>SDKNetworkErrorForGroupAddMemberInvalidOwner</Declaration>
+            
+            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDKNetworkErrorForGroupRemoveMemberInvalidParameter</TokenIdentifier>
+            <Abstract type="html">Needs documentation
+     </Abstract>
+            <Declaration>SDKNetworkErrorForGroupRemoveMemberInvalidParameter</Declaration>
+            
+            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDKNetworkErrorForGroupRemoveMemberInvalidGroupType</TokenIdentifier>
+            <Abstract type="html">Needs documentation
+     </Abstract>
+            <Declaration>SDKNetworkErrorForGroupRemoveMemberInvalidGroupType</Declaration>
+            
+            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDKNetworkErrorForGroupRemoveMemberInvalidOwner</TokenIdentifier>
+            <Abstract type="html">Needs documentation
+     </Abstract>
+            <Declaration>SDKNetworkErrorForGroupRemoveMemberInvalidOwner</Declaration>
+            
+            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDKNetworkErrorForGroupRemoveMemberCannotRemoveOwner</TokenIdentifier>
+            <Abstract type="html">Needs documentation
+     </Abstract>
+            <Declaration>SDKNetworkErrorForGroupRemoveMemberCannotRemoveOwner</Declaration>
+            
+            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDKNetworkErrorForGroupOwnerTransferInvalid</TokenIdentifier>
+            <Abstract type="html">Needs documentation
+     </Abstract>
+            <Declaration>SDKNetworkErrorForGroupOwnerTransferInvalid</Declaration>
+            
+            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDKNetworkErrorForGroupOwnerNotMemberOfGroup</TokenIdentifier>
+            <Abstract type="html">Needs documentation
+     </Abstract>
+            <Declaration>SDKNetworkErrorForGroupOwnerNotMemberOfGroup</Declaration>
+            
+            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDKNetworkErrorForGroupInvalidHeaderData</TokenIdentifier>
+            <Abstract type="html">Needs documentation
+     </Abstract>
+            <Declaration>SDKNetworkErrorForGroupInvalidHeaderData</Declaration>
+            
+            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDKNetworkErrorForGroupInvalidBodyData</TokenIdentifier>
+            <Abstract type="html">Needs documentation
+     </Abstract>
+            <Declaration>SDKNetworkErrorForGroupInvalidBodyData</Declaration>
+            
+            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDKNetworkErrorForGroupInvalidMemberPermission</TokenIdentifier>
+            <Abstract type="html">Needs documentation
+     </Abstract>
+            <Declaration>SDKNetworkErrorForGroupInvalidMemberPermission</Declaration>
+            
+            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDKNetworkErrorForGroupOperations</TokenIdentifier>
+            <Abstract type="html">Needs documentation
+     </Abstract>
+            <Declaration>SDKNetworkErrorForGroupOperations</Declaration>
+            
+            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
             <TokenIdentifier>//apple_ref/c/econst/SDKNetworkErrorGivenSubscriptionIdNotFound</TokenIdentifier>
             <Abstract type="html">Needs documentation
      </Abstract>

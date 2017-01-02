@@ -311,6 +311,76 @@ typedef NS_ENUM(NSUInteger, SDKNetworkError) {
      *  Needs documentation
      */
     SDKNetworkErrorPaymentFailedAtPaymentGateway                 = 40117,
+    
+    /**
+     *  Needs documentation
+     */
+    SDKNetworkErrorForGroupNotExist                              = 40101,
+    
+    /**
+     *  Needs documentation
+     */
+    SDKNetworkErrorForGroupInvalidParameter                      = 40201,
+    
+    /**
+     *  Needs documentation
+     */
+    SDKNetworkErrorForGroupAddMemberInvalidParameter             = 40301,
+    /**
+     *  Needs documentation
+     */
+    SDKNetworkErrorForGroupAddMemberInvalidGroupType             = 40302,
+    /**
+     *  Needs documentation
+     */
+    SDKNetworkErrorForGroupAddMemberInvalidOwner                 = 40303,
+    /**
+     *  Needs documentation
+     */
+    SDKNetworkErrorForGroupRemoveMemberInvalidParameter          = 40401,
+    /**
+     *  Needs documentation
+     */
+    SDKNetworkErrorForGroupRemoveMemberInvalidGroupType          = 40402,
+    
+    /**
+     *  Needs documentation
+     */
+    SDKNetworkErrorForGroupRemoveMemberInvalidOwner              = 40403,
+    
+    /**
+     *  Needs documentation
+     */
+    SDKNetworkErrorForGroupRemoveMemberCannotRemoveOwner         = 40404,
+    
+    /**
+     *  Needs documentation
+     */
+    SDKNetworkErrorForGroupOwnerTransferInvalid                  = 40501,
+    
+    /**
+     *  Needs documentation
+     */
+    SDKNetworkErrorForGroupOwnerNotMemberOfGroup                 = 40502,
+    /**
+     *  Needs documentation
+     */
+    SDKNetworkErrorForGroupInvalidHeaderData                     = 40601,
+    /**
+     *  Needs documentation
+     */
+    SDKNetworkErrorForGroupInvalidBodyData                       = 40602,
+    
+    /**
+     *  Needs documentation
+     */
+    SDKNetworkErrorForGroupInvalidMemberPermission               = 40603,
+    
+    /**
+     *  Needs documentation
+     */
+    SDKNetworkErrorForGroupOperations                            = 40604,
+    
     /**
      *  Needs documentation
      */

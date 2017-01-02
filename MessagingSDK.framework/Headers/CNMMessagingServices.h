@@ -283,6 +283,15 @@ typedef void (^CNMAttachmentTransferProgress)(NSUInteger currentBytesTransferred
 + (void)createNewConversationWithOtherCashewContact:(CNMContact *)otherCashewContact withCompletion:(CNMMessagingConversationCompletion)completion;
 
 /**
+ *  Creates a new group conversation with the given name using the array of CNMContacts. Caller is the admin / owner of the newly created group.
+ *
+ *  @param groupName     The name of the group (This param is required)
+ *  @param otherContacts Array of valid CNMContacts. If you instantiate your CNMContact, unexpected results may happen.
+ *  @param completion    Completion block that returns CNMConversation or an error if something went wrong
+ */
++ (void)createNewGroupConversation:(NSString *)groupName withContacts:(NSArray *)otherContacts withCompletion:(CNMMessagingConversationCompletion)completion;
+
+/**
  *  Updates the conversation by adding contacts to group
  *
  *  @param conversation The group conversation you wish to update
@@ -308,9 +317,24 @@ typedef void (^CNMAttachmentTransferProgress)(NSUInteger currentBytesTransferred
  *  @param completion   Completion block that returns CNMConversation or an error if something went wrong
  */
 + (void)updateConversation:(CNMConversation *)conversation newName:(NSString *)newGroupName withCompletion:(CNMMessagingConversationCompletion)completion;
+/**
+ *  Updates the conversation by changing the Features status to all members belonging to the group can add members.
+ *
+ *  @param conversation The group conversation you wish to update
+ *  @param completion   Completion block that returns CNMConversation or an error if something went wrong
+ */
++ (void)updateConversationFeaturesAdded:(CNMConversation *)cnmConversationParam withCompletion:(CNMMessagingConversationCompletion)completion;
 
 /**
- *  Updates the conversation by changing the group admin
+ *  Updates the conversation by changing the Feature Status to only Main Admin and Admin can add members to group
+ *
+ *  @param conversation The group conversation you wish to update
+ *  @param completion   Completion block that returns CNMConversation or an error if something went wrong
+ */
++ (void)updateConversationFeaturesRemoved:(CNMConversation *)cnmConversationParam withCompletion:(CNMMessagingConversationCompletion)completion;
+
+/**
+ *  Updates the conversation by changing the group Mainadmin
  *
  *  @param conversation The group conversation you wish to update
  *  @param newOwner     The new owner
@@ -326,6 +350,29 @@ typedef void (^CNMAttachmentTransferProgress)(NSUInteger currentBytesTransferred
  *  @param completion   Completion block that returns CNMConversation or an error if something went wrong
  */
 + (void)leaveConversation:(CNMConversation *)conversation withCompletion:(CNMMessagingConversationCompletion)completion;
+
+/**
+ *  Updates the conversation by changing the group Member to Admin's
+ *
+ *  @param conversation The group conversation you wish to update
+ *  @param addAdmins    Array of valid CNMContacts
+ *  @param completion   Completion block that returns CNMConversation or an error if something went wrong
+ */
+
++ (void)updateConversation:(CNMConversation *)cnmConversationParam addAdmins:(NSArray *)adminsToAdd withCompletion:(CNMMessagingConversationCompletion)completion;
+
+/**
+ *  Updates the conversation by changing the group Admin's to Members
+ *
+ *  @param conversation The group conversation you wish to update
+ *  @param removeAdmins Array of valid CNMContacts
+ *  @param completion   Completion block that returns CNMConversation or an error if something went wrong
+ */
+
++ (void)updateConversation:(CNMConversation *)cnmConversationParam removeAdmins:(NSArray *)removeAdmins withCompletion:(CNMMessagingConversationCompletion)completion;
+
++ (void)getGroupConfig:(CNMConversation *)cnmConversationParam;
++ (void)getGroupConfig:(NSString *)groupId withCompletion:(CNMMessagingConversationCompletion)completion;
 
 #pragma mark - Delivery Calls
 

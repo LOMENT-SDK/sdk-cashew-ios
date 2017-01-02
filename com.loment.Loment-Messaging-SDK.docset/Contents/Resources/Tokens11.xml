@@ -364,6 +364,29 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/createNewGroupConversation:withContacts:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Creates a new group conversation with the given name using the array of CNMContacts. Caller is the admin / owner of the newly created group.</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)createNewGroupConversation:(NSString *)groupName withContacts:(NSArray *)otherContacts withCompletion:(CNMMessagingConversationCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>groupName</Name>
+					<Abstract type="html">The name of the group (This param is required)</Abstract>
+				</Parameter><Parameter>
+					<Name>otherContacts</Name>
+					<Abstract type="html">Array of valid CNMContacts. If you instantiate your CNMContact, unexpected results may happen.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Completion block that returns CNMConversation or an error if something went wrong</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/createNewGroupConversation:withContacts:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/updateConversation:addMembers:withCompletion:</TokenIdentifier>
 			<Abstract type="html">Updates the conversation by adding contacts to group</Abstract>
 			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
@@ -433,8 +456,48 @@ To send a message with one-time settings call sendNewMessage:withAttachmentFilen
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/updateConversationFeaturesAdded:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Updates the conversation by changing the Features status to all members belonging to the group can add members.</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)updateConversationFeaturesAdded:(CNMConversation *)cnmConversationParam withCompletion:(CNMMessagingConversationCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Completion block that returns CNMConversation or an error if something went wrong</Abstract>
+				</Parameter><Parameter>
+					<Name>conversation</Name>
+					<Abstract type="html">The group conversation you wish to update</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updateConversationFeaturesAdded:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/updateConversationFeaturesRemoved:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Updates the conversation by changing the Feature Status to only Main Admin and Admin can add members to group</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)updateConversationFeaturesRemoved:(CNMConversation *)cnmConversationParam withCompletion:(CNMMessagingConversationCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Completion block that returns CNMConversation or an error if something went wrong</Abstract>
+				</Parameter><Parameter>
+					<Name>conversation</Name>
+					<Abstract type="html">The group conversation you wish to update</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updateConversationFeaturesRemoved:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/updateConversation:newOwner:withCompletion:</TokenIdentifier>
-			<Abstract type="html">Updates the conversation by changing the group admin</Abstract>
+			<Abstract type="html">Updates the conversation by changing the group Mainadmin</Abstract>
 			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
 			
 			<Declaration>+ (void)updateConversation:(CNMConversation *)conversation newOwner:(CNMContact *)newOwner withCompletion:(CNMMessagingConversationCompletion)completion</Declaration>
@@ -473,6 +536,76 @@ NOTE: Historical data is kept, you will simply not receive new information on sa
 			</Parameters>
 			
 			<Anchor>//api/name/leaveConversation:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/updateConversation:addAdmins:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Updates the conversation by changing the group Member to Admin&apos;s</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)updateConversation:(CNMConversation *)cnmConversationParam addAdmins:(NSArray *)adminsToAdd withCompletion:(CNMMessagingConversationCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Completion block that returns CNMConversation or an error if something went wrong</Abstract>
+				</Parameter><Parameter>
+					<Name>addAdmins</Name>
+					<Abstract type="html">Array of valid CNMContacts</Abstract>
+				</Parameter><Parameter>
+					<Name>conversation</Name>
+					<Abstract type="html">The group conversation you wish to update</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updateConversation:addAdmins:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/updateConversation:removeAdmins:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Updates the conversation by changing the group Admin&apos;s to Members</Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)updateConversation:(CNMConversation *)cnmConversationParam removeAdmins:(NSArray *)removeAdmins withCompletion:(CNMMessagingConversationCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>removeAdmins</Name>
+					<Abstract type="html">Array of valid CNMContacts</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Completion block that returns CNMConversation or an error if something went wrong</Abstract>
+				</Parameter><Parameter>
+					<Name>conversation</Name>
+					<Abstract type="html">The group conversation you wish to update</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updateConversation:removeAdmins:withCompletion:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/getGroupConfig:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)getGroupConfig:(CNMConversation *)cnmConversationParam</Declaration>
+			
+			
+			<Anchor>//api/name/getGroupConfig:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CNMMessagingServices/getGroupConfig:withCompletion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CNMMessagingServices.h</DeclaredIn>
+			
+			<Declaration>+ (void)getGroupConfig:(NSString *)groupId withCompletion:(CNMMessagingConversationCompletion)completion</Declaration>
+			
+			
+			<Anchor>//api/name/getGroupConfig:withCompletion:</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
