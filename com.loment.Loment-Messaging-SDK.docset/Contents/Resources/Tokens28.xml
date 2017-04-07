@@ -112,6 +112,17 @@
             <NodeRef refid="28"/>
         </Token>
         
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDKFoundationErrorDidNotsetPrerequisiteUrl</TokenIdentifier>
+            <Abstract type="html">Error indicating that the developer has not set Prerequisite Url SDK yet
+     </Abstract>
+            <Declaration>SDKFoundationErrorDidNotsetPrerequisiteUrl</Declaration>
+            
+            <DeclaredIn>CNMErrorCodes.h</DeclaredIn>
+            
+            <NodeRef refid="28"/>
+        </Token>
+        
         
 	</File>
 </Tokens>

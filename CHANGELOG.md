@@ -1,5 +1,10 @@
 # Release Notes
 
+## Version 2.0 (Apr 7, 2017)
+- Made SDK Generic ( End user can configure the end points)
+- implemented change password call
+- issue fix
+
 ## Version 1.1 (Dec 30, 2016)
 - Support for Groups chat
 - Support for Group update messages

@@ -62,6 +62,10 @@
 		
 		<option value="//api/name/authenticateUser:withPassword:withCompletion:">+ authenticateUser:withPassword:withCompletion:</option>
 		
+		<option value="//api/name/changepasswordForEmail:withCurrentPassword:andNewPassword:withCompletion:">+ changepasswordForEmail:withCurrentPassword:andNewPassword:withCompletion:</option>
+		
+		<option value="//api/name/changepasswordForEmail:withNewPassword:withCompletion:">+ changepasswordForEmail:withNewPassword:withCompletion:</option>
+		
 		<option value="//api/name/recoverPasswordForEmail:withCompletion:">+ recoverPasswordForEmail:withCompletion:</option>
 		
 		<option value="//api/name/registerUserWithName:withPassword:withEmail:withPhone:withIsoCode:withCompletion:">+ registerUserWithName:withPassword:withEmail:withPhone:withIsoCode:withCompletion:</option>
@@ -418,6 +422,147 @@ pass that selected account to MessagingServices to begin Loment Messaging.</p>
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/changepasswordForEmail:withNewPassword:withCompletion:" title="changepasswordForEmail:withNewPassword:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/changepasswordForEmail:withNewPassword:withCompletion:">+&nbsp;changepasswordForEmail:withNewPassword:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sends Changepassword password email to the specified email address</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)changepasswordForEmail:(NSString *)<em>email</em> withNewPassword:(NSString *)<em>newpassword</em> withCompletion:(CNMUserServicesCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>email</code></th>
+						<td><p>Email address to the change password for email to</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newpassword</code></th>
+						<td><p>New password to be set for the account.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block excuted when the network block completes (<a href="../Classes/CNMUser.html">CNMUser</a> will not be set)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sends Changepassword password email to the specified email address</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMUserServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/changepasswordForEmail:withCurrentPassword:andNewPassword:withCompletion:" title="changepasswordForEmail:withCurrentPassword:andNewPassword:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/changepasswordForEmail:withCurrentPassword:andNewPassword:withCompletion:">+&nbsp;changepasswordForEmail:withCurrentPassword:andNewPassword:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sends Changepassword password email to the specified email address</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)changepasswordForEmail:(NSString *)<em>email</em> withCurrentPassword:(NSString *)<em>currentpassword</em> andNewPassword:(NSString *)<em>newpassword</em> withCompletion:(CNMUserServicesCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>email</code></th>
+						<td><p>Email address to the change password for email to</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>currentpassword</code></th>
+						<td><p>current password for the account</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newpassword</code></th>
+						<td><p>New password to be set for the account.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block excuted when the network block completes (<a href="../Classes/CNMUser.html">CNMUser</a> will not be set)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sends Changepassword password email to the specified email address</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMUserServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/addCashewAccount:forUser:withCompletion:" title="addCashewAccount:forUser:withCompletion:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/addCashewAccount:forUser:withCompletion:">+&nbsp;addCashewAccount:forUser:withCompletion:</a></code>
 </h3>
@@ -563,7 +708,7 @@ pass that selected account to MessagingServices to begin Loment Messaging.</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2017 Loment. All rights reserved. Updated: 2017-01-02</p>
+						<p class="copyright">Copyright &copy; 2017 Loment. All rights reserved. Updated: 2017-04-07</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>

@@ -385,6 +385,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/setConversationName:</TokenIdentifier>
+			<Abstract type="html">Returns all Name of Participant for individual conversation and Group name for Group conversation</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *conversationName</Declaration>
+			
+			
+			<Anchor>//api/name/conversationName</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/conversationName</TokenIdentifier>
+			<Abstract type="html">Returns all Name of Participant for individual conversation and Group name for Group conversation</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *conversationName</Declaration>
+			
+			
+			<Anchor>//api/name/conversationName</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CNMConversation/conversationName</TokenIdentifier>
+			<Abstract type="html">Returns all Name of Participant for individual conversation and Group name for Group conversation</Abstract>
+			<DeclaredIn>CNMConversation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *conversationName</Declaration>
+			
+			
+			<Anchor>//api/name/conversationName</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CNMConversation/isGroup</TokenIdentifier>
 			<Abstract type="html">Helper method to tell if a conversation is a group or not (aka 1-1 convo, private convo)</Abstract>
 			<DeclaredIn>CNMConversation.h</DeclaredIn>

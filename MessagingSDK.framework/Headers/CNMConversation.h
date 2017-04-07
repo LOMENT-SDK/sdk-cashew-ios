@@ -81,6 +81,12 @@ extern NSString * __nonnull const CNMNewConversationKey;
  */
 @property (nullable, nonatomic, strong, readonly) NSString * selectedCashewID;
 
+/**
+ *  Returns all Name of Participant for individual conversation and Group name for Group conversation
+ */
+@property (nullable, nonatomic, strong, readonly) NSString * conversationName;
+
+
 
 //@property (nullable, nonatomic, strong) NSSet *messages; // Maybe later
 

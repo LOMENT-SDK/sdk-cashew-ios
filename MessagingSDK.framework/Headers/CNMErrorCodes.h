@@ -46,7 +46,11 @@ typedef NS_ENUM(NSUInteger, SDKFoundationError)
     /**
      *  Error if attachment is already being downloaded
      */
-    SDKFoundationErrorAlreadyDownloadingAttachment       = -1008
+    SDKFoundationErrorAlreadyDownloadingAttachment       = -1008,
+    /**
+     *  Error indicating that the developer has not set Prerequisite Url SDK yet
+     */
+    SDKFoundationErrorDidNotsetPrerequisiteUrl           = -1009
 
 };
 

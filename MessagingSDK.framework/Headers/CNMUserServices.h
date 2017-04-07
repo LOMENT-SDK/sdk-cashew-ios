@@ -85,6 +85,25 @@ typedef void (^CNMUserServicesCompletion)(CNMUser * user, NSError *error);
 + (void)recoverPasswordForEmail:(NSString *)email withCompletion:(CNMUserServicesCompletion)completion;
 
 /**
+ *  Sends Changepassword password email to the specified email address
+ *
+ *  @param email        Email address to the change password for email to
+ *  @param newpassword  New password to be set for the account.
+ *  @param completion   Completion block excuted when the network block completes (CNMUser will not be set)
+ */
++ (void)changepasswordForEmail:(NSString *)email withNewPassword:(NSString *)newpassword withCompletion:(CNMUserServicesCompletion)completion;
+/**
+ *  Sends Changepassword password email to the specified email address
+ *
+ *  @param email            Email address to the change password for email to
+ *  @param currentpassword  current password for the account
+ *  @param newpassword      New password to be set for the account.
+ *  @param completion       Completion block excuted when the network block completes (CNMUser will not be set)
+ */
+
++ (void)changepasswordForEmail:(NSString *)email withCurrentPassword:(NSString *)currentpassword andNewPassword:(NSString *)newpassword withCompletion:(CNMUserServicesCompletion)completion;
+
+/**
  *  Creates the Cashew Username for the specified user
  *
  *  @param cashewUsername   New Cashew Username
