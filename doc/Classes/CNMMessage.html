@@ -12,7 +12,7 @@
 <body class="appledoc">
 	<header>
 		<div class="container" class="hide-in-xcode">
-			
+
 			<h1 id="library-title">
 				<a href="../index.html">Loment Messaging SDK </a>
 			</h1>
@@ -20,7 +20,7 @@
 			<p id="developer-home">
 				<a href="../index.html">Loment</a>
 			</p>
-			
+
 		</div>
 	</header>
 
@@ -42,53 +42,55 @@
 
 							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
-	
+
 	<option value="overview">Overview</option>
-	
 
-	
-	
+
+
+
 	<option value="tasks">Tasks</option>
-	
-	
 
-	
-	
+
+
+
+
 	<optgroup label="Properties">
-		
+
 		<option value="//api/name/acknowledgement">acknowledgement</option>
-		
+
 		<option value="//api/name/attachment">attachment</option>
-		
+
 		<option value="//api/name/content">content</option>
-		
+
 		<option value="//api/name/conversation">conversation</option>
-		
+
 		<option value="//api/name/expiryDate">expiryDate</option>
-		
+
 		<option value="//api/name/expiryMinutes">expiryMinutes</option>
-		
+
 		<option value="//api/name/forwardRestricted">forwardRestricted</option>
-		
+
 		<option value="//api/name/msgType">msgType</option>
-		
+
 		<option value="//api/name/priority">priority</option>
-		
+
+		<option value="//api/name/scheduletime">scheduleTime</option>
+
 		<option value="//api/name/sender">sender</option>
-		
+
 		<option value="//api/name/serverId">serverId</option>
-		
+
 		<option value="//api/name/status">status</option>
-		
+
 		<option value="//api/name/timestamp">timestamp</option>
-		
+
 	</optgroup>
-	
 
-	
 
-	
-	
+
+
+
+
 </select>
 						</label>
 					</li>
@@ -103,7 +105,7 @@
 				<main role="main">
 					<h1 class="title">CNMMessage Class Reference</h1>
 
-					
+
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Inherits from</th>
@@ -113,26 +115,26 @@
 	<td>CNMMessage.h</td>
 </tr>
 						</tbody></table></div>
-					
 
-                    
-					
+
+
+
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
 						<p>Object represents a message object in the Loment system.</p>
 					</div>
-					
-					
 
-					
-					
+
+
+
+
 					<div class="section section-tasks">
 						<a title="Tasks" name="tasks"></a>
-						
 
-						
-						
+
+
+
 
 						<div class="task-list">
 							<div class="section-method">
@@ -144,41 +146,41 @@
 		<div class="pointy-thing"></div>
 
 		<div class="method-info-container">
-			
-			
+
+
 			<div class="method-subsection brief-description">
 				<p>Indicates whether the message can be forwarded</p>
 			</div>
-			
-		    
+
+
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) BOOL forwardRestricted</code></div>
 
-		    
-			
 
-			
 
-			
 
-			
+
+
+
+
+
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>Indicates whether the message can be forwarded</p>
 			</div>
-			
 
-			
 
-			
 
-			
+
+
+
+
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
 				<p><code class="declared-in-ref">CNMMessage.h</code></p>
 			</div>
-			
-			
+
+
 		</div>
 	</div>
 </div><div class="section-method">
@@ -190,41 +192,41 @@
 		<div class="pointy-thing"></div>
 
 		<div class="method-info-container">
-			
-			
+
+
 			<div class="method-subsection brief-description">
 				<p>The priority of a message (low, medium, high, highest)</p>
 			</div>
-			
-		    
+
+
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) MessagePriorityLevel priority</code></div>
 
-		    
-			
 
-			
 
-			
 
-			
+
+
+
+
+
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>The priority of a message (low, medium, high, highest)</p>
 			</div>
-			
 
-			
 
-			
 
-			
+
+
+
+
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
 				<p><code class="declared-in-ref">CNMMessage.h</code></p>
 			</div>
-			
-			
+
+
 		</div>
 	</div>
 </div><div class="section-method">
@@ -236,41 +238,41 @@
 		<div class="pointy-thing"></div>
 
 		<div class="method-info-container">
-			
-			
+
+
 			<div class="method-subsection brief-description">
 				<p>The unique id for the message, assigned by the server</p>
 			</div>
-			
-		    
+
+
 
 			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) NSString *serverId</code></div>
 
-		    
-			
 
-			
 
-			
 
-			
+
+
+
+
+
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>The unique id for the message, assigned by the server</p>
 			</div>
-			
 
-			
 
-			
 
-			
+
+
+
+
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
 				<p><code class="declared-in-ref">CNMMessage.h</code></p>
 			</div>
-			
-			
+
+
 		</div>
 	</div>
 </div><div class="section-method">
@@ -282,41 +284,41 @@
 		<div class="pointy-thing"></div>
 
 		<div class="method-info-container">
-			
-			
+
+
 			<div class="method-subsection brief-description">
 				<p>The current status of the message (pending, failed, sent, read)</p>
 			</div>
-			
-		    
+
+
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) MessageStatus status</code></div>
 
-		    
-			
 
-			
 
-			
 
-			
+
+
+
+
+
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>The current status of the message (pending, failed, sent, read)</p>
 			</div>
-			
 
-			
 
-			
 
-			
+
+
+
+
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
 				<p><code class="declared-in-ref">CNMMessage.h</code></p>
 			</div>
-			
-			
+
+
 		</div>
 	</div>
 </div><div class="section-method">
@@ -328,41 +330,41 @@
 		<div class="pointy-thing"></div>
 
 		<div class="method-info-container">
-			
-			
+
+
 			<div class="method-subsection brief-description">
 				<p>Current state of acknowledgement. @See <a href="../Constants/AcknowledgementState.html">AcknowledgementState</a></p>
 			</div>
-			
-		    
+
+
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) AcknowledgementState acknowledgement</code></div>
 
-		    
-			
 
-			
 
-			
 
-			
+
+
+
+
+
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>Current state of acknowledgement. @See <a href="../Constants/AcknowledgementState.html">AcknowledgementState</a></p>
 			</div>
-			
 
-			
 
-			
 
-			
+
+
+
+
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
 				<p><code class="declared-in-ref">CNMMessage.h</code></p>
 			</div>
-			
-			
+
+
 		</div>
 	</div>
 </div><div class="section-method">
@@ -374,41 +376,41 @@
 		<div class="pointy-thing"></div>
 
 		<div class="method-info-container">
-			
-			
+
+
 			<div class="method-subsection brief-description">
 				<p>The time at which the message was created</p>
 			</div>
-			
-		    
+
+
 
 			<div class="method-subsection method-declaration"><code>@property (nonnull, nonatomic, strong, readonly) NSDate *timestamp</code></div>
 
-		    
-			
 
-			
 
-			
 
-			
+
+
+
+
+
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>The time at which the message was created</p>
 			</div>
-			
 
-			
 
-			
 
-			
+
+
+
+
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
 				<p><code class="declared-in-ref">CNMMessage.h</code></p>
 			</div>
-			
-			
+
+
 		</div>
 	</div>
 </div><div class="section-method">
@@ -420,41 +422,41 @@
 		<div class="pointy-thing"></div>
 
 		<div class="method-info-container">
-			
-			
+
+
 			<div class="method-subsection brief-description">
 				<p>The number of minutes between the message being viewed and expiring (-1 if the message does not expire)</p>
 			</div>
-			
-		    
+
+
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) NSInteger expiryMinutes</code></div>
 
-		    
-			
 
-			
 
-			
 
-			
+
+
+
+
+
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>The number of minutes between the message being viewed and expiring (-1 if the message does not expire)</p>
 			</div>
-			
 
-			
 
-			
 
-			
+
+
+
+
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
 				<p><code class="declared-in-ref">CNMMessage.h</code></p>
 			</div>
-			
-			
+
+
 		</div>
 	</div>
 </div><div class="section-method">
@@ -466,44 +468,138 @@
 		<div class="pointy-thing"></div>
 
 		<div class="method-info-container">
-			
-			
+
+
 			<div class="method-subsection brief-description">
 				<p>The date at which the message expires, nil if the message does not expire.</p>
 			</div>
-			
-		    
+
+
 
 			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) NSDate *expiryDate</code></div>
 
-		    
-			
 
-			
 
-			
 
-			
+
+
+
+
+
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>The date at which the message expires, nil if the message does not expire.</p>
 			</div>
-			
 
-			
 
-			
 
-			
+
+
+
+
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
 				<p><code class="declared-in-ref">CNMMessage.h</code></p>
 			</div>
-			
-			
+
+
 		</div>
 	</div>
+</div>
+
+<!-------------Update -------------------->
+<div class="section-method">
+	<a name="//api/name/scheduletime" title="scheduleTime"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scheduletime">&nbsp;&nbsp;scheduleTime</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+
+
+			<div class="method-subsection brief-description">
+				<p>The date at which the message schedule time, nil if the message does not sending delay</p>
+			</div>
+
+
+
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) NSDate * scheduleTime;</code></div>
+	<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The date at which the message schedule time, nil if the message does not sending delay.</p>
+			</div>
+
+<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessage.h</code></p>
+			</div>
+
+
+		</div>
+	</div>
+
+
+
 </div><div class="section-method">
+	<a name="//api/name/conversation" title="conversation"></a>
+	<h3 class="method-title"><code><a href="#//api/name/conversation">&nbsp;&nbsp;conversation</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+
+
+			<div class="method-subsection brief-description">
+				<p>The conversation that the message belongs to</p>
+			</div>
+
+
+
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, weak, readonly) CNMConversation *conversation</code></div>
+
+
+
+
+
+
+
+
+
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The conversation that the message belongs to</p>
+			</div>
+
+
+
+
+
+
+
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessage.h</code></p>
+			</div>
+
+
+		</div>
+	</div>
+
+</div>
+<!-------------End Update------------------>
+
+
+
+
+
+
+
+
+<div class="section-method">
 	<a name="//api/name/sender" title="sender"></a>
 	<h3 class="method-title"><code><a href="#//api/name/sender">&nbsp;&nbsp;sender</a></code>
 </h3>
@@ -512,41 +608,41 @@
 		<div class="pointy-thing"></div>
 
 		<div class="method-info-container">
-			
-			
+
+
 			<div class="method-subsection brief-description">
 				<p>The sender of the message</p>
 			</div>
-			
-		    
+
+
 
 			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) CNMContact *sender</code></div>
 
-		    
-			
 
-			
 
-			
 
-			
+
+
+
+
+
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>The sender of the message</p>
 			</div>
-			
 
-			
 
-			
 
-			
+
+
+
+
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
 				<p><code class="declared-in-ref">CNMMessage.h</code></p>
 			</div>
-			
-			
+
+
 		</div>
 	</div>
 </div><div class="section-method">
@@ -558,41 +654,41 @@
 		<div class="pointy-thing"></div>
 
 		<div class="method-info-container">
-			
-			
+
+
 			<div class="method-subsection brief-description">
 				<p>The conversation that the message belongs to</p>
 			</div>
-			
-		    
+
+
 
 			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, weak, readonly) CNMConversation *conversation</code></div>
 
-		    
-			
 
-			
 
-			
 
-			
+
+
+
+
+
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>The conversation that the message belongs to</p>
 			</div>
-			
 
-			
 
-			
 
-			
+
+
+
+
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
 				<p><code class="declared-in-ref">CNMMessage.h</code></p>
 			</div>
-			
-			
+
+
 		</div>
 	</div>
 </div><div class="section-method">
@@ -604,41 +700,41 @@
 		<div class="pointy-thing"></div>
 
 		<div class="method-info-container">
-			
-			
+
+
 			<div class="method-subsection brief-description">
 				<p>If message contains an attachment this value will be present. See <a href="../Classes/CNMAttachment.html">CNMAttachment</a> for details on how to extract attachment information</p>
 			</div>
-			
-		    
+
+
 
 			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) CNMAttachment *attachment</code></div>
 
-		    
-			
 
-			
 
-			
 
-			
+
+
+
+
+
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>If message contains an attachment this value will be present. See <a href="../Classes/CNMAttachment.html">CNMAttachment</a> for details on how to extract attachment information</p>
 			</div>
-			
 
-			
 
-			
 
-			
+
+
+
+
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
 				<p><code class="declared-in-ref">CNMMessage.h</code></p>
 			</div>
-			
-			
+
+
 		</div>
 	</div>
 </div><div class="section-method">
@@ -650,41 +746,41 @@
 		<div class="pointy-thing"></div>
 
 		<div class="method-info-container">
-			
-			
+
+
 			<div class="method-subsection brief-description">
 				<p>The message in plain text</p>
 			</div>
-			
-		    
+
+
 
 			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) NSString *content</code></div>
 
-		    
-			
 
-			
 
-			
 
-			
+
+
+
+
+
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>The message in plain text</p>
 			</div>
-			
 
-			
 
-			
 
-			
+
+
+
+
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
 				<p><code class="declared-in-ref">CNMMessage.h</code></p>
 			</div>
-			
-			
+
+
 		</div>
 	</div>
 </div><div class="section-method">
@@ -696,33 +792,33 @@
 		<div class="pointy-thing"></div>
 
 		<div class="method-info-container">
-			
+
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) NSInteger msgType</code></div>
 
-		    
+
 		</div>
 	</div>
 </div>
 						</div>
-						
-					</div>
-					
-					
 
-                    
-                    
-          
+					</div>
+
+
+
+
+
+
 				</main>
 
 				<footer>
 					<div class="footer-copyright">
-						
+
 						<p class="copyright">Copyright &copy; 2017 Loment. All rights reserved. Updated: 2017-04-07</p>
-						
-						
+
+
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
-						
+
 					</div>
 				</footer>
 			</div>

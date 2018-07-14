@@ -60,6 +60,11 @@
 @property (nullable, nonatomic, strong, readonly) NSDate * expiryDate;
 
 /**
+ *  The date at which the message schedule time, nil if the message does not sending delay.
+ */
+@property (nullable, nonatomic, strong, readonly) NSString * scheduleTime;
+
+/**
  *  The sender of the message
  */
 @property (nullable, nonatomic, strong, readonly) CNMContact * sender;

@@ -177,7 +177,10 @@ typedef void (^CNMAttachmentTransferProgress)(NSUInteger currentBytesTransferred
  *  @param msgType              Type of message (1- Normal messages, 2- Welcome message, 3- Contact, 4- Old Groups , 5- Auto Response , 6- New Groups , 7 - Screen Shot )  
  *  @param completion           Completion handler that is called when we are finished sending
  */
+
 + (void)sendNewMessage:(NSString *)plainText forConversation:(CNMConversation *)cnmConversation withType:(NSInteger)msgType withCompletion:(CNMMessagingServiceCompletion)completion;
+
++ (void)sendNewMessage:(NSString *)plainText withScheduleTime:(NSDate *)scheduleTime forConversation:(CNMConversation *)cnmConversation withType:(NSInteger)msgType withCompletion:(CNMMessagingServiceCompletion)completion;
 
 /**
  *  Sends a new message from the user on the specified conversation with an attachment. Uses settings stored in global settings. See CNMSettingsServices, defaults can be changed here.
@@ -192,7 +195,8 @@ typedef void (^CNMAttachmentTransferProgress)(NSUInteger currentBytesTransferred
  *  @param attachmentTransferProgress   Periodic called block during the time the attachment is uploaded
  *  @param completion                   Completion handler that is called when we are finished sending
  */
-+ (void)sendNewMessage:(NSString *)plainText withAttachmentFilename:(NSString *)attachmentFilename withAttachmentData:(NSData *)attachmentData forConversation:(CNMConversation *)conversation withType:(NSInteger)msgType withAttachmentTransferProgress:(CNMAttachmentTransferProgress)attachmentTransferProgress withCompletion:(CNMMessagingServiceCompletion)completion;
+
++ (void)sendNewMessage:(NSString *)plainText withAttachmentFilename:(NSString *)attachmentFilename withAttachmentData:(NSData *)attachmentData withScheduleTime:(NSDate *)scheduleTime forConversation:(CNMConversation *)conversation withType:(NSInteger)msgType withAttachmentTransferProgress:(CNMAttachmentTransferProgress)attachmentTransferProgress withCompletion:(CNMMessagingServiceCompletion)completion;
 
 /**
  *  Sends a new message from the user on the specified conversation with customized settings.
@@ -204,14 +208,16 @@ typedef void (^CNMAttachmentTransferProgress)(NSUInteger currentBytesTransferred
 *  @param msgType              Type of message (1- Normal messages, 2- Welcome message, 3- Contact, 4- Old Groups , 5- Auto Response , 6- New Groups , 7 - Screen Shot )  
  *  @param completion           Completion handler that is called when we are finished sending
  */
-+ (void)sendNewMessage:(NSString *)plainText options:(CNMMessageOptions)options withExpirationDuration:(NSInteger)expirationDuration forConversation:(CNMConversation *)conversation withType:(NSInteger)msgType withCompletion:(CNMMessagingServiceCompletion)completion;
+
++ (void)sendNewMessage:(NSString *)plainText withScheduleTime:(NSDate *)scheduleTime options:(CNMMessageOptions)options withExpirationDuration:(NSInteger)expirationDuration forConversation:(CNMConversation *)cnmConversation withType:(NSInteger)msgType withCompletion:(CNMMessagingServiceCompletion)completion;
 
 /**
- *  Sends a new message from the user on the specified conversation with an attachment and customized settings.
+ *  Sends a new message from the user on the specified conversation with an multiple attachments and customized settings.
  *
  *  @param plainText                    Plain text message
  *  @param attachmentFilename           The filename of the attachment
  *  @param attachmentData               The NSData contents of the file
+ *  @param scheduleTime                 The time and date of the message 
  *  @param options                      Bit mask of options to set on a message
  *  @param expirationDuration           Expiration in minutes. Valid values are 1-999. Passing anything else assumes no expiration.
  *  @param conversation                 The conversation to post on
@@ -219,7 +225,14 @@ typedef void (^CNMAttachmentTransferProgress)(NSUInteger currentBytesTransferred
  *  @param attachmentTransferProgress   Periodic called block during the time the attachment is uploaded
  *  @param completion                   Completion handler that is called when we are finished sending
  */
-+ (void)sendNewMessage:(NSString *)plainText withAttachmentFilename:(NSString *)attachmentFilename withAttachmentData:(NSData *)attachmentData options:(CNMMessageOptions)options withExpirationDuration:(NSInteger)expirationDuration forConversation:(CNMConversation *)conversation withType:(NSInteger)msgType withAttachmentTransferProgress:(CNMAttachmentTransferProgress)attachmentTransferProgress withCompletion:(CNMMessagingServiceCompletion)completion;
+
++ (void)sendNewMessage:(NSString *)plainText withAttachmentFilename:(NSString *)attachmentFilename withAttachmentData:(NSData *)attachmentData withScheduleTime:(NSDate *)scheduleTime options:(CNMMessageOptions)options withExpirationDuration:(NSInteger)expirationDuration forConversation:(CNMConversation *)cnmConversation withType:(NSInteger)msgType withAttachmentTransferProgress:(CNMAttachmentTransferProgress)attachmentTransferProgress withCompletion:(CNMMessagingServiceCompletion)completion;
+
+
++ (void)sendNewMessage:(NSString* )plainText withAttachmentFilenames:(NSArray* )attachmentFilenames withAttachmentsData:(NSArray* )attachmentsData withScheduleTime:(NSDate *)scheduleTime options:(CNMMessageOptions)options withExpirationDuration:(NSInteger)expirationDuration forConversation:(CNMConversation* )conversation withType:(NSInteger)msgType withAttachmentTransferProgress:(CNMAttachmentTransferProgress)attachmentTransferProgress withCompletion:(CNMMessagingServiceCompletion)completion;
+
+
++ (void)sendNewMessage:(NSString* )plainText withAttachmentFilenames:(NSArray* )attachmentFilenames withAttachmentsData:(NSArray* )attachmentsData options:(CNMMessageOptions)options withExpirationDuration:(NSInteger)expirationDuration forConversation:(CNMConversation* )conversation withType:(NSInteger)msgType withAttachmentTransferProgress:(CNMAttachmentTransferProgress)attachmentTransferProgress withCompletion:(CNMMessagingServiceCompletion)completion;
 
 /**
  *  Mark a message as read
